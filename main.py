@@ -1,5 +1,6 @@
 import re
 from enum import Enum
+import sqlite3
 
 class Operation (Enum):
     SELECT = "Select"
@@ -18,12 +19,18 @@ def parseLine(line):
         return Operation.PROJECTION.value + " " + m.group(1)
     return "Error"
 
+def testQuery():
+    con = sqlite3.connect(":memory:")
+    cur = con.cursor()
+    cur.execute ("CREATE TABLE flights (from_airport text, to_airport text, days text)")
+    cur.execute ("INSERT INTO flights VALUES ('YUL', 'DME', '1234567')")
+    cur.execute ("SELECT * FROM flights WHERE from_airport='YUL'")
+    print(cur.fetchone())
+    cur.close ()
 
 def main():
     inputline = "P(atr1, atr2)"
     print(parseLine(inputline))
-
-
-
+    testQuery()
 
 main()
