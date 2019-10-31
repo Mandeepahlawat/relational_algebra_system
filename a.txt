@@ -1,3 +1,4 @@
+code1	code2	number
 YUL	DME	1234567
 YUL	CDG	127
 CDG	DME	345

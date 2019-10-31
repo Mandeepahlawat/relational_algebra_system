@@ -2,64 +2,95 @@ import re
 from enum import Enum
 import sqlite3
 
-class Operation (Enum):
-    SELECT = "Select"
-    UNION = "Union"
-    PROJECTION = "Project"
-
-def parseLine(line):
-    if re.search("^S\(([A-Za-z0-9]+)\)$", line):
-        m = re.search("^S\(([A-Za-z]+)\)$", line)
-        return Operation.SELECT.value + " " + m.group(1)
-    if re.search("^U\(([A-Za-z0-9]+), ([A-Za-z0-9]+)\)$", line):
-        m = re.search("^U\(([A-Za-z0-9]+), ([A-Za-z0-9]+)\)$", line)
-        return Operation.UNION.value + " " + m.group(1) + " " + m.group(2)
-    if re.search("^P\((.*)\)$", line):
-        m = re.search("^P\((.*)\)$", line)
-        cols=m.group(1).split(",")
-        table=cols.pop(0).strip()
-        attrs=""
-        for a in cols:
-            attrs+=a.strip()+","
-        attrs=attrs[:-1]
-        return Operation.PROJECTION.value, table, attrs
-    return "Error"
-
-def loadTable(con, name):
-    cur = con.cursor()
+def loadTable(cur, name):
     cur.execute ("SELECT COUNT(name) FROM sqlite_master WHERE type='table' AND name='"+name+"'")
-    r=cur.fetchone()[0]
-    if (r==0):
-        with open(name+".txt") as f:
-            content=f.readlines()
-            cols=len(content[0].split("\t"))
-            create="CREATE TABLE "+name+" ("
-            names="("
-            for i in range(cols):
-                create+="c"+str(i)+" TEXT,"
-                names+="?,"
-            create=create[:-1]+")"
-            names=names[:-1]+")"
-            cur.execute (create)
-            query="INSERT INTO "+name+" VALUES "+names
-            for line in content:
-                values=tuple(line[:-1].split("\t"))
-                cur.execute(query, values)
-
-def projection(con, table, columns):
-    cur = con.cursor()
-    cur.execute ("SELECT "+columns+" FROM "+table)
-    res=cur.fetchall()
-    for line in res:
-        print(line)
+    table_count=cur.fetchone()[0]
+    #table already exists so delete existing table
+    if table_count != 0:
+        cur.execute ("DROP TABLE {}".format(name))
     
+    with open(name+".txt") as f:
+        content = f.readlines()
+        column_names = content[0].split("\t")
+        column_names = [col.strip() for col in column_names]
+        column_names = [col for col in column_names if col]
+        cur.execute ("CREATE TABLE {} ({})".format(name, " text, ".join(column_names) + ' text'))
+
+        # insert lines by skipping first row
+        for idx, line in enumerate(content):
+            if idx != 0:
+                line_content = line.split("\t")
+                line_content = [line.strip() for line in line_content]
+                # removes empty string values from the list
+                line_content = [line for line in line_content if line]
+                # extra step, if we don't do it sqlitite thinks that individual values are variables instead of string
+                line_content = ["'{}'".format(line) for line in line_content]
+
+                cur.execute("INSERT INTO {} values ({})".format(name, ", ".join(line_content)))
+
+def get_select_conditions(inputline):
+    if re.search("select", inputline, re.IGNORECASE):
+        selected_conditions = re.search("\[.+\]", inputline).group().replace("[", "").replace("]", "")
+        selected_conditions = selected_conditions.split(",")
+        return " and".join(selected_conditions)
+    else:
+        return None
+
+def get_relations(inputline):
+    return re.search("\(.+\)", inputline).group().replace("(", "").replace(")", "")
+
+def get_projections(inputline):
+    if re.search("project", inputline, re.IGNORECASE):
+        project_cols = re.search("\<.+\>", inputline).group().replace("<", "").replace(">", "")
+        return project_cols
+    else:
+        return '*'
+
+def print_results(cur):
+    results = cur.fetchall()
+    print("\n\n**************** RESULTS ****************\n\n")
+    for result in results:
+        print(result)
+        print
 
 def main():
-    con = sqlite3.connect(":memory:")
-    inputline = "P(a, c2, c1, c0)"
-    (operation, table, attrs)=parseLine(inputline)
-    loadTable(con, table)
-    if (operation==Operation.PROJECTION.value):
-        projection(con, table, attrs)
+    table_names = []
+    table_names.append(input("Please enter table name\n"))
+
+    while input("Do you want to load more tables? Answer in yes or no\n") == "yes":
+        table_names.append(input("Please enter table name\n"))
+    
+    # create sql database and load all the data
+    con = sqlite3.connect("relational_algebra")
+    cur = con.cursor()
+
+    for table_name in table_names:
+        loadTable(cur, table_name)
+
+    # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
+    inputline = input("Input your query in this format:\n project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\n\n\n")
+
+    while inputline:
+        # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"     
+        select_conditions = get_select_conditions(inputline)    
+        projections = get_projections(inputline)
+        relations = get_relations(inputline)
+        
+        if select_conditions:
+            query = 'Select {} from {} where {}'.format(projections, relations, select_conditions)
+        else:
+            query = 'Select {} from {}'.format(projections, relations)
+
+        cur.execute(query)
+        print_results(cur)
+
+        if input("Do you have any other query? Answer in yes or no\n") == "yes":
+            inputline = input("Input your query in this format:\n project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\n\n\n")
+        else:
+            inputline = None
+    
+
+    con.commit()
+    con.close()
 
 main()
