@@ -1,3 +1,4 @@
+import glob
 import re
 from enum import Enum
 import sqlite3
@@ -54,11 +55,7 @@ def print_results(cur):
         print
 
 def main():
-    table_names = []
-    table_names.append(input("Please enter table name\n"))
-
-    while input("Do you want to load more tables? Answer in yes or no\n") == "yes":
-        table_names.append(input("Please enter table name\n"))
+    table_names=[name[:-4] for name in glob.glob("*.txt")]
     
     # create sql database and load all the data
     con = sqlite3.connect("relational_algebra")
@@ -68,9 +65,9 @@ def main():
         loadTable(cur, table_name)
 
     # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
-    inputline = input("Input your query in this format:\n project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\n\n\n")
+    inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")
 
-    while inputline:
+    while (inputline and (inputline!="q")):
         # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"     
         select_conditions = get_select_conditions(inputline)    
         projections = get_projections(inputline)
@@ -83,13 +80,9 @@ def main():
 
         cur.execute(query)
         print_results(cur)
+        inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")
 
-        if input("Do you have any other query? Answer in yes or no\n") == "yes":
-            inputline = input("Input your query in this format:\n project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\n\n\n")
-        else:
-            inputline = None
-    
-
+    print ("Thank you and have a nice day!")
     con.commit()
     con.close()
 
