@@ -38,7 +38,7 @@ def get_select_conditions(inputline):
         return None
 
 def get_relations(inputline):
-    return re.search("\(.+\)", inputline).group().replace("(", "").replace(")", "")
+    return re.search("\(.+\)", inputline).group().replace("(", "").replace(")", "").split(",")
 
 def get_projections(inputline):
     if re.search("project", inputline, re.IGNORECASE):
@@ -68,16 +68,23 @@ def main():
     inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")
 
     while (inputline and (inputline!="q")):
-        # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"     
+        # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"
+        # inputline = "project <code1, code2> select [code1="YUL"] (a,c)"
         select_conditions = get_select_conditions(inputline)    
         projections = get_projections(inputline)
         relations = get_relations(inputline)
         
-        if select_conditions:
-            query = 'Select {} from {} where {}'.format(projections, relations, select_conditions)
-        else:
-            query = 'Select {} from {}'.format(projections, relations)
-
+        query=""
+        union=False
+        for relation in relations:
+            if union:
+                query+= " UNION "
+            query += 'Select {} from {}'.format(projections, relation)
+            if select_conditions:
+                query += ' where {}'.format(select_conditions)
+            union=True
+        
+        print (query)
         cur.execute(query)
         print_results(cur)
         inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")

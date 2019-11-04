@@ -1,0 +1,4 @@
+code1	code2	number
+YUL	IST	257
+IST	VKO	1234567
+YUL	VKO	6
