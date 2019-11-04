@@ -47,6 +47,14 @@ def get_projections(inputline):
     else:
         return '*'
 
+def get_new(inputline):
+    if re.search(":", inputline, re.IGNORECASE):
+        new_name = re.search("^.+:", inputline).group().replace(":", "")
+        return new_name
+    else:
+        return ''
+    
+
 def print_results(cur):
     results = cur.fetchall()
     print("\n\n**************** RESULTS ****************\n\n")
@@ -69,10 +77,12 @@ def main():
 
     while (inputline and (inputline!="q")):
         # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"
-        # inputline = "project <code1, code2> select [code1="YUL"] (a,c)"
+        # inputline = "temp: project <code1, code2> select [code1="YUL"] (a,c)"
+        # inputline = "project <code1, code2> (temp)"
         select_conditions = get_select_conditions(inputline)    
         projections = get_projections(inputline)
         relations = get_relations(inputline)
+        new_name = get_new(inputline)
         
         query=""
         union=False
@@ -84,6 +94,13 @@ def main():
                 query += ' where {}'.format(select_conditions)
             union=True
         
+        if (new_name):
+            temp='DROP TABLE IF EXISTS {}'.format(new_name)
+            cur.execute(temp)
+            query='CREATE TABLE {} AS {}'.format(new_name, query)
+            cur.execute(query)
+            query='SELECT * FROM {}'.format(new_name)
+            
         print (query)
         cur.execute(query)
         print_results(cur)
