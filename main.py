@@ -2,6 +2,7 @@ import glob
 import re
 from enum import Enum
 import sqlite3
+from provenance import process_query_provenance
 
 def loadTable(cur, name):
     cur.execute ("SELECT COUNT(name) FROM sqlite_master WHERE type='table' AND name='"+name+"'")
@@ -62,6 +63,34 @@ def print_results(cur):
         print(result)
         print
 
+def process_query(inputline, cur):
+    select_conditions = get_select_conditions(inputline)    
+    projections = get_projections(inputline)
+    relations = get_relations(inputline)
+    new_name = get_new(inputline)
+
+    query=""
+    union=False
+    for relation in relations:
+        if union:
+            query+= " UNION "
+        query += 'Select {} from {}'.format(projections, relation)
+        if select_conditions:
+            query += ' where {}'.format(select_conditions)
+        union=True
+
+    if (new_name):
+        temp='DROP TABLE IF EXISTS {}'.format(new_name)
+        cur.execute(temp)
+        query='CREATE TABLE {} AS {}'.format(new_name, query)
+        cur.execute(query)
+        query='SELECT * FROM {}'.format(new_name)
+    
+    print (query)
+    cur.execute(query)
+    print_results(cur)
+
+
 def main():
     table_names=[name[:-4] for name in glob.glob("*.txt")]
     
@@ -71,40 +100,25 @@ def main():
 
     for table_name in table_names:
         loadTable(cur, table_name)
+    
+    annotation = 0
 
     # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
-    inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")
+    inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr enter annotation number from 1 to 5\nOr q to quit\n")
 
     while (inputline and (inputline!="q")):
         # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"
         # inputline = "temp: project <code1, code2> select [code1="YUL"] (a,c)"
         # inputline = "project <code1, code2> (temp)"
-        select_conditions = get_select_conditions(inputline)    
-        projections = get_projections(inputline)
-        relations = get_relations(inputline)
-        new_name = get_new(inputline)
-        
-        query=""
-        union=False
-        for relation in relations:
-            if union:
-                query+= " UNION "
-            query += 'Select {} from {}'.format(projections, relation)
-            if select_conditions:
-                query += ' where {}'.format(select_conditions)
-            union=True
-        
-        if (new_name):
-            temp='DROP TABLE IF EXISTS {}'.format(new_name)
-            cur.execute(temp)
-            query='CREATE TABLE {} AS {}'.format(new_name, query)
-            cur.execute(query)
-            query='SELECT * FROM {}'.format(new_name)
-            
-        print (query)
-        cur.execute(query)
-        print_results(cur)
-        inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n\n")
+        if (re.search("^\d$", inputline)):
+            annotation=inputline
+            print("Annotation is "+annotation)
+        else:
+            if (annotation=="4"):
+                process_query_provenance(inputline, cur)
+            else:
+                process_query(inputline, cur)
+        inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr enter annotation number from 1 to 5\nOr q to quit\n")
 
     print ("Thank you and have a nice day!")
     con.commit()
