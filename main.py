@@ -3,6 +3,7 @@ import re
 import sqlite3
 from provenance import process_query_provenance
 from bag import process_query_bag
+from probability import process_probability_query
 
 def loadTable(cur, name):
     cur.execute ("SELECT COUNT(name) FROM sqlite_master WHERE type='table' AND name='"+name+"'")
@@ -16,6 +17,7 @@ def loadTable(cur, name):
         column_names = content[0].split("\t")
         column_names = [col.strip() for col in column_names]
         column_names = [col for col in column_names if col]
+        # import pdb; pdb.set_trace()
         cur.execute ("CREATE TABLE {} ({})".format(name, " text, ".join(column_names) + ' text'))
 
         # insert lines by skipping first row
@@ -104,24 +106,29 @@ def main():
     annotation = 0
 
     # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
-    inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr enter annotation number from 1 to 5\nOr q to quit\n")
+    inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\n")
 
     while (inputline and (inputline!="q")):
         # inputline = "project <code1,code2> select[code1='YUL', code2='CDG'] (a)"
         # inputline = "temp: project <code1, code2> select [code1="YUL"] (a,c)"
         # inputline = "project <code1, code2> (temp)"
-        if (re.search("^\d$", inputline)):
-            annotation=inputline
-            print("Annotation is "+annotation)
+        # if (re.search("^\d$", inputline)):
+        #     annotation=inputline
+        #     print("Annotation is "+annotation)
+        # else:
+        annotation = input("Enter annotation number from 1 to 5\n")
+        while int(annotation) > 5:
+            annotation = input("Enter annotation number from 1 to 5\n")
+
+        if annotation == "4":
+            process_query_provenance(inputline, cur)
+        elif annotation == "2":
+            process_probability_query(inputline,cur)
+        elif annotation == "1":
+            process_query_bag(inputline, cur)
         else:
-            if (annotation=="4"):
-                process_query_provenance(inputline, cur)
-            else:
-                if (annotation =="1"):
-                    process_query_bag(inputline, cur)
-                else:
-                    process_query(inputline, cur)
-        inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr enter annotation number from 1 to 5\nOr q to quit\n")
+            process_query(inputline, cur)
+        inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n")
 
     print ("Thank you and have a nice day!")
     con.commit()
