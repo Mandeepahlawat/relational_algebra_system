@@ -17,7 +17,6 @@ def loadTable(cur, name):
         column_names = content[0].split("\t")
         column_names = [col.strip() for col in column_names]
         column_names = [col for col in column_names if col]
-        # import pdb; pdb.set_trace()
         cur.execute ("CREATE TABLE {} ({})".format(name, " text, ".join(column_names) + ' text'))
 
         # insert lines by skipping first row
