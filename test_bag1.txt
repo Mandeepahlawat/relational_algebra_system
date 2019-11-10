@@ -1,0 +1,7 @@
+code1	code2	bag
+YUL	DME	1
+YUL	CDG	2
+CDG	DME	3
+CDG	DME	3
+CDG	DME	3
+CDG	DME	3
