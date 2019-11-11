@@ -5,6 +5,7 @@ from provenance import process_query_provenance
 from bag import process_query_bag
 from probability import process_probability_query
 from standard import process_query_standard
+from certainty import process_query_certainty
 
 def loadTable(cur, name):
     cur.execute ("SELECT COUNT(name) FROM sqlite_master WHERE type='table' AND name='"+name+"'")
@@ -124,6 +125,8 @@ def main():
                 process_query_bag(inputline, cur)
             elif (annotation =="5"):
                 process_query_standard(inputline, cur)
+            elif (annotation =="3"):
+                process_query_certainty(inputline, cur)
             else:
                 process_query(inputline, cur)
         inputline = input("Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr enter annotation number from 1 to 5\nOr q to quit\n")
