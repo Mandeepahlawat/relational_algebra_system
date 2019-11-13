@@ -32,11 +32,11 @@ def get_projections(inputline):
     else:
         return '*'
 
-def add_probabilities(results):
+def add_provenance_values(results):
     final_results = {}
     for result in results:
-        key = result[0:-1]
-        val = result[-1]
+        key = result[0:-1] #all values except the provenance
+        val = result[-1] #value of provenance
         final_results[key] = final_results.get(key, []) + [val]
 
     for key, val in final_results.items():
@@ -50,22 +50,10 @@ def add_probabilities(results):
 
     return final_results_list
 
-def multiply_probabilities(results):
-    final_results = {}
-    for result in results:
-        key = result[0:-1]
-        val = result[-1]
-        final_results[key] = final_results.get(key, []) + [val]
 
-    for key, val in final_results.items():
-        temp = reduce((lambda x, y : x * y), temp)
-        final_results[key] = 1 - temp
-
-    return list(final_results.items())
-
-def get_all_values_from_tuple_index(prob_indices, join_result):
+def get_provenance_values_for_join(indices, join_result):
     result = 1
-    for i in prob_indices:
+    for i in indices:
         result *= float(join_result[i])
     return result
 
@@ -97,7 +85,7 @@ def create_temp_join_table(cur, inputline, relation_dict):
     prob_indices = [i for i,x in enumerate(join_columns) if x == ANNOTATED_COLUMN_NAME]
 
     # calculate new value for probability
-    probability_list = [get_all_values_from_tuple_index(prob_indices, join_result) for join_result in join_results]
+    probability_list = [get_provenance_values_for_join(prob_indices, join_result) for join_result in join_results]
     # delete existing probability values and append the new value in the end
     new_join_results = [delete_values_from_tuple_index_and_add_new(prob_indices, join_result, probability_list[i]) for i, join_result in enumerate(join_results)]
 
@@ -115,7 +103,7 @@ def create_temp_join_table(cur, inputline, relation_dict):
         temp_table_name = TEMP_TABLE_NAME_2
         temp_other_table_name = TEMP_TABLE_NAME_1
            
-    cur.execute ("CREATE TABLE {} ({})".format(temp_table_name, " text, ".join(join_columns) + ' text'))
+    cur.execute("CREATE TABLE {} ({})".format(temp_table_name, " text, ".join(join_columns) + ' text'))
 
     for result in new_join_results:
         print(result)
@@ -133,9 +121,14 @@ def create_temp_join_table(cur, inputline, relation_dict):
             select_condition += "{}=[{}]".format(temp_col_list[i], com_col)
             select_condition_list.append(select_condition)
 
-    select_condition = " and ".join(select_condition_list)
-    #create new temp table after natural join and drop the other one
-    cur.execute("create table {} as select * from {} where {}".format(temp_other_table_name, temp_table_name, select_condition))
+    #if common columns then perform natural join else cross product
+    if len(select_condition_list):
+        select_condition = " and ".join(select_condition_list)
+        cur.execute("create table {} as select * from {} where {}".format(temp_other_table_name, temp_table_name, select_condition))
+    else:
+        cur.execute("create table {} as select * from {}".format(temp_other_table_name, temp_table_name))
+    
+    #drop the other one temp table so can be reused later on
     drop_temp_table_by_name(temp_table_name, cur)
 
 def get_all_table_columns(inputline, cur):
@@ -169,8 +162,8 @@ def print_results(cur, operation=None):
 
 def create_temp_result_table(cur, results, result_table_name, projections):
     if projections != '*':
-        # join probabilities before inserting them in temp result table
-        results = add_probabilities(results)
+        # join provenance values before inserting them in temp result table
+        results = add_provenance_values(results)
         column_names = [col.strip() for col in projections.split(',')]
     else:
         if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
@@ -222,26 +215,13 @@ def nested_join_queries(cur):
     query = "({} join {})".format(TEMP_RESULT_TABLE_NAME_1, TEMP_RESULT_TABLE_NAME_2)
     create_temp_join_table(cur, query, relation_dict)
 
-    cur.execute("PRAGMA table_info({})".format(TEMP_RESULT_TABLE_NAME_1))
-    result_table_cols = [col[1] for col in cur.fetchall()]
-
-    projection_list = []
-    for col in result_table_cols:
-        if '.' in col:
-            dot_index = col.index('.')
-            new_col = col[dot_index+1:].replace("'","")
-            projection_list.append(new_col)
-        else:
-            projection_list.append(col)
-
-    projection_list = ",".join(projection_list)
+    projection_list = get_projections_for_nested_join(query, cur)
     
     temp_table_name = None
     if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
         temp_table_name = TEMP_TABLE_NAME_2
     else:
         temp_table_name = TEMP_TABLE_NAME_1
-
 
     query = 'Select {} from {}'.format(projection_list, temp_table_name)
 
@@ -250,7 +230,27 @@ def nested_join_queries(cur):
     return cur.fetchall()
 
 
+def get_projections_for_nested_join(query, cur):
+    relation_dict = get_all_table_columns(query, cur)
+    common_columns, join_columns = get_join_and_columns_from_relation_dict(relation_dict)
+    join_columns.append(ANNOTATED_COLUMN_NAME)
+
+    projection_list = []
+    for col in join_columns:
+        if '.' in col:
+            dot_index = col.index('.')
+            new_col = col[dot_index+1:].replace("'","")
+            if new_col not in projection_list:
+                projection_list.append(new_col)
+        else:
+            projection_list.append(col)
+
+    projection_list = ",".join(projection_list)
+    return projection_list
+
+
 def process_probability_query(inputline, cur):
+    # inputline = "project <code1> (a) nestedjoin project<code3> (b)"
     # inputline = "project <code1, code2> select[code1='YUL'] (a)"
     # inputline = "project <code1, code2> select[code1='YUL'] (a join b)"
     # inputline = "project <code1, code2> (a join b)"
@@ -296,28 +296,19 @@ def process_probability_query(inputline, cur):
             if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
                 temp_table_name = TEMP_TABLE_NAME_2
             else:
-                emp_table_name = TEMP_TABLE_NAME_1
-
-            if select_conditions:
-                query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
-            else:
-                query = 'Select {} from {}'.format(projections, temp_table_name)
-
-            print(query)
-            cur.execute(query)
+                temp_table_name = TEMP_TABLE_NAME_1
         else:
             select_conditions = get_select_conditions(query)
             projections = get_projections(query)
-            relations = get_relations(query)
+            temp_table_name = get_relations(query)
 
-            if select_conditions:
-                query = 'Select {} from {} where {}'.format(projections, relations, select_conditions)
-            else:
-                query = 'Select {} from {}'.format(projections, relations, select_conditions)
+        if select_conditions:
+            query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
+        else:
+            query = 'Select {} from {}'.format(projections, temp_table_name)
             
-            print(query)
-            cur.execute(query)
-
+        print(query)
+        cur.execute(query)
         results = cur.fetchall()
 
         if is_temp_table_empty(TEMP_RESULT_TABLE_NAME_1, cur):
@@ -332,19 +323,21 @@ def process_probability_query(inputline, cur):
             combined_results = []
             if is_union:
                 combined_results = union_queries(cur)
+                cur.execute("PRAGMA table_info({})".format(TEMP_RESULT_TABLE_NAME_2))
+                result_table_projections = ",".join([col[1] for col in cur.fetchall()])
             if is_nested_join:
                 drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
                 drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
                 combined_results = nested_join_queries(cur)
+                temp_nested_join_query = "({} join {})".format(TEMP_RESULT_TABLE_NAME_1, TEMP_RESULT_TABLE_NAME_2)
+                result_table_projections = get_projections_for_nested_join(temp_nested_join_query, cur)
 
             # delete one of the temp results table and create a new one consisting union results
             result_table_name = TEMP_RESULT_TABLE_NAME_1
             drop_temp_table_by_name(result_table_name, cur)
-            cur.execute("PRAGMA table_info({})".format(TEMP_RESULT_TABLE_NAME_2))
-            result_table_projections = ",".join([col[1] for col in cur.fetchall()])
+            
             create_temp_result_table(cur, combined_results, result_table_name, result_table_projections)
             drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_2, cur)
-
         
         if index+1 == len(query_list):
             # last query, hence show results
