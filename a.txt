@@ -1,4 +1,4 @@
-code1	code2	number
-YUL	DME	1234567
-YUL	CDG	127
-CDG	DME	345
+code1	code2	number	provenance
+YUL	DME	1234567	0.2
+YUL	CDG	127	0.5
+CDG	DME	345	0.7

@@ -1,4 +1,4 @@
-code1	code3
-YUL	DCE
-YUL	CXG	
-CDG	DBE	
+code1	code3	provenance
+YUL	DME	0.8
+YUL	CXG	0.6
+CDG	DBE	0.6
