@@ -164,6 +164,6 @@ def process_query_bag(inputline, cur):
 
     execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(new_name))
     # execute_query(cur, 'CREATE TABLE {} AS SELECT * FROM {} '.format(new_name, temp_name))
-    execute_query(cur, 'CREATE TABLE {} AS SELECT {},sum(bag) FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
+    execute_query(cur, 'CREATE TABLE {} AS SELECT {},sum(bag) as bag FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
     execute_query(cur, 'SELECT * FROM {}'.format(new_name))
     print_results(cur)
