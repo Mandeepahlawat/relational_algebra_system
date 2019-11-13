@@ -261,7 +261,7 @@ def process_probability_query(inputline, cur):
     # inputline = "project <code1> (a) union project <code1> (b) union project <code1> (c) union project <code3> (b)"
     # inputline = "project <code1> (a) nestedjoin project <code1> (b)"
     # inputline = "project <city> select[position='Analyst'](r) nestedjoin project <city> select[position='Field agent' or position='Double agent'](r)"
-    inputline = "project <city> select[position='Analyst'](r) union project <city> select[position='Field agent' or position='Double agent'](r)"
+    # inputline = "project <city> select[position='Analyst'](r) union project <city> select[position='Field agent' or position='Double agent'](r)"
 
     # drop both temp result tables
     drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_1, cur)
