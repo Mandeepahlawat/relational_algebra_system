@@ -80,7 +80,7 @@ def process_query_standard(inputline, cur):
     union=False
     for relation in relations:
         if union:
-            query+= " UNION "
+            query+= " UNION ALL "
         if (re.search(" join ", relation, re.IGNORECASE)):
             relation=process_join(cur, relation)
         query += 'Select {} from {}'.format(projections, relation)

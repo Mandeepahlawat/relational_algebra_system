@@ -61,9 +61,7 @@ def process_join (cur, relation):
         execute_query(cur, 'ALTER TABLE {} RENAME COLUMN certainty TO certainty2'.format(next))
         execute_query(cur, 'CREATE TABLE {} AS SELECT * FROM {} NATURAL JOIN {}'.format(temp_table, current, next))
         execute_query(cur, 'ALTER TABLE {} RENAME COLUMN certainty2 TO certainty'.format(next))
-        execute_query(cur, 'UPDATE {} SET certainty="("||certainty||")" WHERE certainty LIKE "%|%"'.format(temp_table))
-        execute_query(cur, 'UPDATE {} SET certainty2="("||certainty2||")" WHERE certainty2 LIKE "%|%"'.format(temp_table))
-        execute_query(cur, 'UPDATE {} SET certainty2=certainty||"&"||certainty2'.format(temp_table))
+        execute_query(cur, 'UPDATE {} SET certainty2=certainty WHERE certainty<certainty2'.format(temp_table))
         columns=",".join(get_columns(cur, temp_table))
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(result_table))
         execute_query(cur, 'CREATE TABLE {} AS SELECT {} FROM {}'.format(result_table, columns, temp_table))
@@ -82,7 +80,7 @@ def process_query_certainty(inputline, cur):
     union=False
     for relation in relations:
         if union:
-            query+= " UNION "
+            query+= " UNION ALL "
         if (re.search(" join ", relation, re.IGNORECASE)):
             relation=process_join(cur, relation)
         query += 'Select {} from {}'.format(projections, relation)
@@ -96,6 +94,6 @@ def process_query_certainty(inputline, cur):
     columns=",".join(get_columns(cur, temp_name))
 
     execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(new_name))
-    execute_query(cur, 'CREATE TABLE {} AS SELECT {},GROUP_CONCAT(certainty, "|") FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
+    execute_query(cur, 'CREATE TABLE {} AS SELECT {},MAX(certainty) FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
     execute_query(cur, 'SELECT * FROM {}'.format(new_name))
     print_results(cur)
