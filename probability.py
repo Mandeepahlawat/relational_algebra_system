@@ -332,43 +332,10 @@ def process_probability_query(inputline, cur):
             combined_results = []
             if is_union:
                 combined_results = union_queries(cur)
-                # delete one of the temp results table and create a new one consisting union results
-                # result_table_name = TEMP_RESULT_TABLE_NAME_1
-                # drop_temp_table_by_name(result_table_name, cur)
-                # cur.execute("PRAGMA table_info({})".format(TEMP_RESULT_TABLE_NAME_2))
-                # result_table_projections = ",".join([col[1] for col in cur.fetchall()])
-                # create_temp_result_table(cur, union_results, result_table_name, result_table_projections)
-                # drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_2, cur)
-
             if is_nested_join:
-                
                 drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
                 drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
-
                 combined_results = nested_join_queries(cur)
-                # delete one of the temp results table and create a new one consisting union results
-                # result_table_name = TEMP_RESULT_TABLE_NAME_1
-                # drop_temp_table_by_name(result_table_name, cur)
-                
-                # # get column information from temp join tables
-                # if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
-                #     temp_nested_join_table_name = TEMP_TABLE_NAME_2
-                # else:
-                #     temp_nested_join_table_name = TEMP_TABLE_NAME_1
-
-                # cur.execute("PRAGMA table_info({})".format(temp_nested_join_table_name))
-                # result_table_cols = [col[1] for col in cur.fetchall()]
-
-                # result_table_projections_list = []
-                # for col in result_table_cols:
-                #     if '.' in col:
-                #         result_table_projections_list.append("'{}'".format(col))
-                #     else:
-                #         result_table_projections_list.append('{}'.format(col))
-
-                # result_table_projections = ",".join(result_table_projections_list)
-                # create_temp_result_table(cur, nested_join_results, result_table_name, result_table_projections)
-                # drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_2, cur)
 
             # delete one of the temp results table and create a new one consisting union results
             result_table_name = TEMP_RESULT_TABLE_NAME_1
