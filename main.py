@@ -98,10 +98,18 @@ def process_query(inputline, cur):
     cur.execute(query)
     print_results(cur)
 
+
 def union_present(inputline):
     if re.search("union", inputline, re.IGNORECASE):
         return inputline.split("union")
     return ""
+
+
+def natjoin_present(inputline):
+    if re.search("natjoin", inputline, re.IGNORECASE):
+        return inputline.split("natjoin")
+    return ""
+
 
 def main():
     table_names = [name[:-4] for name in glob.glob("*.txt")]
@@ -114,6 +122,7 @@ def main():
         loadTable(cur, table_name)
 
     annotation = 0
+    temp = 0
 
     # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
     inputline = input(
@@ -143,16 +152,26 @@ def main():
             process_query_certainty(inputline, cur)
         else:
             unions = union_present(inputline)
-            temp = 0
+            joins = natjoin_present(inputline)
+
+            if (joins != ""):
+                join_query = []
+                for sub in unions:
+                    temp += 1
+                    query = '_main_join_temp_{}: {}'.format(temp, sub)
+                    join_query.append('_main_join_temp_{}'.format(temp))
+                    process_query(query, cur)
+                inputline = "(" + "join".join(join_query) + ")"
             if (unions != ""):
                 union_query = []
                 for sub in unions:
                     temp += 1
-                    query = '_main_temp_{}: {}'.format(temp, sub)
-                    union_query.append('_main_temp_{}'.format(temp))
+                    query = '_main_union_temp_{}: {}'.format(temp, sub)
+                    union_query.append('_main_union_temp_{}'.format(temp))
                     process_query(query, cur)
                 inputline = "("+",".join(union_query) + ")"
             process_query(inputline, cur)
+
 
         inputline = input(
             "Input your query in this format:\nproject <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)\nOr q to quit\n")
