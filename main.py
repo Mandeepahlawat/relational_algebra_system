@@ -99,16 +99,8 @@ def process_query(inputline, cur):
     print_results(cur)
 
 
-def union_present(inputline):
-    if re.search("union", inputline, re.IGNORECASE):
-        return inputline.split("union")
-    return ""
-
-
-def natjoin_present(inputline):
-    if re.search("natjoin", inputline, re.IGNORECASE):
-        return inputline.split("natjoin")
-    return ""
+def union_or_natjoin_present(inputline):
+    return re.search("union", inputline, re.IGNORECASE) or re.search("natjoin", inputline, re.IGNORECASE)
 
 
 def main():
@@ -151,25 +143,27 @@ def main():
         elif (annotation == "3"):
             process_query_certainty(inputline, cur)
         else:
-            unions = union_present(inputline)
-            joins = natjoin_present(inputline)
+            if (union_or_natjoin_present(inputline)):
+                sub_query = re.split('natjoin|union', inputline)
+                processed_sub_query = []
+                for sub in sub_query:
+                    temp += 1
+                    query = '_main_temp_{}: {}'.format(temp, sub)
+                    processed_sub_query.append('_main_temp_{}'.format(temp))
+                    process_query(query, cur)
+                operations = re.findall('union|natjoin', inputline, re.IGNORECASE)
+                conv = []
+                for op in operations:
+                    if op == "union":
+                        conv.append(" , ")
+                    if op == "natjoin":
+                        conv.append(" join ")
 
-            if (joins != ""):
-                join_query = []
-                for sub in unions:
-                    temp += 1
-                    query = '_main_join_temp_{}: {}'.format(temp, sub)
-                    join_query.append('_main_join_temp_{}'.format(temp))
-                    process_query(query, cur)
-                inputline = "(" + "join".join(join_query) + ")"
-            if (unions != ""):
-                union_query = []
-                for sub in unions:
-                    temp += 1
-                    query = '_main_union_temp_{}: {}'.format(temp, sub)
-                    union_query.append('_main_union_temp_{}'.format(temp))
-                    process_query(query, cur)
-                inputline = "("+",".join(union_query) + ")"
+                query = processed_sub_query.pop(0)
+
+                for op in conv:
+                    query += op + processed_sub_query.pop(0)
+                inputline = "(" + query + ")"
             process_query(inputline, cur)
 
 
