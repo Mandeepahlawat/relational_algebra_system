@@ -17,7 +17,7 @@ def loadTable(cur, name):
 
     with open(name + ".txt") as f:
         content = f.readlines()
-        column_names = content[0].split("\t")
+        column_names = content[0].split(",")
         column_names = [col.strip() for col in column_names]
         column_names = [col for col in column_names if col]
         cur.execute("CREATE TABLE {} ({})".format(name, " text, ".join(column_names) + ' text'))
@@ -25,12 +25,19 @@ def loadTable(cur, name):
         # insert lines by skipping first row
         for idx, line in enumerate(content):
             if idx != 0:
-                line_content = line.split("\t")
+                line_content = line.split(",")
                 line_content = [line.strip() for line in line_content]
                 # removes empty string values from the list
                 line_content = [line for line in line_content if line]
                 # extra step, if we don't do it sqlitite thinks that individual values are variables instead of string
-                line_content = ["'{}'".format(line) for line in line_content]
+                cleaned = []
+                for line in line_content:
+                    if re.search('\'.+\'', line):
+                        cleaned.append(line)
+                    else:
+                        cleaned.append('\'{}\''.format(line))
+
+                line_content = cleaned
 
                 cur.execute("INSERT INTO {} values ({})".format(name, ", ".join(line_content)))
 

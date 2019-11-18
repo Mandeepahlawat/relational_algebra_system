@@ -1,8 +1,0 @@
-name	position	city	classification	provenance
-John	Director	New york	restricted	0.1
-Paul	Janitor	New york	restricted	0.3
-Dave	Analyst	Paris	confidential	0.5
-Ellen	Field agent	Berlin	secret	0.7
-Magdalen	Double agent	Paris	top secret	0.9
-Nancy	HR director	Paris	restricted	.6
-Susan	Analyst	Berlin	secret	0.4	

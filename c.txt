@@ -1,4 +1,0 @@
-code1	code2	number	provenance
-YUL	IST	257	.5
-IST	VKO	1234567	.1
-YUL	VKO	6	.7
