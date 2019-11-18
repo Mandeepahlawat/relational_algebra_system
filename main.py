@@ -102,6 +102,19 @@ def process_query(inputline, cur):
 def union_or_natjoin_present(inputline):
     return re.search("union", inputline, re.IGNORECASE) or re.search("natjoin", inputline, re.IGNORECASE)
 
+def process_query_combined(inputline, cur, annotation):
+    if (annotation == "4"):
+        process_query_provenance(inputline, cur)
+    elif annotation == "2":
+        process_probability_query(inputline, cur)
+    elif (annotation == "1"):
+        process_query_bag(inputline, cur)
+    elif (annotation == "5"):
+        process_query_standard(inputline, cur)
+    elif (annotation == "3"):
+        process_query_certainty(inputline, cur)
+    else:
+        process_query(inputline, cur)
 
 def main():
     table_names = [name[:-4] for name in glob.glob("*.txt")]
@@ -132,39 +145,28 @@ def main():
         while int(annotation) > 5:
             annotation = input("Enter annotation number from 1 to 5\n")
 
-        if (annotation == "4"):
-            process_query_provenance(inputline, cur)
-        elif annotation == "2":
-            process_probability_query(inputline, cur)
-        elif (annotation == "1"):
-            process_query_bag(inputline, cur)
-        elif (annotation == "5"):
-            process_query_standard(inputline, cur)
-        elif (annotation == "3"):
-            process_query_certainty(inputline, cur)
-        else:
-            if (union_or_natjoin_present(inputline)):
-                sub_query = re.split('natjoin|union', inputline)
-                processed_sub_query = []
-                for sub in sub_query:
-                    temp += 1
-                    query = '_main_temp_{}: {}'.format(temp, sub)
-                    processed_sub_query.append('_main_temp_{}'.format(temp))
-                    process_query(query, cur)
-                operations = re.findall('union|natjoin', inputline, re.IGNORECASE)
-                conv = []
-                for op in operations:
-                    if op == "union":
-                        conv.append(" , ")
-                    if op == "natjoin":
-                        conv.append(" join ")
+        if (union_or_natjoin_present(inputline)):
+            sub_query = re.split('natjoin|union', inputline)
+            processed_sub_query = []
+            for sub in sub_query:
+                temp += 1
+                query = '_main_temp_{}: {}'.format(temp, sub)
+                processed_sub_query.append('_main_temp_{}'.format(temp))
+                process_query_combined(query, cur, annotation)
+            operations = re.findall('union|natjoin', inputline, re.IGNORECASE)
+            conv = []
+            for op in operations:
+                if op == "union":
+                    conv.append(" , ")
+                if op == "natjoin":
+                    conv.append(" join ")
 
-                query = processed_sub_query.pop(0)
+            query = processed_sub_query.pop(0)
 
-                for op in conv:
-                    query += op + processed_sub_query.pop(0)
-                inputline = "(" + query + ")"
-            process_query(inputline, cur)
+            for op in conv:
+                query += op + processed_sub_query.pop(0)
+            inputline = "(" + query + ")"
+        process_query_combined(inputline, cur, annotation)
 
 
         inputline = input(
