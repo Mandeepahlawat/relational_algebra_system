@@ -2,7 +2,7 @@ import re
 import sqlite3
 from functools import reduce
 
-ANNOTATED_COLUMN_NAME = 'provenance'
+ANNOTATED_COLUMN_NAME = 'probability'
 TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'

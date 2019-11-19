@@ -1,0 +1,1446 @@
+first_name, last_name, phone, email, street, city, state, zip_code,probability
+'Debra','Burks',NULL,'debra.burks@yahoo.com','9273 Thorne Ave. ','Orchard Park','NY',14127,0.948532098
+'Kasha','Todd',NULL,'kasha.todd@yahoo.com','910 Vine Street ','Campbell','CA',95008,0.288798428
+'Tameka','Fisher',NULL,'tameka.fisher@aol.com','769C Honey Creek St. ','Redondo Beach','CA',90278,0.512648076
+'Daryl','Spence',NULL,'daryl.spence@aol.com','988 Pearl Lane ','Uniondale','NY',11553,0.209398108
+'Charolette','Rice','(916) 381-6003','charolette.rice@msn.com','107 River Dr. ','Sacramento','CA',95820,0.039828325
+'Lyndsey','Bean',NULL,'lyndsey.bean@hotmail.com','769 West Road ','Fairport','NY',14450,0.97588255
+'Latasha','Hays','(716) 986-3359','latasha.hays@hotmail.com','7014 Manor Station Rd. ','Buffalo','NY',14215,0.992432256
+'Jacquline','Duncan',NULL,'jacquline.duncan@yahoo.com','15 Brown St. ','Jackson Heights','NY',11372,0.083975961
+'Genoveva','Baldwin',NULL,'genoveva.baldwin@msn.com','8550 Spruce Drive ','Port Washington','NY',11050,0.054370589
+'Pamelia','Newman',NULL,'pamelia.newman@gmail.com','476 Chestnut Ave. ','Monroe','NY',10950,0.24303163
+'Deshawn','Mendoza',NULL,'deshawn.mendoza@yahoo.com','8790 Cobblestone Street ','Monsey','NY',10952,0.174471282
+'Robby','Sykes','(516) 583-7761','robby.sykes@hotmail.com','486 Rock Maple Street ','Hempstead','NY',11550,0.039290563
+'Lashawn','Ortiz',NULL,'lashawn.ortiz@msn.com','27 Washington Rd. ','Longview','TX',75604,0.471208486
+'Garry','Espinoza',NULL,'garry.espinoza@hotmail.com','7858 Rockaway Court ','Forney','TX',75126,0.135162657
+'Linnie','Branch',NULL,'linnie.branch@gmail.com','314 South Columbia Ave. ','Plattsburgh','NY',12901,0.017865783
+'Emmitt','Sanchez','(212) 945-8823','emmitt.sanchez@hotmail.com','461 Squaw Creek Road ','New York','NY',10002,0.902067677
+'Caren','Stephens',NULL,'caren.stephens@msn.com','914 Brook St. ','Scarsdale','NY',10583,0.38910665
+'Georgetta','Hardin',NULL,'georgetta.hardin@aol.com','474 Chapel Dr. ','Canandaigua','NY',14424,0.259499948
+'Lizzette','Stein',NULL,'lizzette.stein@yahoo.com','19 Green Hill Lane ','Orchard Park','NY',14127,0.305158652
+'Aleta','Shepard',NULL,'aleta.shepard@aol.com','684 Howard St. ','Sugar Land','TX',77478,0.355418561
+'Tobie','Little',NULL,'tobie.little@gmail.com','10 Silver Spear Dr. ','Victoria','TX',77904,0.502890138
+'Adelle','Larsen',NULL,'adelle.larsen@gmail.com','683 West Kirkland Dr. ','East Northport','NY',11731,0.647767226
+'Kaylee','English',NULL,'kaylee.english@msn.com','8786 Fulton Rd. ','Hollis','NY',11423,0.017664134
+'Corene','Wall',NULL,'corene.wall@msn.com','9601 Ocean Rd. ','Atwater','CA',95301,0.705041688
+'Regenia','Vaughan',NULL,'regenia.vaughan@gmail.com','44 Stonybrook Street ','Mahopac','NY',10541,0.035995029
+'Theo','Reese','(562) 215-2907','theo.reese@gmail.com','8755 W. Wild Horse St. ','Long Beach','NY',11561,0.344517743
+'Santos','Valencia',NULL,'santos.valencia@yahoo.com','7479 Carpenter Street ','Sunnyside','NY',11104,0.815055713
+'Jeanice','Frost',NULL,'jeanice.frost@hotmail.com','76 Devon Lane ','Ossining','NY',10562,0.414095533
+'Syreeta','Hendricks',NULL,'syreeta.hendricks@msn.com','193 Spruce Road ','Mahopac','NY',10541,0.454741126
+'Jamaal','Albert',NULL,'jamaal.albert@gmail.com','853 Stonybrook Street ','Torrance','CA',90505,0.647855213
+'Williemae','Holloway','(510) 246-8375','williemae.holloway@msn.com','69 Cypress St. ','Oakland','CA',94603,0.680622038
+'Araceli','Golden',NULL,'araceli.golden@msn.com','12 Ridgeview Ave. ','Fullerton','CA',92831,0.964137274
+'Deloris','Burke',NULL,'deloris.burke@hotmail.com','895 Edgemont Drive ','Palos Verdes Peninsula','CA',90274,0.924135364
+'Brittney','Woodward',NULL,'brittney.woodward@aol.com','960 River St. ','East Northport','NY',11731,0.922798358
+'Guillermina','Noble',NULL,'guillermina.noble@msn.com','6 Del Monte Lane ','Baldwinsville','NY',13027,0.920864344
+'Bernita','Mcdaniel',NULL,'bernita.mcdaniel@hotmail.com','2 Peg Shop Ave. ','Liverpool','NY',13090,0.804131611
+'Melia','Brady',NULL,'melia.brady@gmail.com','907 Shirley Rd. ','Maspeth','NY',11378,0.35010481
+'Zelma','Browning',NULL,'zelma.browning@aol.com','296 Second Street ','Astoria','NY',11102,0.788729046
+'Janetta','Aguirre','(717) 670-2634','janetta.aguirre@aol.com','214 Second Court ','Lancaster','NY',14086,0.930954408
+'Ronna','Butler',NULL,'ronna.butler@gmail.com','9438 Plymouth Court ','Encino','CA',91316,0.201276683
+'Kathie','Freeman',NULL,'kathie.freeman@msn.com','667 Temple Dr. ','Queensbury','NY',12804,0.104841911
+'Tangela','Quinn',NULL,'tangela.quinn@aol.com','4 S. Purple Finch Road ','Richmond Hill','NY',11418,0.659408673
+'Mozelle','Carter','(281) 489-9656','mozelle.carter@aol.com','895 Chestnut Ave. ','Houston','TX',77016,0.425418823
+'Onita','Johns',NULL,'onita.johns@msn.com','32 Glen Creek Lane ','Elmont','NY',11003,0.930408632
+'Bennett','Armstrong',NULL,'bennett.armstrong@aol.com','688 Walnut Street ','Bethpage','NY',11714,0.414881782
+'Monika','Berg',NULL,'monika.berg@gmail.com','369 Vernon Dr. ','Encino','CA',91316,0.223789398
+'Bridgette','Guerra',NULL,'bridgette.guerra@hotmail.com','9982 Manor Drive ','San Lorenzo','CA',94580,0.528717076
+'Cesar','Jackson',NULL,'cesar.jackson@gmail.com','8068 N. Griffin Ave. ','Liverpool','NY',13090,0.383413511
+'Caroll','Hays',NULL,'caroll.hays@yahoo.com','9381 Wrangler St. ','Fairport','NY',14450,0.949565943
+'Cleotilde','Booth',NULL,'cleotilde.booth@gmail.com','17 Corona St. ','Sugar Land','TX',77478,0.88390514
+'Gertrud','Rhodes',NULL,'gertrud.rhodes@aol.com','9961 Meadowbrook Street ','Merrick','NY',11566,0.702328303
+'Tu','Ramirez',NULL,'tu.ramirez@hotmail.com','24 W. Courtland Street ','East Elmhurst','NY',11369,0.626002724
+'Saturnina','Garner',NULL,'saturnina.garner@gmail.com','8538 Fairground St. ','Glendora','CA',91740,0.008555789
+'Fran','Yang',NULL,'fran.yang@hotmail.com','440 Pearl St. ','Utica','NY',13501,0.044030825
+'Diana','Guerra',NULL,'diana.guerra@hotmail.com','45 Chapel Ave. ','Merrick','NY',11566,0.614446594
+'Lolita','Mosley','(281) 363-3309','lolita.mosley@hotmail.com','376 S. High Ridge St. ','Houston','TX',77016,0.483848085
+'Pamala','Henry',NULL,'pamala.henry@aol.com','197 Bridgeton Ave. ','Bronx','NY',10451,0.809692641
+'Damien','Dorsey',NULL,'damien.dorsey@yahoo.com','161 Old York Street ','Central Islip','NY',11722,0.099321882
+'Latasha','Stanley',NULL,'latasha.stanley@gmail.com','8068 Fordham Drive ','Rockville Centre','NY',11570,0.999673146
+'Neil','Mccall',NULL,'neil.mccall@gmail.com','7476 Oakland Dr. ','San Carlos','CA',94070,0.349223434
+'Elinore','Aguilar',NULL,'elinore.aguilar@msn.com','9766 Rockcrest Ave. ','San Angelo','TX',76901,0.173244835
+'Alica','Hunter',NULL,'alica.hunter@hotmail.com','8 San Juan Drive ','East Elmhurst','NY',11369,0.050899459
+'Tenisha','Lyons',NULL,'tenisha.lyons@aol.com','78 E. Rock Creek Street ','Amityville','NY',11701,0.589265028
+'Bobbie','Foster',NULL,'bobbie.foster@yahoo.com','988 Pineknoll Ave. ','Desoto','TX',75115,0.080438993
+'Kanesha','Vega',NULL,'kanesha.vega@gmail.com','771 E. Oxford Drive ','Rome','NY',13440,0.958379941
+'Lorrie','Becker',NULL,'lorrie.becker@yahoo.com','19 North Court ','Garland','TX',75043,0.968573908
+'Tommie','Melton','(916) 802-2952','tommie.melton@gmail.com','8 West Old York St. ','Sacramento','CA',95820,0.030399595
+'Jayne','Kirkland',NULL,'jayne.kirkland@hotmail.com','7800 Second Lane ','Rowlett','TX',75088,0.563369356
+'Katelin','Kennedy',NULL,'katelin.kennedy@gmail.com','286 Myrtle Lane ','Rocklin','CA',95677,0.43232821
+'Tomasa','Carson',NULL,'tomasa.carson@aol.com','10 Clark Avenue ','East Elmhurst','NY',11369,0.638067062
+'Takako','Casey',NULL,'takako.casey@aol.com','7548 Court Lane ','Bronx','NY',10451,0.226456604
+'Petronila','Norris',NULL,'petronila.norris@aol.com','72 South Marshall Lane ','South El Monte','CA',91733,0.778745717
+'Melanie','Hayes',NULL,'melanie.hayes@msn.com','5 N. Hall Dr. ','Liverpool','NY',13090,0.182121278
+'Georgeann','Waller',NULL,'georgeann.waller@yahoo.com','9797 Bald Hill Ave. ','North Tonawanda','NY',14120,0.616260047
+'Abby','Gamble',NULL,'abby.gamble@aol.com','60 Myers Dr. ','Amityville','NY',11701,0.603835328
+'Parker','Prince',NULL,'parker.prince@hotmail.com','21 Sulphur Springs Drive ','Port Jefferson Station','NY',11776,0.630689306
+'Keri','Bridges',NULL,'keri.bridges@gmail.com','8504 Brickell Ave. ','Richardson','TX',75080,0.586594157
+'Chi','Goff',NULL,'chi.goff@aol.com','3 W. Glen Ridge Avenue ','Palos Verdes Peninsula','CA',90274,0.394701352
+'Ashanti','Parks',NULL,'ashanti.parks@hotmail.com','846 N. Helen St. ','Baldwin','NY',11510,0.032578936
+'Sarai','Mckee','(716) 912-8110','sarai.mckee@msn.com','641 Glenwood Avenue ','Buffalo','NY',14215,0.64173029
+'Zina','Bonner',NULL,'zina.bonner@hotmail.com','9312 8th Street ','San Lorenzo','CA',94580,0.360038067
+'Lizzie','Joyner',NULL,'lizzie.joyner@msn.com','8541 Roberts St. ','Coachella','CA',92236,0.567474604
+'Tiesha','Daniel',NULL,'tiesha.daniel@yahoo.com','6 West Bohemia Lane ','Scarsdale','NY',10583,0.154492378
+'Armand','Whitehead',NULL,'armand.whitehead@hotmail.com','639 Harvey St. ','Lindenhurst','NY',11757,0.519728514
+'Teofila','Fischer',NULL,'teofila.fischer@aol.com','1 West Brickyard St. ','Huntington Station','NY',11746,0.592892157
+'Lissa','Vargas',NULL,'lissa.vargas@yahoo.com','517 Victoria Ave. ','Oswego','NY',13126,0.368446759
+'Yan','Mcgowan',NULL,'yan.mcgowan@msn.com','8960 Newport Ave. ','Duarte','CA',91010,0.916828313
+'Titus','Bullock',NULL,'titus.bullock@gmail.com','29 Oxford Avenue ','Hollis','NY',11423,0.38126223
+'Arvilla','Osborn',NULL,'arvilla.osborn@gmail.com','60 Acacia Lane ','Upland','CA',91784,0.895314033
+'Marjorie','Logan',NULL,'marjorie.logan@msn.com','95 Grandrose St. ','Franklin Square','NY',11010,0.33276258
+'Marvin','Mullins','(619) 635-2027','marvin.mullins@aol.com','7489 Redwood Drive ','San Diego','CA',92111,0.463870261
+'Tena','Cruz',NULL,'tena.cruz@yahoo.com','1 South St. ','Farmingdale','NY',11735,0.476605535
+'Corrina','Sawyer','(248) 370-1364','corrina.sawyer@yahoo.com','95 Briarwood Lane ','Troy','NY',12180,0.450224115
+'Sharyn','Hopkins',NULL,'sharyn.hopkins@hotmail.com','4 South Temple Ave. ','Baldwinsville','NY',13027,0.763274273
+'Letitia','Franco',NULL,'letitia.franco@aol.com','607 Lakeview Drive ','Saratoga Springs','NY',12866,0.634583718
+'Floretta','Higgins',NULL,'floretta.higgins@hotmail.com','870 Lilac Dr. ','Bayside','NY',11361,0.992506849
+'Louanne','Martin',NULL,'louanne.martin@hotmail.com','1 Campfire Ave. ','Yuba City','CA',95993,0.893108467
+'Violet','Valenzuela',NULL,'violet.valenzuela@msn.com','8668 Piper Street ','Plattsburgh','NY',12901,0.201569075
+'Carie','Kidd',NULL,'carie.kidd@yahoo.com','6 East Clinton Street ','Monroe','NY',10950,0.392348143
+'Kellie','Franco',NULL,'kellie.franco@yahoo.com','444 South Walnut Rd. ','Commack','NY',11725,0.603691764
+'Nichelle','Howell',NULL,'nichelle.howell@aol.com','7670 Forest St. ','Scarsdale','NY',10583,0.01372807
+'Marisol','Goodman',NULL,'marisol.goodman@gmail.com','864 East Cherry St. ','Canandaigua','NY',14424,0.017996831
+'Sylvie','Wilkerson',NULL,'sylvie.wilkerson@yahoo.com','750 Central Ave. ','Syosset','NY',11791,0.629573739
+'Katharina','Bates',NULL,'katharina.bates@gmail.com','54 South Greenview Drive ','Campbell','CA',95008,0.856984741
+'Marget','Hodge',NULL,'marget.hodge@msn.com','7199 Selby Lane ','Woodhaven','NY',11421,0.128453352
+'Raul','Melendez',NULL,'raul.melendez@hotmail.com','9772 Manhattan St. ','Elmhurst','NY',11373,0.490446704
+'Cecil','Hopper',NULL,'cecil.hopper@yahoo.com','471 Glenlake Ave. ','Central Islip','NY',11722,0.381662212
+'Shae','Hickman',NULL,'shae.hickman@hotmail.com','740 Pin Oak Street ','Floral Park','NY',11001,0.511401525
+'Monica','Sears','(408) 704-8863','monica.sears@aol.com','57 Glenholme St. ','San Jose','CA',95127,0.084091712
+'Ollie','Zimmerman','(657) 648-2863','ollie.zimmerman@yahoo.com','69 Wood Rd. ','Anaheim','CA',92806,0.407172322
+'Shila','White',NULL,'shila.white@msn.com','94 Lakeshore Street ','Orchard Park','NY',14127,0.988157625
+'Yuk','Vega',NULL,'yuk.vega@yahoo.com','413 Wood St. ','West Hempstead','NY',11552,0.355940426
+'Eliana','Silva',NULL,'eliana.silva@gmail.com','7119 Summer Rd. ','Farmingdale','NY',11735,0.876126376
+'Thalia','Horne',NULL,'thalia.horne@yahoo.com','9312 Harvard Street ','Amityville','NY',11701,0.918640226
+'Rey','Lindsay',NULL,'rey.lindsay@gmail.com','16 Philmont St. ','Monroe','NY',10950,0.370982166
+'Merlene','Vinson',NULL,'merlene.vinson@gmail.com','431 Vine Dr. ','Euless','TX',76039,0.451383888
+'Dacia','William',NULL,'dacia.william@msn.com','62 Cypress Drive ','Sugar Land','TX',77478,0.686441387
+'Le','Wood',NULL,'le.wood@yahoo.com','90 Primrose Dr. ','Pittsford','NY',14534,0.987602306
+'Thalia','Dillard',NULL,'thalia.dillard@yahoo.com','987 NE. Gates Street ','San Angelo','TX',76901,0.750425075
+'Luz','House','(559) 114-2580','luz.house@gmail.com','491 Railroad Street ','Fresno','CA',93706,0.570778041
+'Lucy','Woods',NULL,'lucy.woods@gmail.com','8437 West Rockaway St. ','Palos Verdes Peninsula','CA',90274,0.657167215
+'Shena','Carter',NULL,'shena.carter@yahoo.com','72 University Road ','Howard Beach','NY',11414,0.300006912
+'Robena','Hill','(361) 598-4414','robena.hill@hotmail.com','263 Cross St. ','Corpus Christi','TX',78418,0.350259808
+'Jeni','Booker',NULL,'jeni.booker@gmail.com','546 Railroad Dr. ','South El Monte','CA',91733,0.944278551
+'Herlinda','Stone',NULL,'herlinda.stone@msn.com','725 Gulf St. ','Canandaigua','NY',14424,0.644023019
+'Lavina','Dejesus',NULL,'lavina.dejesus@msn.com','59 E. Valley Avenue ','Newburgh','NY',12550,0.97715758
+'Erlinda','Nielsen',NULL,'erlinda.nielsen@aol.com','728 Oxford Lane ','Maspeth','NY',11378,0.6950243
+'Terrance','Lynn',NULL,'terrance.lynn@yahoo.com','91 East Buckingham Drive ','Plattsburgh','NY',12901,0.182032542
+'Walton','Dejesus',NULL,'walton.dejesus@yahoo.com','15 Washington Rd. ','Lockport','NY',14094,0.19261133
+'Wes','Stanton','(248) 247-5074','wes.stanton@msn.com','8662 Tunnel Street ','Troy','NY',12180,0.605478695
+'Tanesha','Hampton',NULL,'tanesha.hampton@hotmail.com','19 Belmont Ave. ','Syosset','NY',11791,0.966973443
+'Boyd','Irwin',NULL,'boyd.irwin@hotmail.com','221 Whitemarsh St. ','Hamburg','NY',14075,0.628167382
+'Delbert','Wilkins',NULL,'delbert.wilkins@aol.com','420 Greenview St. ','Coram','NY',11727,0.089624037
+'Brianna','Moss','(516) 156-8031','brianna.moss@msn.com','4 Longfellow St. ','Hempstead','NY',11550,0.197449865
+'Dorthey','Jackson','(281) 926-8010','dorthey.jackson@msn.com','9768 Brookside St. ','Houston','TX',77016,0.586282548
+'Sarita','Parks',NULL,'sarita.parks@msn.com','7809 Second Lane ','Forney','TX',75126,0.463889564
+'Shonta','Mercer',NULL,'shonta.mercer@aol.com','319 NE. La Sierra Avenue ','Massapequa','NY',11758,0.869879969
+'Jone','Bernard','(657) 536-5165','jone.bernard@hotmail.com','99 Longbranch Court ','Anaheim','CA',92806,0.456156356
+'Wanita','Davenport',NULL,'wanita.davenport@aol.com','525 Dogwood Ave. ','Spring Valley','NY',10977,0.510481476
+'Cleopatra','Tate',NULL,'cleopatra.tate@aol.com','97 N. Glenwood St. ','East Elmhurst','NY',11369,0.665859115
+'Ramiro','Byers',NULL,'ramiro.byers@gmail.com','16 Pleasant St. ','Saint Albans','NY',11412,0.37844768
+'Nicholas','Vazquez',NULL,'nicholas.vazquez@hotmail.com','9 Roosevelt Street ','West Hempstead','NY',11552,0.138483176
+'Janae','Doyle',NULL,'janae.doyle@gmail.com','760 Rose Ave. ','Jackson Heights','NY',11372,0.018407409
+'Hans','Price',NULL,'hans.price@hotmail.com','51 Glendale Road ','Port Chester','NY',10573,0.05392042
+'Miquel','Neal',NULL,'miquel.neal@hotmail.com','9564 Deerfield Lane ','Staten Island','NY',10301,0.12017322
+'Stefany','Potter',NULL,'stefany.potter@gmail.com','256 South Academy St. ','Saratoga Springs','NY',12866,0.015037396
+'Bernetta','Marquez',NULL,'bernetta.marquez@hotmail.com','626 E. Dunbar Street ','Smithtown','NY',11787,0.600283076
+'Julee','Woodard',NULL,'julee.woodard@yahoo.com','869 Summerhouse Dr. ','Richmond Hill','NY',11418,0.656167095
+'Meredith','Bryan',NULL,'meredith.bryan@hotmail.com','8935 E. Oxford St. ','Spring Valley','NY',10977,0.069540155
+'Weldon','Michael',NULL,'weldon.michael@hotmail.com','9952 Nut Swamp St. ','Huntington','NY',11743,0.694660408
+'Joesph','Delacruz',NULL,'joesph.delacruz@aol.com','184 Cypress Street ','Atwater','CA',95301,0.110275559
+'Katherina','Odom',NULL,'katherina.odom@yahoo.com','897 N. Oak Drive ','Plainview','NY',11803,0.918420038
+'Laraine','Robbins',NULL,'laraine.robbins@yahoo.com','8214 E. Pin Oak Lane ','San Angelo','TX',76901,0.502753602
+'Jenise','Preston',NULL,'jenise.preston@yahoo.com','9 Littleton Drive ','Helotes','TX',78023,0.319555505
+'Lory','Page',NULL,'lory.page@hotmail.com','58 Summerhouse Street ','Bay Shore','NY',11706,0.925115339
+'Charlyn','Cantrell',NULL,'charlyn.cantrell@yahoo.com','8756 Euclid St. ','West Islip','NY',11795,0.815661318
+'Carola','Rodriquez',NULL,'carola.rodriquez@hotmail.com','9433 Heritage Lane ','Banning','CA',92220,0.666734835
+'Alane','Kennedy',NULL,'alane.kennedy@yahoo.com','34 Green Lake Street ','Spring Valley','NY',10977,0.955949097
+'Regina','Burns',NULL,'regina.burns@aol.com','713 Buckingham St. ','Garland','TX',75043,0.872212542
+'Omer','Estrada',NULL,'omer.estrada@gmail.com','9 Honey Creek Street ','Rowlett','TX',75088,0.766912147
+'Crystle','Gilliam',NULL,'crystle.gilliam@yahoo.com','86 Edgewater Road ','Smithtown','NY',11787,0.093123057
+'Kam','Wilder',NULL,'kam.wilder@hotmail.com','500 West Clay Ave. ','Newburgh','NY',12550,0.015377932
+'Margert','Stevens',NULL,'margert.stevens@aol.com','502 North Poplar St. ','Rome','NY',13440,0.891421883
+'Tomika','Larson',NULL,'tomika.larson@yahoo.com','254 Canal St. ','Woodside','NY',11377,0.891347085
+'Jeromy','Burch','(408) 955-8238','jeromy.burch@msn.com','889 Mulberry Street ','San Jose','CA',95127,0.762156786
+'Lena','Mills',NULL,'lena.mills@yahoo.com','42 Homestead St. ','Woodhaven','NY',11421,0.393469663
+'Loreta','Johnston',NULL,'loreta.johnston@yahoo.com','39 Lafayette Dr. ','Spring Valley','NY',10977,0.392135589
+'Nettie','Mcdaniel',NULL,'nettie.mcdaniel@hotmail.com','7004 E. Wakehurst St. ','South Ozone Park','NY',11420,0.170310126
+'Karla','Kirk',NULL,'karla.kirk@yahoo.com','9718 Harvard Rd. ','Palos Verdes Peninsula','CA',90274,0.617227662
+'Regine','Gonzales','(805) 763-4045','regine.gonzales@gmail.com','798 Court Drive ','Oxnard','CA',93035,0.994765758
+'Miriam','Baker',NULL,'miriam.baker@hotmail.com','90 Studebaker St. ','Uniondale','NY',11553,0.214774248
+'Jeanie','Kirkland',NULL,'jeanie.kirkland@aol.com','7643 Old Theatre St. ','Santa Clara','CA',95050,0.496085184
+'Marquerite','Dawson',NULL,'marquerite.dawson@gmail.com','37 Hamilton Court ','Garland','TX',75043,0.86604172
+'Babara','Ochoa',NULL,'babara.ochoa@aol.com','872 Smith Store St. ','Scarsdale','NY',10583,0.405665767
+'Nova','Hess',NULL,'nova.hess@msn.com','773 South Lafayette St. ','Duarte','CA',91010,0.051008298
+'Carley','Reynolds',NULL,'carley.reynolds@gmail.com','2 Snake Hill Drive ','South El Monte','CA',91733,0.703443126
+'Carissa','Foreman',NULL,'carissa.foreman@msn.com','69C N. Ridge Rd. ','Maspeth','NY',11378,0.165700391
+'Genoveva','Tyler','(212) 152-6381','genoveva.tyler@gmail.com','8121 Windfall Ave. ','New York','NY',10002,0.58670397
+'Deane','Sears',NULL,'deane.sears@hotmail.com','3 Bradford Court ','Pittsford','NY',14534,0.636176939
+'Karey','Steele',NULL,'karey.steele@gmail.com','8879 Kent Lane ','Farmingdale','NY',11735,0.692972519
+'Olevia','Pitts',NULL,'olevia.pitts@gmail.com','39 Fieldstone Drive ','Redondo Beach','CA',90278,0.187616665
+'Jenniffer','Bullock',NULL,'jenniffer.bullock@msn.com','38 Oxford Avenue ','Bay Shore','NY',11706,0.152089267
+'Jeniffer','Ratliff',NULL,'jeniffer.ratliff@gmail.com','510 Rocky River Court ','Floral Park','NY',11001,0.857494102
+'Klara','Stanley',NULL,'klara.stanley@aol.com','603 Mechanic St. ','Webster','NY',14580,0.183687628
+'Morton','Lee',NULL,'morton.lee@yahoo.com','313 Ridge St. ','San Angelo','TX',76901,0.879684126
+'Ken','Charles',NULL,'ken.charles@msn.com','9124 W. Piper Lane ','Monsey','NY',10952,0.837024208
+'Hedwig','Paul',NULL,'hedwig.paul@msn.com','422 Manor Ave. ','Apple Valley','CA',92307,0.857306114
+'Sharla','Flynn','(805) 478-7724','sharla.flynn@hotmail.com','7 Brown Drive ','Oxnard','CA',93035,0.463881168
+'Damian','Dawson',NULL,'damian.dawson@hotmail.com','528 St Margarets Street ','Liverpool','NY',13090,0.870350349
+'Toya','Pratt','(562) 218-6405','toya.pratt@yahoo.com','485 San Pablo Drive ','Long Beach','NY',11561,0.944589992
+'Graciela','Barber','(805) 656-6987','graciela.barber@hotmail.com','1 E. Young St. ','Oxnard','CA',93035,0.226373748
+'Bong','Hebert',NULL,'bong.hebert@gmail.com','545 Brook St. ','Torrance','CA',90505,0.6053503
+'Ayanna','Rhodes',NULL,'ayanna.rhodes@msn.com','7425 Pheasant St. ','Hicksville','NY',11801,0.948133573
+'Dorine','Roberson',NULL,'dorine.roberson@msn.com','396 Meadowbrook Lane ','Santa Cruz','CA',95060,0.513547736
+'Addie','Hahn',NULL,'addie.hahn@hotmail.com','8165 Baker Ave. ','Franklin Square','NY',11010,0.605238072
+'Edythe','Valencia',NULL,'edythe.valencia@yahoo.com','9346 Wall St. ','North Tonawanda','NY',14120,0.91674338
+'Andy','O''neill',NULL,'andy.o''neill@msn.com','9544 Mulberry Drive ','Rego Park','NY',11374,0.799949764
+'Luis','Tyler',NULL,'luis.tyler@gmail.com','9568 Campfire Circle ','Amarillo','TX',79106,0.20489843
+'Clelia','Workman',NULL,'clelia.workman@yahoo.com','620 North Somerset St. ','New Windsor','NY',12553,0.073104948
+'Ashely','Holmes',NULL,'ashely.holmes@aol.com','45 High Ridge Ave. ','Farmingdale','NY',11735,0.989718784
+'Candis','Harding',NULL,'candis.harding@gmail.com','33 NW. Cambridge Ave. ','Ballston Spa','NY',12020,0.316563753
+'Marni','Bolton','(717) 670-6268','marni.bolton@msn.com','7469 Plymouth Ave. ','Lancaster','NY',14086,0.151150608
+'Minerva','Decker','(281) 271-6390','minerva.decker@yahoo.com','794 Greenrose Street ','Houston','TX',77016,0.941880635
+'Alpha','King',NULL,'alpha.king@hotmail.com','14 Henry Smith St. ','Rockville Centre','NY',11570,0.033169814
+'Harris','Pittman',NULL,'harris.pittman@yahoo.com','404 Cherry Hill Road ','Jamaica','NY',11432,0.034055803
+'Stephaine','Riddle',NULL,'stephaine.riddle@hotmail.com','199 Vermont Court ','Brooklyn','NY',11201,0.949353691
+'Michel','Blankenship',NULL,'michel.blankenship@msn.com','382 West Hill Dr. ','Forney','TX',75126,0.778081467
+'Denis','Logan',NULL,'denis.logan@msn.com','121 Rockcrest Street ','Ridgecrest','CA',93555,0.287645969
+'Jutta','Everett',NULL,'jutta.everett@gmail.com','27 Taylor Ave. ','Selden','NY',11784,0.19744554
+'Priscilla','Wilkins','(229) 322-2269','priscilla.wilkins@aol.com','653 Pawnee Rd. ','Albany','NY',12203,0.747408631
+'Gilma','Dejesus',NULL,'gilma.dejesus@yahoo.com','777 Thompson Ave. ','Scarsdale','NY',10583,0.470379441
+'Buford','Bridges','(248) 604-7346','buford.bridges@msn.com','239 Oak Valley Court ','Troy','NY',12180,0.172358107
+'Elenore','Hensley',NULL,'elenore.hensley@hotmail.com','7037 Aspen St. ','Hamburg','NY',14075,0.560898024
+'Ross','Pugh',NULL,'ross.pugh@msn.com','8598 Saxon St. ','North Tonawanda','NY',14120,0.957715338
+'Judith','Finley',NULL,'judith.finley@hotmail.com','474 West Bank Road ','Whitestone','NY',11357,0.269564117
+'Wai','Soto',NULL,'wai.soto@msn.com','30 Arch Drive ','Bethpage','NY',11714,0.69164203
+'Carline','Collier','(559) 810-6070','carline.collier@msn.com','28 Trenton Lane ','Fresno','CA',93706,0.850147008
+'Casey','Gill',NULL,'casey.gill@gmail.com','636 Prospect Avenue ','Port Washington','NY',11050,0.213857542
+'Darcie','Morgan','(442) 618-7068','darcie.morgan@aol.com','476 East Adams Ave. ','Oceanside','NY',11572,0.160236894
+'Lucio','Sherman',NULL,'lucio.sherman@gmail.com','842 Corona Ave. ','Smithtown','NY',11787,0.659067565
+'Clementine','Mooney',NULL,'clementine.mooney@yahoo.com','678 Charles Court ','Mcallen','TX',78501,0.773382998
+'Anya','Contreras',NULL,'anya.contreras@msn.com','38 Old Fairground St. ','East Northport','NY',11731,0.272022012
+'Scarlet','Yates',NULL,'scarlet.yates@hotmail.com','687 Shirley St. ','Patchogue','NY',11772,0.686578514
+'Moses','Pope',NULL,'moses.pope@yahoo.com','654 Theatre Street ','Lawndale','CA',90260,0.735096699
+'Barbera','Riggs',NULL,'barbera.riggs@aol.com','12 Gartner Drive ','Plainview','NY',11803,0.814920297
+'Kiana','Rivera',NULL,'kiana.rivera@gmail.com','9 Sheffield Dr. ','Richmond Hill','NY',11418,0.329300518
+'Danielle','Bond',NULL,'danielle.bond@msn.com','8589 Shub Farm Street ','Patchogue','NY',11772,0.402081419
+'Whitney','Estes','(631) 315-4020','whitney.estes@gmail.com','454 Bear Hill Street ','Brentwood','NY',11717,0.106237329
+'Molly','Langley',NULL,'molly.langley@aol.com','63 Bridgeton Street ','Holbrook','NY',11741,0.912634175
+'Chelsey','Hardin',NULL,'chelsey.hardin@hotmail.com','13 Brickyard Street ','Deer Park','NY',11729,0.399599183
+'Jenee','Rasmussen','(916) 219-1774','jenee.rasmussen@hotmail.com','19 George Lane ','Sacramento','CA',95820,0.039721135
+'Freddie','Mathis',NULL,'freddie.mathis@hotmail.com','31 Shady St. ','Euless','TX',76039,0.135630198
+'Mariana','Strong',NULL,'mariana.strong@msn.com','972 Dunbar Dr. ','Santa Clara','CA',95050,0.340432818
+'Winfred','Harris',NULL,'winfred.harris@msn.com','734 Glen Eagles St. ','East Meadow','NY',11554,0.997774956
+'Jeromy','Elliott',NULL,'jeromy.elliott@gmail.com','7112 Laurel Street ','Bay Shore','NY',11706,0.876931016
+'Verona','O''neill',NULL,'verona.o''neill@hotmail.com','8279 W. Sussex St. ','Selden','NY',11784,0.548852579
+'Elvera','Peck',NULL,'elvera.peck@yahoo.com','759 Lakewood Street ','Banning','CA',92220,0.528731346
+'Cindi','Larson',NULL,'cindi.larson@msn.com','896 Golden Star Rd. ','Howard Beach','NY',11414,0.823044162
+'Felice','Guzman',NULL,'felice.guzman@hotmail.com','7 Creekside Lane ','Canyon Country','CA',91387,0.353387229
+'Le','Deleon',NULL,'le.deleon@msn.com','58 Clark Court ','Banning','CA',92220,0.731561195
+'Manie','Sanchez',NULL,'manie.sanchez@hotmail.com','471 Illinois Ave. ','Queensbury','NY',12804,0.080208538
+'Rutha','Howell',NULL,'rutha.howell@gmail.com','9247 Jones Street ','Canyon Country','CA',91387,0.114876809
+'Natosha','Rowland',NULL,'natosha.rowland@aol.com','51 Elmwood St. ','Ballston Spa','NY',12020,0.397001746
+'Jessika','Bray',NULL,'jessika.bray@yahoo.com','37 East Greystone St. ','San Pablo','CA',94806,0.983872404
+'Delila','Hamilton',NULL,'delila.hamilton@yahoo.com','7451 East James Ave. ','Palos Verdes Peninsula','CA',90274,0.002054194
+'Dionne','Norris',NULL,'dionne.norris@yahoo.com','9993 Greenview Circle ','Niagara Falls','NY',14304,0.350616046
+'Muriel','Juarez',NULL,'muriel.juarez@gmail.com','8073 Cemetery Drive ','Palos Verdes Peninsula','CA',90274,0.633199774
+'Cecelia','Gill',NULL,'cecelia.gill@aol.com','372 Silver Spear Dr. ','Mcallen','TX',78501,0.782661596
+'Magda','Eaton',NULL,'magda.eaton@aol.com','860 Middle River Street ','Ossining','NY',10562,0.980986413
+'Ivonne','Yang','(915) 181-1950','ivonne.yang@gmail.com','7359 North Lake View St. ','El Paso','TX',79930,0.384973142
+'Kasie','Rodriquez',NULL,'kasie.rodriquez@aol.com','7 North Beech St. ','Ballston Spa','NY',12020,0.455230726
+'Eleni','Gordon',NULL,'eleni.gordon@hotmail.com','583 W. San Carlos Street ','Richmond Hill','NY',11418,0.205714579
+'Maurice','Norton',NULL,'maurice.norton@hotmail.com','32 Mayflower Dr. ','Atwater','CA',95301,0.744583416
+'Cristobal','Hutchinson',NULL,'cristobal.hutchinson@gmail.com','58 Washington Avenue ','Lawndale','CA',90260,0.188559253
+'Flossie','Holder',NULL,'flossie.holder@msn.com','8459 W. Newport Court ','Massapequa Park','NY',11762,0.258547408
+'Erma','Salinas',NULL,'erma.salinas@gmail.com','347 Sheffield St. ','Merrick','NY',11566,0.415775675
+'Earl','Stanley',NULL,'earl.stanley@gmail.com','569 Lake Lane ','Elmhurst','NY',11373,0.852902897
+'Maribel','William',NULL,'maribel.william@aol.com','65 Magnolia Ave. ','Torrance','CA',90505,0.497419462
+'Johnathan','Velazquez',NULL,'johnathan.velazquez@hotmail.com','9680 E. Somerset Street ','Pleasanton','CA',94566,0.674726263
+'Rodrick','Shelton',NULL,'rodrick.shelton@hotmail.com','7157 Addison Street ','Canyon Country','CA',91387,0.084535533
+'Ferne','Kline',NULL,'ferne.kline@hotmail.com','303 Shady St. ','Fullerton','CA',92831,0.886209279
+'Rubin','Decker','(716) 950-9835','rubin.decker@gmail.com','9875 Shady Ave. ','Buffalo','NY',14215,0.282236078
+'Dortha','Jarvis','(442) 919-8256','dortha.jarvis@yahoo.com','76 Prince Drive ','Oceanside','NY',11572,0.914054434
+'Mariela','Huffman',NULL,'mariela.huffman@gmail.com','531 Fieldstone Road ','Garden City','NY',11530,0.651844966
+'Mellisa','Farley',NULL,'mellisa.farley@yahoo.com','21 West Princess St. ','Central Islip','NY',11722,0.51462263
+'Myung','Hooper',NULL,'myung.hooper@gmail.com','951 Mill Road ','Elmont','NY',11003,0.932131245
+'Angelina','Lloyd',NULL,'angelina.lloyd@yahoo.com','9593 North Sherman Dr. ','Apple Valley','CA',92307,0.645686664
+'Trinity','Riddle',NULL,'trinity.riddle@aol.com','23 Oakland Lane ','Ballston Spa','NY',12020,0.885465433
+'Barton','Crosby',NULL,'barton.crosby@msn.com','896 Edgewater St. ','Bellmore','NY',11710,0.396653685
+'Claudio','Wise',NULL,'claudio.wise@hotmail.com','810 Oxford Ave. ','Kingston','NY',12401,0.144083956
+'Katheleen','Marks',NULL,'katheleen.marks@yahoo.com','69 North Tower St. ','Longview','TX',75604,0.5096219
+'Deja','Chaney',NULL,'deja.chaney@hotmail.com','52 Woodside Ave. ','Jamaica','NY',11432,0.428120381
+'Queenie','Vance',NULL,'queenie.vance@gmail.com','172 Arcadia Ave. ','Ozone Park','NY',11417,0.188429808
+'Josh','Shaw',NULL,'josh.shaw@gmail.com','212 North Leeton Ridge Street ','Hopewell Junction','NY',12533,0.799518108
+'Pinkie','Kirkland',NULL,'pinkie.kirkland@yahoo.com','18 Myers St. ','San Angelo','TX',76901,0.374528312
+'Lavette','Wright',NULL,'lavette.wright@msn.com','6 Windsor Street ','Ronkonkoma','NY',11779,0.60013591
+'Mark','Garrett',NULL,'mark.garrett@msn.com','285 Rosewood Dr. ','Monroe','NY',10950,0.937090596
+'Myesha','Burgess',NULL,'myesha.burgess@gmail.com','306 Trenton Rd. ','Campbell','CA',95008,0.050106724
+'Justina','Long',NULL,'justina.long@aol.com','39 Littleton Ave. ','South El Monte','CA',91733,0.694137394
+'Brenda','Tate',NULL,'brenda.tate@msn.com','36 Hilltop Street ','San Angelo','TX',76901,0.009947014
+'Rayna','Perry',NULL,'rayna.perry@hotmail.com','7238 Oakland St. ','Ozone Park','NY',11417,0.736336064
+'Randolph','Chase',NULL,'randolph.chase@yahoo.com','828 Bridle Ave. ','San Lorenzo','CA',94580,0.461350661
+'Jaimee','Day',NULL,'jaimee.day@aol.com','7534 Whitemarsh Ave. ','Poughkeepsie','NY',12601,0.975281107
+'Susann','Bass',NULL,'susann.bass@msn.com','21 Old Rock Maple Ave. ','Commack','NY',11725,0.772422048
+'Leola','Gould',NULL,'leola.gould@gmail.com','8 Kirkland St. ','Astoria','NY',11102,0.726403812
+'Virgil','Frost',NULL,'virgil.frost@gmail.com','9798 Beacon St. ','Levittown','NY',11756,0.137183862
+'Mireille','Puckett','(805) 961-9909','mireille.puckett@hotmail.com','378 Purple Finch Drive ','Oxnard','CA',93035,0.100378737
+'Keturah','Massey',NULL,'keturah.massey@msn.com','189 Arnold Drive ','Banning','CA',92220,0.800173466
+'Charmain','Webster',NULL,'charmain.webster@hotmail.com','36 East Stonybrook Rd. ','Richardson','TX',75080,0.125825881
+'Barry','Buckner',NULL,'barry.buckner@gmail.com','8779 High Noon Rd. ','Centereach','NY',11720,0.308898204
+'Boyce','Burks',NULL,'boyce.burks@gmail.com','879 Harvey Dr. ','Sunnyside','NY',11104,0.72205324
+'Monty','Frost','(516) 460-5396','monty.frost@aol.com','76 Foxrun Dr. ','Hempstead','NY',11550,0.100468268
+'Tiny','French',NULL,'tiny.french@hotmail.com','7163 Hall St. ','Plainview','NY',11803,0.882699165
+'Clementina','Sargent',NULL,'clementina.sargent@hotmail.com','9853 Catherine Road ','Rome','NY',13440,0.993941813
+'Danny','Kim',NULL,'danny.kim@msn.com','74 Essex Drive ','South Ozone Park','NY',11420,0.046126386
+'Sophia','Mcmillan',NULL,'sophia.mcmillan@msn.com','8541 S. Pleasant Street ','Uniondale','NY',11553,0.989299314
+'Christia','Carson',NULL,'christia.carson@gmail.com','220 Orchard Street ','Helotes','TX',78023,0.453036374
+'Jennie','Middleton',NULL,'jennie.middleton@gmail.com','95 High Noon Dr. ','Upland','CA',91784,0.459459953
+'Jame','Riggs',NULL,'jame.riggs@hotmail.com','9237 Hudson Drive ','Bay Shore','NY',11706,0.812973667
+'Rayford','Simon',NULL,'rayford.simon@msn.com','998 Whitemarsh Road ','Mountain View','CA',94043,0.455960897
+'Annett','Garrett',NULL,'annett.garrett@yahoo.com','19 Euclid Lane ','Scarsdale','NY',10583,0.495394869
+'Hayden','Cross',NULL,'hayden.cross@gmail.com','90 Pumpkin Hill St. ','Apple Valley','CA',92307,0.119497096
+'Rolanda','Larsen',NULL,'rolanda.larsen@yahoo.com','5 West University Court ','Woodhaven','NY',11421,0.568140076
+'Jayme','Zamora',NULL,'jayme.zamora@gmail.com','2 Ridge Lane ','Springfield Gardens','NY',11413,0.045831666
+'Hope','Cotton',NULL,'hope.cotton@aol.com','9092 Blue Spring Dr. ','Redondo Beach','CA',90278,0.474616804
+'Vikki','Erickson',NULL,'vikki.erickson@yahoo.com','24 Jones Street ','Kingston','NY',12401,0.76885996
+'Fransisca','Nicholson',NULL,'fransisca.nicholson@aol.com','945 Schoolhouse Street ','Glendora','CA',91740,0.477083421
+'Mazie','Fernandez',NULL,'mazie.fernandez@hotmail.com','583 Harvard Ave. ','Webster','NY',14580,0.692588001
+'Anderson','Martin',NULL,'anderson.martin@hotmail.com','9051 Hillside Dr. ','Canandaigua','NY',14424,0.28571459
+'Gilberto','Parsons',NULL,'gilberto.parsons@gmail.com','8115 North Edgewater Drive ','Middle Village','NY',11379,0.307564127
+'Charise','Burt','(559) 888-2229','charise.burt@aol.com','582 Creek St. ','Fresno','CA',93706,0.391599997
+'Cameron','Carroll',NULL,'cameron.carroll@yahoo.com','9133 South Halifax Ave. ','Longview','TX',75604,0.328625961
+'Melani','Jarvis',NULL,'melani.jarvis@hotmail.com','8 Tunnel St. ','Maspeth','NY',11378,0.053370342
+'Javier','Nichols',NULL,'javier.nichols@msn.com','8944 Marconi St. ','Rowlett','TX',75088,0.976048583
+'Justina','Jenkins',NULL,'justina.jenkins@yahoo.com','8236 Creek St. ','Baldwin','NY',11510,0.068636341
+'Hortencia','Graham',NULL,'hortencia.graham@aol.com','7764 Greenrose Street ','Euless','TX',76039,0.784778748
+'Christia','Wilkins',NULL,'christia.wilkins@msn.com','7062 Willow Court ','Woodside','NY',11377,0.834834051
+'Eliz','Whitney',NULL,'eliz.whitney@msn.com','523 Crescent Court ','Fullerton','CA',92831,0.210448268
+'Justin','Newton',NULL,'justin.newton@hotmail.com','93 Shore Rd. ','Apple Valley','CA',92307,0.403204402
+'Aron','Wiggins','(442) 497-3353','aron.wiggins@aol.com','6 Bradford St. ','Oceanside','NY',11572,0.14273218
+'Chere','Hardin',NULL,'chere.hardin@yahoo.com','763 Fulton Road ','Brooklyn','NY',11201,0.301390111
+'Merideth','Preston',NULL,'merideth.preston@yahoo.com','794 Rockaway St. ','Poughkeepsie','NY',12601,0.209730034
+'Jeniffer','Slater',NULL,'jeniffer.slater@aol.com','30 Old Orange Lane ','Schenectady','NY',12302,0.837714096
+'Laureen','Paul',NULL,'laureen.paul@yahoo.com','617 Squaw Creek Rd. ','Bellmore','NY',11710,0.651292817
+'Berna','Moore',NULL,'berna.moore@hotmail.com','7230 Lafayette Drive ','Bronx','NY',10451,0.193358794
+'Shiela','Calderon',NULL,'shiela.calderon@msn.com','844 Albany St. ','Rocklin','CA',95677,0.915332928
+'Sharie','Alvarez','(212) 211-7621','sharie.alvarez@msn.com','987 West Leatherwood Dr. ','New York','NY',10002,0.338219585
+'Bettie','Glover',NULL,'bettie.glover@gmail.com','9083 Addison Dr. ','Euless','TX',76039,0.869115396
+'Marilyn','Frank',NULL,'marilyn.frank@aol.com','8878 Branch Street ','Port Chester','NY',10573,0.593460769
+'Sheba','Knapp',NULL,'sheba.knapp@aol.com','86 Gates Street ','Woodside','NY',11377,0.082971386
+'Aleta','Mack',NULL,'aleta.mack@yahoo.com','8869 W. Edgemont Lane ','Bay Shore','NY',11706,0.293880382
+'Reena','Higgins',NULL,'reena.higgins@gmail.com','900 South Columbia Street ','Canyon Country','CA',91387,0.961075642
+'Ami','Mcmahon',NULL,'ami.mcmahon@aol.com','566 Hilldale Drive ','Sunnyside','NY',11104,0.415703783
+'Somer','Jordan',NULL,'somer.jordan@msn.com','7046 Helen Avenue ','Huntington Station','NY',11746,0.03333969
+'Scarlet','Reed',NULL,'scarlet.reed@hotmail.com','151 S. Myers Court ','Bronx','NY',10451,0.466379082
+'Trisha','Johnson','(717) 126-8787','trisha.johnson@msn.com','59 Wild Horse St. ','Lancaster','NY',14086,0.325372212
+'Majorie','Wyatt',NULL,'majorie.wyatt@yahoo.com','8507 Miller St. ','South Ozone Park','NY',11420,0.800787583
+'Abbey','Pugh',NULL,'abbey.pugh@gmail.com','26 Market Drive ','Forest Hills','NY',11375,0.265749924
+'Tamela','Harrell',NULL,'tamela.harrell@aol.com','7316 Cypress Rd. ','Central Islip','NY',11722,0.500181222
+'Yanira','Bradshaw',NULL,'yanira.bradshaw@gmail.com','7484 Ann Court ','Smithtown','NY',11787,0.936548085
+'Delana','Scott',NULL,'delana.scott@yahoo.com','7372 Ridgeview St. ','Mount Vernon','NY',10550,0.122068807
+'Cassondra','Pruitt',NULL,'cassondra.pruitt@aol.com','4 Alderwood Circle ','Merrick','NY',11566,0.214566027
+'Jesica','Fields',NULL,'jesica.fields@yahoo.com','318 Country Dr. ','Commack','NY',11725,0.696745755
+'Herta','Rollins',NULL,'herta.rollins@msn.com','287 1st Drive ','Mountain View','CA',94043,0.515759643
+'Mi','Gray','(229) 813-2130','mi.gray@aol.com','27 Roehampton Dr. ','Albany','NY',12203,0.837727332
+'Jacalyn','Barnett',NULL,'jacalyn.barnett@gmail.com','7537 Swanson Street ','Maspeth','NY',11378,0.187389801
+'Kanesha','Hudson','(510) 788-7298','kanesha.hudson@gmail.com','8293 Gartner Drive ','Oakland','CA',94603,0.400462226
+'Darren','Witt',NULL,'darren.witt@aol.com','916 Hillcrest Ave. ','Coachella','CA',92236,0.563315482
+'Mable','Pratt',NULL,'mable.pratt@gmail.com','254 SW. Temple Street ','Coachella','CA',92236,0.466584652
+'Christoper','Mccall',NULL,'christoper.mccall@msn.com','72 Summit St. ','Bay Shore','NY',11706,0.928763257
+'Margorie','Wynn',NULL,'margorie.wynn@gmail.com','707 Schoolhouse St. ','Monsey','NY',10952,0.084772495
+'Josef','Greer',NULL,'josef.greer@gmail.com','92 Summer Court ','Jamaica','NY',11432,0.105954929
+'Tisa','Whitney',NULL,'tisa.whitney@yahoo.com','549 Newbridge Dr. ','Monsey','NY',10952,0.482266342
+'Tonda','Armstrong',NULL,'tonda.armstrong@aol.com','19 Forest Rd. ','Sunnyside','NY',11104,0.161352359
+'Arvilla','Weiss',NULL,'arvilla.weiss@msn.com','477 Blue Spring St. ','Bay Shore','NY',11706,0.128590215
+'Vashti','Rosario',NULL,'vashti.rosario@yahoo.com','623 Johnson Circle ','Bronx','NY',10451,0.743786472
+'Sheri','Cole','(408) 658-2285','sheri.cole@aol.com','479 Chapel Court ','San Jose','CA',95127,0.148165021
+'Kandace','Giles',NULL,'kandace.giles@msn.com','30 NE. Walt Whitman Drive ','Wantagh','NY',11793,0.378220571
+'Angie','Powers',NULL,'angie.powers@aol.com','6 Rockland Dr. ','Pomona','CA',91768,0.284631567
+'Van','Peters','(281) 658-7772','van.peters@yahoo.com','45 Fifth Dr. ','Houston','TX',77016,0.832287318
+'Virgina','Berg',NULL,'virgina.berg@yahoo.com','804 South Purple Finch Drive ','Valley Stream','NY',11580,0.089505507
+'Olevia','Noel',NULL,'olevia.noel@yahoo.com','39 N. Rosewood Dr. ','Kingston','NY',12401,0.746455083
+'Kaci','Gallegos',NULL,'kaci.gallegos@gmail.com','8573 Halifax St. ','Ballston Spa','NY',12020,0.699348571
+'Bev','Chang',NULL,'bev.chang@yahoo.com','104 Rockville St. ','Ithaca','NY',14850,0.890929608
+'Rodger','Rojas',NULL,'rodger.rojas@yahoo.com','8442 Cooper Ave. ','Bayside','NY',11361,0.223050983
+'Lavonne','Anderson',NULL,'lavonne.anderson@aol.com','9420 Wintergreen Court ','Floral Park','NY',11001,0.093239324
+'Blanca','Hooper',NULL,'blanca.hooper@msn.com','340 Bald Hill St. ','Ozone Park','NY',11417,0.22104986
+'Alysha','Powers',NULL,'alysha.powers@msn.com','39 West Marshall Ave. ','Forest Hills','NY',11375,0.516855475
+'Mary','Singleton',NULL,'mary.singleton@hotmail.com','474 Amerige Ave. ','Woodside','NY',11377,0.28815834
+'Jina','Cooper',NULL,'jina.cooper@aol.com','8947 W. Lexington Rd. ','Howard Beach','NY',11414,0.252724232
+'Loni','Duncan',NULL,'loni.duncan@gmail.com','80 Saxton Lane ','Rosedale','NY',11422,0.682657346
+'Collene','Roman',NULL,'collene.roman@aol.com','30 North Argyle Dr. ','Wappingers Falls','NY',12590,0.499142085
+'Mariette','Trevino',NULL,'mariette.trevino@aol.com','4 Border Court ','Utica','NY',13501,0.80229142
+'Candelaria','Coffey',NULL,'candelaria.coffey@aol.com','45 Newport Lane ','Merrick','NY',11566,0.753105492
+'Yan','Trevino',NULL,'yan.trevino@gmail.com','796 Jefferson Rd. ','Uniondale','NY',11553,0.60913428
+'Elanor','Patrick',NULL,'elanor.patrick@aol.com','51 Howard Ave. ','Victoria','TX',77904,0.58971685
+'Klara','Mosley',NULL,'klara.mosley@gmail.com','518 Devon Court ','Port Chester','NY',10573,0.554731235
+'Rosalba','O''neal',NULL,'rosalba.o''neal@yahoo.com','7517 Pennsylvania St. ','Mount Vernon','NY',10550,0.929884493
+'Mina','Carrillo',NULL,'mina.carrillo@aol.com','8659 Trenton Lane ','Uniondale','NY',11553,0.634694528
+'Alesia','Horne',NULL,'alesia.horne@aol.com','9229 Amherst Lane ','Selden','NY',11784,0.26984846
+'Kristen','Alvarez',NULL,'kristen.alvarez@aol.com','9778 North River St. ','Bronx','NY',10451,0.276388422
+'Collin','Webster',NULL,'collin.webster@aol.com','475 Cottage Rd. ','Howard Beach','NY',11414,0.823805324
+'Ashlee','Pena',NULL,'ashlee.pena@aol.com','966 Highland St. ','Whitestone','NY',11357,0.350166522
+'Aimee','Merritt',NULL,'aimee.merritt@yahoo.com','537 East Meadowbrook St. ','Flushing','NY',11354,0.533621159
+'Rochelle','Ward',NULL,'rochelle.ward@yahoo.com','7855 La Sierra Street ','Glendora','CA',91740,0.655150509
+'Nelle','Beck',NULL,'nelle.beck@aol.com','8998 Wakehurst Drive ','Upland','CA',91784,0.049460415
+'Kaila','Walters',NULL,'kaila.walters@msn.com','57 Gates Drive ','Elmhurst','NY',11373,0.933647644
+'Aleta','Stone',NULL,'aleta.stone@aol.com','8 Elm Dr. ','Whitestone','NY',11357,0.151222369
+'Leif','Short',NULL,'leif.short@gmail.com','962 Carpenter Ave. ','San Angelo','TX',76901,0.439758994
+'Lorrie','Pollard',NULL,'lorrie.pollard@yahoo.com','7834 Shore Ave. ','Ronkonkoma','NY',11779,0.706138195
+'Vernita','Ball',NULL,'vernita.ball@gmail.com','126 Arnold Dr. ','Los Banos','CA',93635,0.690031266
+'Cyndi','Bush',NULL,'cyndi.bush@gmail.com','18 Smoky Hollow Drive ','Elmhurst','NY',11373,0.818665657
+'Gertrude','Terry',NULL,'gertrude.terry@hotmail.com','34 Airport Dr. ','Upland','CA',91784,0.53867952
+'Virgen','Clemons',NULL,'virgen.clemons@gmail.com','354 Cactus Drive ','South El Monte','CA',91733,0.910125965
+'Fairy','Robinson',NULL,'fairy.robinson@msn.com','8837 Joy Ridge St. ','Liverpool','NY',13090,0.055891003
+'Laverna','Hernandez',NULL,'laverna.hernandez@hotmail.com','34 South Longfellow St. ','Niagara Falls','NY',14304,0.85392858
+'Jeannie','Wilcox',NULL,'jeannie.wilcox@yahoo.com','7744 Miles Dr. ','Franklin Square','NY',11010,0.127040984
+'Suellen','Mercado',NULL,'suellen.mercado@yahoo.com','3 Taylor Drive ','Sunnyside','NY',11104,0.891041915
+'Bart','Hess',NULL,'bart.hess@aol.com','799 N. Maiden Street ','Kingston','NY',12401,0.675628295
+'Alfredo','Dodson',NULL,'alfredo.dodson@hotmail.com','8960 Glenholme Dr. ','Depew','NY',14043,0.030943221
+'Shaunda','Barnett',NULL,'shaunda.barnett@gmail.com','9366 San Carlos Lane ','Longview','TX',75604,0.510321891
+'Kerrie','Morton',NULL,'kerrie.morton@hotmail.com','8772 State St. ','Pittsford','NY',14534,0.668433698
+'Elouise','Fry',NULL,'elouise.fry@aol.com','49 Bohemia Street ','Canyon Country','CA',91387,0.749377331
+'Augustus','Steele',NULL,'augustus.steele@aol.com','7474 N. Orchard St. ','Ballston Spa','NY',12020,0.252423885
+'Greta','Page',NULL,'greta.page@hotmail.com','8316 Augusta Drive ','Commack','NY',11725,0.663871276
+'Kerrie','O''neill',NULL,'kerrie.o''neill@gmail.com','69 Wellington Ave. ','Shirley','NY',11967,0.354847458
+'Dannette','Guerrero',NULL,'dannette.guerrero@gmail.com','68 Carriage Street ','San Pablo','CA',94806,0.581942428
+'Edra','Fitzgerald',NULL,'edra.fitzgerald@msn.com','8892 Birchwood St. ','Central Islip','NY',11722,0.02635586
+'Jerome','Bolton',NULL,'jerome.bolton@msn.com','9921 Argyle Street ','Carmel','NY',10512,0.983204018
+'Conception','Slater',NULL,'conception.slater@gmail.com','5 Sunset Street ','Bellmore','NY',11710,0.116373402
+'Octavia','Case','(212) 171-1335','octavia.case@aol.com','40 Charles Road ','New York','NY',10002,0.255729926
+'Dexter','Roberts',NULL,'dexter.roberts@gmail.com','84 Thatcher Court ','Sunnyside','NY',11104,0.894172626
+'Ginette','Edwards',NULL,'ginette.edwards@hotmail.com','9262 NW. Center Ave. ','Baldwin','NY',11510,0.851470705
+'Romaine','Haley',NULL,'romaine.haley@aol.com','737 Edgefield Drive ','Ithaca','NY',14850,0.056748919
+'Gwendolyn','Miller',NULL,'gwendolyn.miller@msn.com','90 Fordham Ave. ','Harlingen','TX',78552,0.766923373
+'Luke','Fuller','(516) 363-2253','luke.fuller@hotmail.com','576 Cleveland Lane ','Hempstead','NY',11550,0.408078414
+'Zoraida','Patton',NULL,'zoraida.patton@aol.com','95 Grand Dr. ','Huntington Station','NY',11746,0.718647527
+'Georgeanna','Webster','(805) 885-8830','georgeanna.webster@msn.com','40 Creekside Circle ','Oxnard','CA',93035,0.943226379
+'Krystin','Marshall',NULL,'krystin.marshall@hotmail.com','10 Old Proctor Lane ','Poughkeepsie','NY',12601,0.413069428
+'Vince','Schneider',NULL,'vince.schneider@hotmail.com','473 Corona Ave. ','Merrick','NY',11566,0.828379992
+'Iola','Rasmussen',NULL,'iola.rasmussen@yahoo.com','283 N. Manor Station Dr. ','Monroe','NY',10950,0.923173875
+'Valery','Saunders',NULL,'valery.saunders@msn.com','42 Marlborough St. ','Victoria','TX',77904,0.492108083
+'Johna','Powers',NULL,'johna.powers@hotmail.com','379 Central Ave. ','Deer Park','NY',11729,0.18208424
+'Charleen','Hurst',NULL,'charleen.hurst@yahoo.com','87 Country Avenue ','Utica','NY',13501,0.265885257
+'Augustina','Joyner',NULL,'augustina.joyner@aol.com','7931 Honey Creek Court ','Mount Vernon','NY',10550,0.910146538
+'Daisy','Ward',NULL,'daisy.ward@msn.com','45 Silver Spear Ave. ','Pomona','CA',91768,0.391596142
+'Latonya','Dixon',NULL,'latonya.dixon@hotmail.com','9399 Evergreen Street ','Garland','TX',75043,0.370340319
+'Hipolito','Padilla',NULL,'hipolito.padilla@hotmail.com','311 E. Rose Avenue ','New Rochelle','NY',10801,0.389362684
+'Emmett','Casey',NULL,'emmett.casey@yahoo.com','893 Logan St. ','Valley Stream','NY',11580,0.987478726
+'Kandi','Mcneil',NULL,'kandi.mcneil@msn.com','402 Border Street ','Massapequa Park','NY',11762,0.307290824
+'Luciano','Marsh',NULL,'luciano.marsh@aol.com','7685 South Willow Drive ','Bellmore','NY',11710,0.972456139
+'Julius','Holt',NULL,'julius.holt@aol.com','386 Lower River Street ','East Meadow','NY',11554,0.88929816
+'Holly','Nieves',NULL,'holly.nieves@aol.com','60 Cleveland St. ','Longview','TX',75604,0.236198905
+'Douglass','Little',NULL,'douglass.little@hotmail.com','294 Harvey Drive ','Duarte','CA',91010,0.901374664
+'Izola','Hobbs',NULL,'izola.hobbs@gmail.com','685 Beacon Dr. ','Woodhaven','NY',11421,0.953643622
+'Honey','Camacho',NULL,'honey.camacho@gmail.com','934 2nd St. ','Bayside','NY',11361,0.405830516
+'Laureen','Barry',NULL,'laureen.barry@yahoo.com','909 Ridge St. ','Orchard Park','NY',14127,0.466142496
+'Katharine','Herrera',NULL,'katharine.herrera@hotmail.com','395 SE. Branch St. ','Queensbury','NY',12804,0.297793047
+'Sunshine','Rosario',NULL,'sunshine.rosario@aol.com','1 Chestnut Lane ','Jamaica','NY',11432,0.122374189
+'Yevette','Todd',NULL,'yevette.todd@aol.com','119 Lakewood Rd. ','Ballston Spa','NY',12020,0.975545161
+'Dorthea','Walker',NULL,'dorthea.walker@aol.com','11 Third St. ','Port Washington','NY',11050,0.155546047
+'Alane','Munoz','(914) 706-7576','alane.munoz@gmail.com','8 Strawberry Dr. ','Yonkers','NY',10701,0.869828454
+'Ayana','Keith','(805) 230-2101','ayana.keith@hotmail.com','182 Thorne Road ','Oxnard','CA',93035,0.212213937
+'Caridad','Compton',NULL,'caridad.compton@aol.com','9575 SW. Kingston Court ','San Lorenzo','CA',94580,0.929410426
+'Earline','Ballard',NULL,'earline.ballard@hotmail.com','939 Lyme Road ','Mount Vernon','NY',10550,0.731816356
+'Nathanael','Bradley',NULL,'nathanael.bradley@aol.com','58 Third St. ','Amsterdam','NY',12010,0.128137913
+'Chasidy','Tran',NULL,'chasidy.tran@msn.com','9286 Anderson Street ','Vista','CA',92083,0.742671624
+'Janella','Bright','(507) 616-2958','janella.bright@aol.com','7317 Tower Dr. ','Rochester','NY',14606,0.938664687
+'Josie','Schultz',NULL,'josie.schultz@hotmail.com','225 Mammoth Street ','Canyon Country','CA',91387,0.348791605
+'Ellsworth','Michael',NULL,'ellsworth.michael@yahoo.com','9982 White St. ','Carmel','NY',10512,0.725019868
+'Jennette','Wooten',NULL,'jennette.wooten@msn.com','8221 Bow Ridge Lane ','Rowlett','TX',75088,0.789580847
+'Cassandra','Nichols',NULL,'cassandra.nichols@yahoo.com','4 Glenwood Circle ','Hicksville','NY',11801,0.291269916
+'Courtney','Wyatt',NULL,'courtney.wyatt@gmail.com','369 Arrowhead St. ','Garden City','NY',11530,0.491889737
+'Terese','Palmer',NULL,'terese.palmer@hotmail.com','8 Sugar Drive ','Bay Shore','NY',11706,0.225430035
+'Sherita','Cherry',NULL,'sherita.cherry@gmail.com','9636 Old Cedarwood Street ','Liverpool','NY',13090,0.662766505
+'Serina','Hensley',NULL,'serina.hensley@yahoo.com','53 Proctor Drive ','Jamaica','NY',11432,0.456316833
+'Jeni','Farley',NULL,'jeni.farley@aol.com','4 Mill Lane ','Richmond Hill','NY',11418,0.185710241
+'Everett','Vega',NULL,'everett.vega@yahoo.com','7859 James Ave. ','Holbrook','NY',11741,0.103952035
+'Latosha','Dalton','(661) 529-4501','latosha.dalton@yahoo.com','59 E. Wintergreen Ave. ','Bakersfield','CA',93306,0.771837843
+'Romelia','Myers',NULL,'romelia.myers@msn.com','8630 Brook St. ','Garden City','NY',11530,0.676904522
+'Effie','Jenkins','(631) 477-1277','effie.jenkins@msn.com','75 South Glen Eagles Court ','Brentwood','NY',11717,0.818364413
+'Efren','Oliver',NULL,'efren.oliver@gmail.com','9343 1st Rd. ','Nanuet','NY',10954,0.406500529
+'Jerlene','Rios',NULL,'jerlene.rios@yahoo.com','32 Griffin St. ','Plainview','NY',11803,0.884511721
+'Bess','Mcbride',NULL,'bess.mcbride@yahoo.com','9832 Winchester St. ','Garden City','NY',11530,0.820638061
+'Birdie','Kramer','(248) 725-2174','birdie.kramer@hotmail.com','311 Newcastle Dr. ','Troy','NY',12180,0.237179795
+'Collen','Hayes',NULL,'collen.hayes@yahoo.com','117 Eagle St. ','Smithtown','NY',11787,0.147453903
+'Clare','Neal',NULL,'clare.neal@msn.com','8922 Shady Ave. ','Mahopac','NY',10541,0.403029378
+'Jeanett','Herman',NULL,'jeanett.herman@hotmail.com','839 East Arch Street ','Lindenhurst','NY',11757,0.077082858
+'Micki','Rutledge',NULL,'micki.rutledge@aol.com','9868 Marvon Street ','Richmond Hill','NY',11418,0.818134452
+'Loise','Walker',NULL,'loise.walker@aol.com','201 Glen Eagles St. ','Shirley','NY',11967,0.717065001
+'Burma','Summers',NULL,'burma.summers@yahoo.com','890 East Elmwood Street ','Freeport','NY',11520,0.001950917
+'Myron','Ruiz',NULL,'myron.ruiz@gmail.com','45 Shadow Brook Lane ','Amityville','NY',11701,0.632381594
+'Lashawna','Richardson',NULL,'lashawna.richardson@hotmail.com','9920 Purple Finch St. ','Baldwin','NY',11510,0.565153447
+'Lavern','Orr',NULL,'lavern.orr@hotmail.com','913 N. Young Street ','Webster','NY',14580,0.133515934
+'Alec','Peck',NULL,'alec.peck@hotmail.com','4 W. Belmont St. ','Victoria','TX',77904,0.768231786
+'Christopher','Richardson',NULL,'christopher.richardson@gmail.com','7846 Windfall Dr. ','Santa Cruz','CA',95060,0.250072662
+'Arminda','Weber',NULL,'arminda.weber@yahoo.com','6 Hill Field St. ','Bellmore','NY',11710,0.016887326
+'Emmett','Hahn',NULL,'emmett.hahn@hotmail.com','7727 6th St. ','Freeport','NY',11520,0.287038936
+'Gertha','Mejia',NULL,'gertha.mejia@yahoo.com','518 Orchard St. ','Flushing','NY',11354,0.839792693
+'Garland','Weaver',NULL,'garland.weaver@gmail.com','7161 Goldfield Court ','Amsterdam','NY',12010,0.069386946
+'Jayson','Rutledge',NULL,'jayson.rutledge@yahoo.com','8672 Coffee St. ','Lake Jackson','TX',77566,0.553642482
+'Narcisa','Knapp',NULL,'narcisa.knapp@aol.com','435 Dogwood Dr. ','Amarillo','TX',79106,0.278461959
+'Gayla','Sims',NULL,'gayla.sims@gmail.com','98 Hall Street ','Lindenhurst','NY',11757,0.954446389
+'Chelsey','Boyd',NULL,'chelsey.boyd@yahoo.com','9569 Birchpond Ave. ','Euless','TX',76039,0.336971842
+'Catherine','Miles',NULL,'catherine.miles@msn.com','7189 Elm Dr. ','East Elmhurst','NY',11369,0.902768088
+'Valeri','Marshall',NULL,'valeri.marshall@hotmail.com','494 East Brewery Dr. ','East Meadow','NY',11554,0.233829204
+'Grace','Madden',NULL,'grace.madden@gmail.com','606 East Rocky River St. ','San Pablo','CA',94806,0.248031695
+'Joaquin','Hawkins','(657) 557-1746','joaquin.hawkins@aol.com','3 Oklahoma Lane ','Anaheim','CA',92806,0.81869788
+'Kirstie','Vazquez',NULL,'kirstie.vazquez@gmail.com','8006 Rockland Ave. ','Saratoga Springs','NY',12866,0.936271728
+'Yu','Mcdonald',NULL,'yu.mcdonald@aol.com','784 Pheasant Rd. ','Ossining','NY',10562,0.544849824
+'Celestine','Jacobs',NULL,'celestine.jacobs@gmail.com','87 Hanover Rd. ','Massapequa','NY',11758,0.487990583
+'Justa','Thompson',NULL,'justa.thompson@aol.com','43 Manor Ave. ','Corona','NY',11368,0.092616488
+'Lise','Alvarado',NULL,'lise.alvarado@gmail.com','9816 Newcastle Dr. ','Hamburg','NY',14075,0.306412507
+'Pearl','Fox',NULL,'pearl.fox@yahoo.com','9415 Honey Creek Dr. ','Uniondale','NY',11553,0.734181603
+'Travis','Goodman',NULL,'travis.goodman@yahoo.com','65 Rockcrest Dr. ','Los Banos','CA',93635,0.16531172
+'Shu','Mays',NULL,'shu.mays@gmail.com','996 St Margarets Lane ','Astoria','NY',11102,0.283380486
+'Ezra','Fowler',NULL,'ezra.fowler@hotmail.com','16 Pearl St. ','Nanuet','NY',10954,0.904157672
+'Edda','Young',NULL,'edda.young@gmail.com','50 S. Airport Street ','North Tonawanda','NY',14120,0.770007993
+'Lidia','Ashley',NULL,'lidia.ashley@hotmail.com','8436 Meadow St. ','Baldwinsville','NY',13027,0.089900811
+'Moira','Lester',NULL,'moira.lester@msn.com','496 Greystone Court ','Jackson Heights','NY',11372,0.239750685
+'Tony','Hicks','(657) 260-6783','tony.hicks@gmail.com','226 Carriage Street ','Anaheim','CA',92806,0.007520808
+'Malinda','Baxter',NULL,'malinda.baxter@yahoo.com','7698 Briarwood Ave. ','Whitestone','NY',11357,0.664945743
+'Marlo','Jefferson',NULL,'marlo.jefferson@gmail.com','39 Trenton Rd. ','Niagara Falls','NY',14304,0.248641829
+'Tiana','Henderson',NULL,'tiana.henderson@aol.com','62 Orange St. ','Franklin Square','NY',11010,0.874624221
+'Wilda','Petersen',NULL,'wilda.petersen@aol.com','899 Helen St. ','Jamaica','NY',11432,0.851574579
+'Irving','Pitts',NULL,'irving.pitts@msn.com','346 College Court ','Torrance','CA',90505,0.058087976
+'Sheree','Pena',NULL,'sheree.pena@yahoo.com','822 Virginia Court ','Staten Island','NY',10301,0.987330415
+'Vance','Taylor','(717) 218-5607','vance.taylor@msn.com','8279 Military Dr. ','Lancaster','NY',14086,0.927674072
+'Terra','Pickett',NULL,'terra.pickett@aol.com','7822 Depot Avenue ','Amsterdam','NY',12010,0.39022181
+'Faustino','Delacruz',NULL,'faustino.delacruz@msn.com','88 West Greenview Street ','South Richmond Hill','NY',11419,0.65551887
+'Julienne','Moody','(682) 841-4643','julienne.moody@hotmail.com','35 South Oxford Rd. ','Fort Worth','TX',76110,0.43546486
+'Hee','Greer',NULL,'hee.greer@hotmail.com','41 North Garfield Ave. ','Selden','NY',11784,0.837391851
+'Whitney','Cash',NULL,'whitney.cash@gmail.com','8 Surrey Street ','Hamburg','NY',14075,0.091781154
+'Clarita','Curry',NULL,'clarita.curry@hotmail.com','661 Tanglewood Street ','Hollis','NY',11423,0.411002652
+'Reita','Dickson',NULL,'reita.dickson@hotmail.com','7506 Mechanic Dr. ','Scarsdale','NY',10583,0.303345174
+'Rosa','Kinney',NULL,'rosa.kinney@yahoo.com','330 Highland Drive ','Brooklyn','NY',11201,0.328960873
+'Buford','Gilbert',NULL,'buford.gilbert@yahoo.com','9 East Ketch Harbour Street ','Bellmore','NY',11710,0.085862172
+'Homer','Powers',NULL,'homer.powers@msn.com','8207 East El Dorado Ave. ','Palos Verdes Peninsula','CA',90274,0.334768268
+'Rudolf','Gilliam',NULL,'rudolf.gilliam@aol.com','17 Marlborough Circle ','Palos Verdes Peninsula','CA',90274,0.447256852
+'Andreas','Herman',NULL,'andreas.herman@msn.com','456 Rock Creek Street ','Mount Vernon','NY',10550,0.942340645
+'Max','Charles',NULL,'max.charles@gmail.com','695 St Paul Street ','Glen Cove','NY',11542,0.203783486
+'Tammera','Fischer','(510) 534-8845','tammera.fischer@hotmail.com','405 Olive St. ','Oakland','CA',94603,0.74600951
+'Joshua','Robertson',NULL,'joshua.robertson@gmail.com','81 Campfire Court ','Patchogue','NY',11772,0.818743853
+'Larraine','Horn',NULL,'larraine.horn@msn.com','368 South Summerhouse Dr. ','Utica','NY',13501,0.46452972
+'Andreas','Mayer',NULL,'andreas.mayer@hotmail.com','8577 Galvin Circle ','New Rochelle','NY',10801,0.437258295
+'Lazaro','Moran',NULL,'lazaro.moran@gmail.com','83 E. Buttonwood Street ','Sugar Land','TX',77478,0.801905137
+'Afton','Juarez',NULL,'afton.juarez@gmail.com','8330 Riverview Drive ','Coram','NY',11727,0.407410151
+'Angele','Schroeder','(845) 804-6312','angele.schroeder@yahoo.com','33 S. Shadow Brook Street ','New City','NY',10956,0.175694851
+'Ellena','Clements',NULL,'ellena.clements@aol.com','7918 Mulberry Street ','Santa Monica','CA',90403,0.116469816
+'Selene','Austin',NULL,'selene.austin@msn.com','9042 Linda Circle ','Duarte','CA',91010,0.797460131
+'Kimberely','Bowen','(248) 199-2582','kimberely.bowen@hotmail.com','88 Belmont Street ','Troy','NY',12180,0.895932165
+'Mia','Delgado',NULL,'mia.delgado@yahoo.com','850 Wakehurst Drive ','Coachella','CA',92236,0.879878166
+'Garret','Clay','(361) 687-9477','garret.clay@yahoo.com','9516 College Drive ','Corpus Christi','TX',78418,0.941674823
+'Alejandro','Haney',NULL,'alejandro.haney@msn.com','3 Griffin Street ','Wantagh','NY',11793,0.68459814
+'Inge','Olsen','(562) 719-5041','inge.olsen@msn.com','295 Iroquois Rd. ','Long Beach','NY',11561,0.279308419
+'Christiane','Bradford',NULL,'christiane.bradford@gmail.com','9043 Woodland Ave. ','Orchard Park','NY',14127,0.240736847
+'Carter','Bentley',NULL,'carter.bentley@yahoo.com','145 North Bridle Ave. ','Carmel','NY',10512,0.198774729
+'Sherie','Ayala',NULL,'sherie.ayala@msn.com','5 Beech Ave. ','South El Monte','CA',91733,0.151370185
+'Jamika','Acevedo',NULL,'jamika.acevedo@yahoo.com','8027 NW. Poplar St. ','Ozone Park','NY',11417,0.378077776
+'Shery','Randolph',NULL,'shery.randolph@hotmail.com','602 Laurel Street ','Ontario','CA',91762,0.492652064
+'Lanita','Burton',NULL,'lanita.burton@msn.com','8980 Aspen Avenue ','Coachella','CA',92236,0.017901567
+'Timothy','Byers',NULL,'timothy.byers@msn.com','8645 Devonshire Lane ','Ronkonkoma','NY',11779,0.611438946
+'Jasmin','Young',NULL,'jasmin.young@gmail.com','337 Beach Street ','Helotes','TX',78023,0.382906571
+'Catarina','Mendez',NULL,'catarina.mendez@hotmail.com','444 Hanover Court ','West Islip','NY',11795,0.741225148
+'Tajuana','Rollins',NULL,'tajuana.rollins@msn.com','724 N. Glen Creek Street ','Oswego','NY',13126,0.65334344
+'Thad','Castro','(631) 943-1407','thad.castro@msn.com','71 Surrey Ave. ','Brentwood','NY',11717,0.967224976
+'Tena','Huber',NULL,'tena.huber@gmail.com','185 East Littleton St. ','Newburgh','NY',12550,0.319019104
+'Dori','Alvarez',NULL,'dori.alvarez@msn.com','8208 Brandywine St. ','Kingston','NY',12401,0.325476224
+'Elmo','Arnold','(562) 841-9339','elmo.arnold@aol.com','7616 Lyme Rd. ','Long Beach','NY',11561,0.39230144
+'Felicidad','Golden',NULL,'felicidad.golden@yahoo.com','9712 Coffee Ave. ','Lockport','NY',14094,0.428714928
+'Jenine','Crane','(682) 183-6555','jenine.crane@msn.com','7381 Alderwood Drive ','Fort Worth','TX',76110,0.641725328
+'Lea','Key',NULL,'lea.key@yahoo.com','7 Ocean St. ','Banning','CA',92220,0.401372698
+'Rory','Cooper',NULL,'rory.cooper@gmail.com','459 West Street ','Rocklin','CA',95677,0.400576098
+'Hilde','Nieves',NULL,'hilde.nieves@gmail.com','9437 Fordham Lane ','Campbell','CA',95008,0.314326216
+'Marry','Benjamin',NULL,'marry.benjamin@yahoo.com','33 Amerige Street ','Forney','TX',75126,0.204403901
+'Vernell','Goff',NULL,'vernell.goff@msn.com','77 Cobblestone St. ','Monroe','NY',10950,0.309238475
+'Erlene','Cook',NULL,'erlene.cook@gmail.com','89 Blue Spring Street ','Mount Vernon','NY',10550,0.75815067
+'Carroll','Kelly',NULL,'carroll.kelly@yahoo.com','346 Grant Circle ','Monroe','NY',10950,0.897440742
+'Basilia','Thornton','(631) 592-9548','basilia.thornton@hotmail.com','9033 Pine Dr. ','Brentwood','NY',11717,0.436348882
+'Tricia','Daniels',NULL,'tricia.daniels@gmail.com','8628 Crescent Court ','Forney','TX',75126,0.256196443
+'Kandace','Hughes',NULL,'kandace.hughes@hotmail.com','482 Ryan Ave. ','San Lorenzo','CA',94580,0.375458522
+'Alejandro','Norman',NULL,'alejandro.norman@yahoo.com','8918 Marsh Lane ','Upland','CA',91784,0.50308103
+'Rodney','Odom',NULL,'rodney.odom@yahoo.com','7782 North Deerfield Lane ','Richmond Hill','NY',11418,0.915986492
+'Bettie','Pierce',NULL,'bettie.pierce@gmail.com','787 North Vernon Lane ','Farmingdale','NY',11735,0.860125686
+'Dagny','Owen',NULL,'dagny.owen@hotmail.com','8028 Thompson Drive ','San Angelo','TX',76901,0.352068623
+'Cinthia','Poole',NULL,'cinthia.poole@aol.com','7 Central Ave. ','Lake Jackson','TX',77566,0.704062418
+'Sheila','Travis',NULL,'sheila.travis@yahoo.com','9285 Front St. ','Longview','TX',75604,0.55194404
+'Arcelia','Vinson',NULL,'arcelia.vinson@gmail.com','40 Dogwood St. ','West Islip','NY',11795,0.104472806
+'Lucas','Estes',NULL,'lucas.estes@yahoo.com','99 Old Church St. ','Santa Monica','CA',90403,0.018119003
+'Marissa','Summers',NULL,'marissa.summers@msn.com','81 Carpenter St. ','Saint Albans','NY',11412,0.499589434
+'Kaley','Blanchard',NULL,'kaley.blanchard@msn.com','74 Evergreen Court ','Palos Verdes Peninsula','CA',90274,0.697489755
+'Wm','Pope',NULL,'wm.pope@msn.com','212 Marsh Court ','Auburn','NY',13021,0.513442466
+'Rubye','Mccall','(248) 764-3359','rubye.mccall@hotmail.com','71 Sherwood Dr. ','Troy','NY',12180,0.556049264
+'Adriene','Rivera',NULL,'adriene.rivera@hotmail.com','973 Yukon Avenue ','Encino','CA',91316,0.349235094
+'Laurence','Christian',NULL,'laurence.christian@gmail.com','2 Maple St. ','Jamaica','NY',11432,0.656812766
+'Shirely','Stanley','(915) 437-6113','shirely.stanley@gmail.com','73 White Avenue ','El Paso','TX',79930,0.624638625
+'Danille','Mcfarland',NULL,'danille.mcfarland@msn.com','14 Tailwater St. ','Rocklin','CA',95677,0.131228604
+'Salena','Day',NULL,'salena.day@msn.com','8067 Park Court ','San Lorenzo','CA',94580,0.65604189
+'Matilda','Larson',NULL,'matilda.larson@hotmail.com','336 Saxon Court ','Harlingen','TX',78552,0.869312292
+'Mellisa','Kim','(424) 151-6481','mellisa.kim@aol.com','17 Lyme Dr. ','Los Angeles','CA',90008,0.142142539
+'Vonda','Berger',NULL,'vonda.berger@yahoo.com','615 S. Proctor Ave. ','Santa Clara','CA',95050,0.856410962
+'Soledad','Moses',NULL,'soledad.moses@yahoo.com','85 Hickory Ave. ','Jackson Heights','NY',11372,0.176817374
+'Lashandra','Turner','(562) 327-9469','lashandra.turner@hotmail.com','11 Marlborough Rd. ','Long Beach','NY',11561,0.609933642
+'Lynne','Anderson','(915) 789-6666','lynne.anderson@msn.com','325 Inverness St. ','El Paso','TX',79930,0.424729019
+'Chasidy','Webster',NULL,'chasidy.webster@msn.com','8296 S. Lookout Lane ','Rocklin','CA',95677,0.870689107
+'Ulysses','Gaines',NULL,'ulysses.gaines@aol.com','22 Gregory Lane ','Monsey','NY',10952,0.120343334
+'Euna','Lopez',NULL,'euna.lopez@gmail.com','7979 South Mountainview Ave. ','Carmel','NY',10512,0.62380265
+'Cherelle','Key',NULL,'cherelle.key@msn.com','7739 Snake Hill Lane ','Valley Stream','NY',11580,0.993400005
+'Jeffry','Church',NULL,'jeffry.church@msn.com','426 Grandrose Ave. ','Pleasanton','CA',94566,0.83873811
+'Cyndi','Dyer',NULL,'cyndi.dyer@msn.com','313 West Argyle Ave. ','Baldwin','NY',11510,0.952481796
+'Danilo','Holmes',NULL,'danilo.holmes@gmail.com','657 Manor Station Dr. ','Hicksville','NY',11801,0.394632025
+'Joni','Lee',NULL,'joni.lee@gmail.com','8573 Proctor Street ','Centereach','NY',11720,0.561938093
+'Antony','Atkinson',NULL,'antony.atkinson@msn.com','680 East Birchwood Lane ','Smithtown','NY',11787,0.885328143
+'Deanne','Parsons',NULL,'deanne.parsons@aol.com','76 Amherst Drive ','Lindenhurst','NY',11757,0.380892562
+'Frederica','Rojas',NULL,'frederica.rojas@yahoo.com','7835 West Jockey Hollow Rd. ','Ithaca','NY',14850,0.441213345
+'Emelda','Dickerson',NULL,'emelda.dickerson@aol.com','7457 6th St. ','Hamburg','NY',14075,0.225539948
+'Rudolf','Moran',NULL,'rudolf.moran@gmail.com','5 Birchwood Rd. ','Maspeth','NY',11378,0.476838722
+'Benito','Hendrix',NULL,'benito.hendrix@gmail.com','676 S. Bowman Lane ','Depew','NY',14043,0.521229799
+'Jonell','Rivas',NULL,'jonell.rivas@msn.com','8415 East High Point St. ','Amarillo','TX',79106,0.796585985
+'Joi','Reeves','(619) 952-9613','joi.reeves@msn.com','9101 Williams Court ','San Diego','CA',92111,0.017677873
+'Leland','Mcdowell',NULL,'leland.mcdowell@gmail.com','8034 E. Washington Lane ','Encino','CA',91316,0.69774216
+'Delaine','Estes',NULL,'delaine.estes@yahoo.com','8916 Hartford Rd. ','Amarillo','TX',79106,0.432034043
+'Genevieve','Juarez',NULL,'genevieve.juarez@gmail.com','93 Goldfield Drive ','New Hyde Park','NY',11040,0.016678153
+'Kylee','Dickson',NULL,'kylee.dickson@gmail.com','7908 Sherwood Street ','Amityville','NY',11701,0.099027423
+'Renita','Henry',NULL,'renita.henry@msn.com','474 Woodland Ave. ','New Rochelle','NY',10801,0.070793006
+'Sarah','Kirkland',NULL,'sarah.kirkland@aol.com','42 N. Glendale Avenue ','Wappingers Falls','NY',12590,0.503418122
+'Paul','Lester',NULL,'paul.lester@gmail.com','275 Clay St. ','Vista','CA',92083,0.576828235
+'Taisha','Vang',NULL,'taisha.vang@yahoo.com','660 East Foster Lane ','Shirley','NY',11967,0.751312167
+'Eliana','Reese',NULL,'eliana.reese@hotmail.com','7079 NE. Cross Drive ','Woodhaven','NY',11421,0.499839146
+'Leonore','Dorsey',NULL,'leonore.dorsey@yahoo.com','8213 South Branch Avenue ','Jackson Heights','NY',11372,0.71779461
+'Ashleigh','Frank',NULL,'ashleigh.frank@gmail.com','9008 Plymouth Street ','Levittown','NY',11756,0.457620888
+'Gabriel','Wagner',NULL,'gabriel.wagner@msn.com','7921 Manhattan Ave. ','Ballston Spa','NY',12020,0.619090799
+'Margene','Eaton',NULL,'margene.eaton@yahoo.com','43 Sugar Street ','Wantagh','NY',11793,0.28834725
+'Toshia','Cardenas',NULL,'toshia.cardenas@gmail.com','878 Bayberry Street ','Amsterdam','NY',12010,0.01337464
+'Jamika','Blanchard',NULL,'jamika.blanchard@gmail.com','420 Cambridge Street ','Fresh Meadows','NY',11365,0.830381265
+'Shery','Acosta',NULL,'shery.acosta@yahoo.com','17 Canal Ave. ','Saratoga Springs','NY',12866,0.565336111
+'Jenna','Saunders',NULL,'jenna.saunders@aol.com','4 Young St. ','Yorktown Heights','NY',10598,0.629893068
+'Skye','Pope',NULL,'skye.pope@yahoo.com','121 S. Bay Meadows Ave. ','Richmond Hill','NY',11418,0.342464915
+'Ana','Palmer','(657) 323-8684','ana.palmer@yahoo.com','7 Buckingham St. ','Anaheim','CA',92806,0.874287986
+'Eric','Hardin',NULL,'eric.hardin@gmail.com','39 S. Parker Drive ','Jamaica','NY',11432,0.912193958
+'Basil','Ballard',NULL,'basil.ballard@yahoo.com','7477 Belmont Ave. ','San Lorenzo','CA',94580,0.698499025
+'Gabriel','Pitts',NULL,'gabriel.pitts@gmail.com','8462 Marshall Drive ','Clifton Park','NY',12065,0.129302866
+'Cayla','Johnson',NULL,'cayla.johnson@msn.com','7091 Rockaway Avenue ','Coram','NY',11727,0.517962741
+'Sharika','Colon','(562) 452-6136','sharika.colon@gmail.com','509 Henry Smith St. ','Long Beach','NY',11561,0.365060932
+'Donnetta','Henson',NULL,'donnetta.henson@hotmail.com','2 Tallwood Drive ','Webster','NY',14580,0.983893894
+'Leigh','Burke',NULL,'leigh.burke@hotmail.com','7651 Creek St. ','Schenectady','NY',12302,0.283712442
+'Deloris','Larson',NULL,'deloris.larson@aol.com','242 Branch Street ','Duarte','CA',91010,0.7273906
+'Ehtel','Cobb',NULL,'ehtel.cobb@hotmail.com','741 Rockville Drive ','Lockport','NY',14094,0.148499898
+'Evelina','Byrd','(716) 601-7704','evelina.byrd@msn.com','628 S. Church St. ','Buffalo','NY',14215,0.480139019
+'Zulema','Browning',NULL,'zulema.browning@gmail.com','12 NW. Lafayette St. ','Amsterdam','NY',12010,0.778211332
+'Tressa','Weiss',NULL,'tressa.weiss@msn.com','52 Wild Rose Avenue ','Ossining','NY',10562,0.282014349
+'Yvette','Rogers',NULL,'yvette.rogers@aol.com','3 SE. Oklahoma Drive ','Franklin Square','NY',11010,0.944186449
+'Kiara','Deleon','(657) 378-8011','kiara.deleon@gmail.com','164 Addison Drive ','Anaheim','CA',92806,0.115355922
+'Taylor','Cole',NULL,'taylor.cole@gmail.com','9408 Holly Lane ','Carmel','NY',10512,0.828693949
+'Myrtie','James',NULL,'myrtie.james@yahoo.com','566 North Livingston Ave. ','Merrick','NY',11566,0.235874653
+'Ashton','Lott',NULL,'ashton.lott@hotmail.com','609 Windfall Lane ','Floral Park','NY',11001,0.868662695
+'Kara','Higgins',NULL,'kara.higgins@aol.com','758 Jennings Street ','Ossining','NY',10562,0.172886053
+'Tomeka','Higgins',NULL,'tomeka.higgins@msn.com','591 W. Corona St. ','Poughkeepsie','NY',12601,0.075802707
+'Ronald','Parsons',NULL,'ronald.parsons@msn.com','268 Pin Oak Rd. ','Maspeth','NY',11378,0.196533276
+'Allison','Nolan','(845) 276-5729','allison.nolan@gmail.com','7421 Victoria St. ','New City','NY',10956,0.71291899
+'Derrick','Marks',NULL,'derrick.marks@yahoo.com','7247 East Prairie Lane ','Glendora','CA',91740,0.267926917
+'Yang','Roth',NULL,'yang.roth@aol.com','234 E. Shub Farm Ave. ','Webster','NY',14580,0.319194614
+'Melba','Wilkinson',NULL,'melba.wilkinson@gmail.com','255 Harvard Dr. ','Floral Park','NY',11001,0.428159885
+'Valentin','Mclaughlin',NULL,'valentin.mclaughlin@hotmail.com','56 Squaw Creek Street ','Lindenhurst','NY',11757,0.096152639
+'Lewis','Garner','(631) 871-2512','lewis.garner@gmail.com','9550 East Greenrose St. ','Brentwood','NY',11717,0.453604189
+'Ann','Heath',NULL,'ann.heath@msn.com','413 East St. ','South El Monte','CA',91733,0.509038754
+'Janelle','Maldonado',NULL,'janelle.maldonado@gmail.com','34 Mammoth Street ','Richmond Hill','NY',11418,0.077950303
+'Catrice','Hicks',NULL,'catrice.hicks@yahoo.com','403 Inverness Street ','San Pablo','CA',94806,0.108754735
+'Eli','Contreras',NULL,'eli.contreras@hotmail.com','35 Highland Ave. ','Ronkonkoma','NY',11779,0.088175035
+'Rita','Bailey',NULL,'rita.bailey@hotmail.com','69 Glenwood Street ','Ossining','NY',10562,0.238003694
+'Laure','Pena',NULL,'laure.pena@yahoo.com','9849 West Elmwood St. ','Wappingers Falls','NY',12590,0.500378546
+'Tilda','Melton','(248) 767-4165','tilda.melton@msn.com','237 Elmwood Drive ','Troy','NY',12180,0.068954965
+'Florencio','Davenport',NULL,'florencio.davenport@yahoo.com','8759 Brookside Ave. ','Jamestown','NY',14701,0.759831684
+'Eun','Harris','(619) 378-2432','eun.harris@gmail.com','623 Jones St. ','San Diego','CA',92111,0.499735628
+'Marylyn','Browning',NULL,'marylyn.browning@msn.com','915 Lakeshore Street ','Scarsdale','NY',10583,0.360540087
+'Romana','Barnes',NULL,'romana.barnes@yahoo.com','9776 Shipley Rd. ','Floral Park','NY',11001,0.777132734
+'Sam','Lester',NULL,'sam.lester@gmail.com','563 South Beacon Lane ','Baldwin','NY',11510,0.613567331
+'Nicki','Larson',NULL,'nicki.larson@yahoo.com','8317 West Leatherwood Dr. ','Monsey','NY',10952,0.946116045
+'Antonetta','Rocha',NULL,'antonetta.rocha@yahoo.com','9858 Newcastle St. ','Port Chester','NY',10573,0.067340863
+'Shara','Pope',NULL,'shara.pope@msn.com','194 Amherst Dr. ','Ridgecrest','CA',93555,0.808746267
+'Trena','Hudson',NULL,'trena.hudson@hotmail.com','135 Grand Ave. ','Monroe','NY',10950,0.082540263
+'Loraine','Sykes',NULL,'loraine.sykes@yahoo.com','9239 Windsor Ave. ','Scarsdale','NY',10583,0.738657811
+'Alissa','Hood',NULL,'alissa.hood@gmail.com','8032 Maple Drive ','New Windsor','NY',12553,0.646060289
+'Augustus','Schmidt',NULL,'augustus.schmidt@msn.com','624 Jones Dr. ','Corona','NY',11368,0.746211405
+'Stacie','Sims','(510) 194-5117','stacie.sims@hotmail.com','47 Orange Ave. ','Oakland','CA',94603,0.626337401
+'Brittni','Green',NULL,'brittni.green@msn.com','842 El Dorado Lane ','Floral Park','NY',11001,0.602497304
+'Etsuko','Garrison',NULL,'etsuko.garrison@yahoo.com','1 Arrowhead Street ','Richmond Hill','NY',11418,0.622221479
+'Calandra','Stanton',NULL,'calandra.stanton@aol.com','36 Livingston Dr. ','Lake Jackson','TX',77566,0.13956935
+'Willis','Randolph',NULL,'willis.randolph@yahoo.com','332 Constitution St. ','Harlingen','TX',78552,0.318762647
+'Shawnda','Glover',NULL,'shawnda.glover@gmail.com','138 Belmont Ave. ','Liverpool','NY',13090,0.234055278
+'Jennette','Baker',NULL,'jennette.baker@gmail.com','798 Marvon St. ','Banning','CA',92220,0.121644617
+'Elma','Molina',NULL,'elma.molina@msn.com','8565 Devon Ave. ','New Rochelle','NY',10801,0.436980899
+'Adam','Henderson',NULL,'adam.henderson@hotmail.com','167 James St. ','Los Banos','CA',93635,0.660216195
+'Ira','Moore',NULL,'ira.moore@gmail.com','1 Pineknoll Court ','Saratoga Springs','NY',12866,0.233447705
+'Kermit','Bowman','(915) 996-5952','kermit.bowman@gmail.com','3 Airport Street ','El Paso','TX',79930,0.904325612
+'Gayle','Wilkinson',NULL,'gayle.wilkinson@yahoo.com','4 Riverside Ave. ','Lindenhurst','NY',11757,0.143808941
+'Launa','Hull',NULL,'launa.hull@yahoo.com','936 Grove Street ','Helotes','TX',78023,0.267255822
+'Myron','Johns',NULL,'myron.johns@msn.com','5 N. Woodsman Rd. ','Whitestone','NY',11357,0.656884131
+'Tuan','Wolfe',NULL,'tuan.wolfe@aol.com','7641 Oak Meadow Dr. ','West Babylon','NY',11704,0.475979717
+'Mathilda','Pennington','(845) 407-9524','mathilda.pennington@gmail.com','14 S. Argyle Ave. ','New City','NY',10956,0.143860534
+'Reatha','Perez',NULL,'reatha.perez@aol.com','9917 1st St. ','Holbrook','NY',11741,0.8778161
+'Arnita','Thomas',NULL,'arnita.thomas@gmail.com','154 2nd St. ','Orchard Park','NY',14127,0.619169338
+'Amparo','Burks',NULL,'amparo.burks@aol.com','7781 Augusta St. ','Merrick','NY',11566,0.536426006
+'Jenny','Bell',NULL,'jenny.bell@hotmail.com','38 Crescent St. ','Niagara Falls','NY',14304,0.962329401
+'Laverne','Craft',NULL,'laverne.craft@aol.com','829 N. Pierce Street ','Forest Hills','NY',11375,0.183616127
+'Darcel','Harmon',NULL,'darcel.harmon@msn.com','966 Hickory Street ','Santa Clara','CA',95050,0.759083836
+'Cecilia','Camacho',NULL,'cecilia.camacho@yahoo.com','682 Mountainview Rd. ','Desoto','TX',75115,0.838763428
+'Pearlie','Cochran',NULL,'pearlie.cochran@msn.com','23 Homewood Rd. ','Campbell','CA',95008,0.29941528
+'Deirdre','Ryan',NULL,'deirdre.ryan@yahoo.com','83 Jefferson Lane ','Utica','NY',13501,0.874845845
+'Yevette','Elliott',NULL,'yevette.elliott@aol.com','182 Euclid Street ','Jackson Heights','NY',11372,0.582171969
+'Ladawn','Downs','(281) 165-2090','ladawn.downs@yahoo.com','7452 S. Airport Court ','Houston','TX',77016,0.578954831
+'Dorothea','Chang',NULL,'dorothea.chang@gmail.com','75 Oak Ave. ','Astoria','NY',11102,0.908746514
+'Merlin','Foreman','(516) 150-1321','merlin.foreman@msn.com','8198 North Rockaway St. ','Hempstead','NY',11550,0.882064506
+'Lanie','Dunn',NULL,'lanie.dunn@gmail.com','7583 Pilgrim Ave. ','North Tonawanda','NY',14120,0.042479053
+'Christoper','Gould',NULL,'christoper.gould@aol.com','8718 South Constitution St. ','Shirley','NY',11967,0.310913179
+'Norine','Huffman',NULL,'norine.huffman@aol.com','363 Dunbar Drive ','Encino','CA',91316,0.843380533
+'Alane','Mccarty','(619) 377-8586','alane.mccarty@hotmail.com','8254 Hilldale Street ','San Diego','CA',92111,0.273830303
+'Charleen','Joyner',NULL,'charleen.joyner@aol.com','735 N. John Dr. ','Corona','NY',11368,0.70639153
+'Zella','Fernandez',NULL,'zella.fernandez@yahoo.com','8 Marshall Dr. ','Rockville Centre','NY',11570,0.684876971
+'Collene','Knox','(361) 760-1523','collene.knox@msn.com','7 North Branch Lane ','Corpus Christi','TX',78418,0.523992616
+'Alysia','Nicholson','(805) 493-7311','alysia.nicholson@hotmail.com','868 Trusel St. ','Oxnard','CA',93035,0.686520072
+'Sharie','Whitaker',NULL,'sharie.whitaker@hotmail.com','7 Bayport Lane ','Merrick','NY',11566,0.003800029
+'Diana','Cobb',NULL,'diana.cobb@hotmail.com','558 Vale St. ','Fullerton','CA',92831,0.705162091
+'Morton','Barron','(661) 386-4884','morton.barron@msn.com','542 Circle Rd. ','Bakersfield','CA',93306,0.779500065
+'Camille','Harvey',NULL,'camille.harvey@hotmail.com','859 Beaver Ridge Ave. ','Huntington','NY',11743,0.263714048
+'Lolita','O''neill',NULL,'lolita.o''neill@aol.com','36 Prairie Dr. ','Massapequa Park','NY',11762,0.880711111
+'Terese','Briggs',NULL,'terese.briggs@msn.com','16 N. Oak Valley St. ','Woodside','NY',11377,0.985974434
+'Majorie','Glover',NULL,'majorie.glover@msn.com','4 Garden Ave. ','Apple Valley','CA',92307,0.983076329
+'Vinnie','Chan',NULL,'vinnie.chan@aol.com','8750 Surrey St. ','Forest Hills','NY',11375,0.352702753
+'Ezra','Silva',NULL,'ezra.silva@msn.com','8629 Catherine Rd. ','New Windsor','NY',12553,0.741947197
+'Jovita','Bishop',NULL,'jovita.bishop@aol.com','8123 Wild Horse St. ','Staten Island','NY',10301,0.676234748
+'Kecia','Olsen',NULL,'kecia.olsen@msn.com','8389 Central St. ','Santa Cruz','CA',95060,0.714892225
+'Ilona','Spears',NULL,'ilona.spears@gmail.com','984 Canterbury Lane ','Port Jefferson Station','NY',11776,0.38497522
+'Senaida','Thompson',NULL,'senaida.thompson@msn.com','578 Golf Drive ','Bronx','NY',10451,0.471478418
+'Larae','Carney',NULL,'larae.carney@msn.com','9322 Glen Ridge Dr. ','Sunnyside','NY',11104,0.789174786
+'Sebrina','Hart',NULL,'sebrina.hart@yahoo.com','7679 Pacific St. ','Coram','NY',11727,0.340396954
+'Kristofer','Craig',NULL,'kristofer.craig@yahoo.com','6 Delaware Lane ','Plainview','NY',11803,0.543361553
+'Luciana','Mcgee',NULL,'luciana.mcgee@msn.com','8002 Cross St. ','Selden','NY',11784,0.713699993
+'Nicki','Fry',NULL,'nicki.fry@hotmail.com','950 Snake Hill Lane ','Endicott','NY',13760,0.309669879
+'Devin','Shaffer','(507) 557-2191','devin.shaffer@gmail.com','382 Third Ave. ','Rochester','NY',14606,0.009173735
+'Erlinda','Osborne',NULL,'erlinda.osborne@yahoo.com','148 Elm St. ','West Islip','NY',11795,0.501638125
+'Camila','Carroll','(210) 436-8676','camila.carroll@yahoo.com','72 Shub Farm Avenue ','San Antonio','TX',78213,0.815549579
+'Vicki','Wiggins',NULL,'vicki.wiggins@hotmail.com','71 Broad Ave. ','Wappingers Falls','NY',12590,0.58576082
+'Lois','Steele',NULL,'lois.steele@yahoo.com','7501 South Marlborough Street ','Ossining','NY',10562,0.539972479
+'Carola','Mcpherson',NULL,'carola.mcpherson@hotmail.com','578 Shirley Dr. ','Rego Park','NY',11374,0.539931572
+'Rochell','Cantrell',NULL,'rochell.cantrell@yahoo.com','437 Water Dr. ','Port Jefferson Station','NY',11776,0.409807531
+'Kasha','Sullivan',NULL,'kasha.sullivan@hotmail.com','48 Foster Rd. ','Scarsdale','NY',10583,0.984514089
+'Viva','Dawson',NULL,'viva.dawson@yahoo.com','446 Princess Ave. ','Orchard Park','NY',14127,0.709202903
+'Hue','Dalton',NULL,'hue.dalton@hotmail.com','7940 Oakwood Street ','Apple Valley','CA',92307,0.959367382
+'Andria','Rivers',NULL,'andria.rivers@aol.com','183 Ohio Ave. ','Amarillo','TX',79106,0.987314048
+'Hilary','Savage','(805) 753-6881','hilary.savage@yahoo.com','696 Howard Court ','Oxnard','CA',93035,0.136560839
+'Lavona','Austin',NULL,'lavona.austin@yahoo.com','926 South Euclid St. ','Utica','NY',13501,0.157151117
+'Doreatha','Ford',NULL,'doreatha.ford@yahoo.com','9413 Ryan Ave. ','Huntington','NY',11743,0.600924301
+'Alina','Mcleod',NULL,'alina.mcleod@msn.com','20 Winchester Street ','Patchogue','NY',11772,0.361277705
+'Aide','Franco',NULL,'aide.franco@msn.com','8017 Lake Forest St. ','Atwater','CA',95301,0.048268999
+'Genny','Hensley',NULL,'genny.hensley@yahoo.com','8849 Marconi Ave. ','Redondo Beach','CA',90278,0.183875182
+'Melita','Dominguez',NULL,'melita.dominguez@msn.com','9903 Santa Clara Lane ','Auburn','NY',13021,0.429671606
+'Fannie','Jenkins','(805) 774-5696','fannie.jenkins@msn.com','7858 E. Pawnee Dr. ','Oxnard','CA',93035,0.293369156
+'Bobbi','Banks',NULL,'bobbi.banks@yahoo.com','396 Wagon Rd. ','Bayside','NY',11361,0.599567266
+'Gwenn','Melton',NULL,'gwenn.melton@yahoo.com','9545 Wakehurst Drive ','Centereach','NY',11720,0.230540689
+'Laci','Castro',NULL,'laci.castro@hotmail.com','130 Birchpond Street ','Saint Albans','NY',11412,0.317039835
+'Evelina','Manning',NULL,'evelina.manning@aol.com','7515 Spring St. ','Mount Vernon','NY',10550,0.874380143
+'Tania','Swanson',NULL,'tania.swanson@yahoo.com','8646 Glen Eagles Ave. ','Longview','TX',75604,0.325500161
+'Laurel','Schultz',NULL,'laurel.schultz@hotmail.com','812 E. 1st Lane ','Mount Vernon','NY',10550,0.734301944
+'Carolyne','Conley',NULL,'carolyne.conley@gmail.com','431 Lees Creek Drive ','Floral Park','NY',11001,0.871524519
+'Eldridge','Greer',NULL,'eldridge.greer@aol.com','131 E. Madison St. ','Central Islip','NY',11722,0.99890699
+'Margret','Barnett',NULL,'margret.barnett@gmail.com','7509 Depot Rd. ','Forney','TX',75126,0.470554842
+'Oliva','Blackwell',NULL,'oliva.blackwell@hotmail.com','54 Ramblewood St. ','Elmhurst','NY',11373,0.25031399
+'Oralia','Farley',NULL,'oralia.farley@hotmail.com','747B E. Coffee Street ','Upland','CA',91784,0.797494106
+'Romaine','Salazar',NULL,'romaine.salazar@yahoo.com','7700 Wentworth Rd. ','Monsey','NY',10952,0.782103343
+'Hermila','Mckay',NULL,'hermila.mckay@yahoo.com','23 Garfield Dr. ','Coachella','CA',92236,0.207981162
+'Lloyd','Miranda',NULL,'lloyd.miranda@hotmail.com','9098 Jennings St. ','Encino','CA',91316,0.044272171
+'Mandi','Gibbs',NULL,'mandi.gibbs@gmail.com','80 Sycamore Drive ','East Elmhurst','NY',11369,0.297827732
+'Hue','May',NULL,'hue.may@aol.com','19 S. Lawrence Dr. ','Valley Stream','NY',11580,0.714774315
+'Tomika','Wilder',NULL,'tomika.wilder@aol.com','142 South Ocean St. ','New Hyde Park','NY',11040,0.196277187
+'Graig','Roth',NULL,'graig.roth@aol.com','7516 Wrangler Street ','West Babylon','NY',11704,0.94953351
+'Lamar','Greer',NULL,'lamar.greer@gmail.com','7909 Golden Star Ave. ','Levittown','NY',11756,0.107211916
+'Raymonde','Garcia',NULL,'raymonde.garcia@aol.com','55 NE. North St. ','Queensbury','NY',12804,0.549008783
+'Cira','Downs','(510) 788-4456','cira.downs@gmail.com','672 Sussex Ave. ','Oakland','CA',94603,0.933222212
+'Marisa','Chambers',NULL,'marisa.chambers@msn.com','15 E. Rock Creek Ave. ','Amityville','NY',11701,0.249795561
+'Rod','Hatfield',NULL,'rod.hatfield@hotmail.com','7090 Bridge Dr. ','Ronkonkoma','NY',11779,0.799917271
+'Quyen','Houston',NULL,'quyen.houston@gmail.com','7758 Homewood Dr. ','Central Islip','NY',11722,0.471590012
+'Han','Schneider',NULL,'han.schneider@gmail.com','40 Holly Street ','Elmhurst','NY',11373,0.012089637
+'Terrell','Mathis',NULL,'terrell.mathis@aol.com','9320 Center Ave. ','Selden','NY',11784,0.388354284
+'Spring','Hayes',NULL,'spring.hayes@hotmail.com','8591 Wentworth St. ','Ossining','NY',10562,0.238835539
+'Lecia','Hancock',NULL,'lecia.hancock@hotmail.com','9167 Pineknoll St. ','Schenectady','NY',12302,0.519190661
+'Twana','Arnold','(657) 988-1904','twana.arnold@msn.com','47 North Fairground Lane ','Anaheim','CA',92806,0.266209844
+'Yvone','Yates',NULL,'yvone.yates@gmail.com','9269 Blue Spring Ave. ','San Pablo','CA',94806,0.841310825
+'Agatha','Melton',NULL,'agatha.melton@yahoo.com','89 East Illinois Street ','Springfield Gardens','NY',11413,0.652295541
+'Lavonda','Stephenson',NULL,'lavonda.stephenson@gmail.com','37 Birchwood Dr. ','Bay Shore','NY',11706,0.145849021
+'Agnes','Sims','(716) 780-9901','agnes.sims@aol.com','170 Queen Lane ','Buffalo','NY',14215,0.196228501
+'Latricia','Lindsey',NULL,'latricia.lindsey@hotmail.com','288 Campfire Dr. ','Yorktown Heights','NY',10598,0.412462389
+'Yolando','Wade',NULL,'yolando.wade@hotmail.com','310 Wilson Ave. ','Massapequa','NY',11758,0.849052862
+'Nenita','Mooney',NULL,'nenita.mooney@hotmail.com','10 W. Bishop Street ','Lawndale','CA',90260,0.686506704
+'Kermit','Hyde',NULL,'kermit.hyde@hotmail.com','87 SE. Carson St. ','Patchogue','NY',11772,0.765988801
+'Angelique','Merrill',NULL,'angelique.merrill@gmail.com','8490 West High Noon Ave. ','South El Monte','CA',91733,0.467785328
+'Ilda','Roberson',NULL,'ilda.roberson@aol.com','8853 Lake St. ','Kingston','NY',12401,0.713465559
+'Corrinne','Garrison',NULL,'corrinne.garrison@yahoo.com','81 East Glenwood Ave. ','Victoria','TX',77904,0.250603367
+'Major','Merrill',NULL,'major.merrill@aol.com','78 Thatcher Court ','Astoria','NY',11102,0.745727902
+'Ouida','Gregory',NULL,'ouida.gregory@aol.com','7984 8th Street ','Merrick','NY',11566,0.988542593
+'Tajuana','Riddle',NULL,'tajuana.riddle@hotmail.com','24 St Margarets Ave. ','Bayside','NY',11361,0.125599508
+'Ricki','Bullock',NULL,'ricki.bullock@hotmail.com','79 Pennington Rd. ','Woodside','NY',11377,0.0924444
+'Celestine','Kent','(717) 890-4260','celestine.kent@aol.com','697 Fordham Street ','Lancaster','NY',14086,0.634746302
+'Debbra','Jacobson',NULL,'debbra.jacobson@yahoo.com','8316 West Bedford Ave. ','Ballston Spa','NY',12020,0.143525345
+'Kandis','Mills',NULL,'kandis.mills@hotmail.com','64 Beechwood Drive ','Hamburg','NY',14075,0.242768588
+'Wallace','Lane',NULL,'wallace.lane@aol.com','901 Liberty St. ','South Richmond Hill','NY',11419,0.643476372
+'Malisa','Mitchell',NULL,'malisa.mitchell@msn.com','87 Ridgewood Court ','Mount Vernon','NY',10550,0.257729392
+'Lilliam','Nolan',NULL,'lilliam.nolan@msn.com','8976 Berkshire Court ','Copperas Cove','TX',76522,0.709659382
+'Tad','Gardner',NULL,'tad.gardner@hotmail.com','9745 E. Wilson St. ','Niagara Falls','NY',14304,0.042494058
+'Petronila','Gallegos',NULL,'petronila.gallegos@gmail.com','8053 Aspen St. ','Howard Beach','NY',11414,0.2395766
+'Yun','Nelson',NULL,'yun.nelson@hotmail.com','529 Durham Street ','Ballston Spa','NY',12020,0.022944229
+'Edgar','Horn',NULL,'edgar.horn@aol.com','7270 W. Cherry Hill Lane ','West Babylon','NY',11704,0.093444804
+'Chantay','Maynard',NULL,'chantay.maynard@gmail.com','7483 1st Ave. ','Elmhurst','NY',11373,0.748358761
+'Donette','Mccarthy',NULL,'donette.mccarthy@yahoo.com','500 NW. Maiden Dr. ','Redondo Beach','CA',90278,0.438077944
+'Mariam','Miranda',NULL,'mariam.miranda@aol.com','18 East Washington Avenue ','Franklin Square','NY',11010,0.400684986
+'Rosalie','Coffey',NULL,'rosalie.coffey@gmail.com','789 Amerige Dr. ','Upland','CA',91784,0.721402384
+'Cathey','Lamb',NULL,'cathey.lamb@msn.com','9621 Ryan Drive ','Bayside','NY',11361,0.635156883
+'Alyse','Jacobson',NULL,'alyse.jacobson@yahoo.com','10 West Devon Lane ','Massapequa Park','NY',11762,0.097372216
+'India','Barron',NULL,'india.barron@msn.com','834 W. Pleasant Rd. ','Huntington','NY',11743,0.622811366
+'Cris','Dunn',NULL,'cris.dunn@yahoo.com','1 Pawnee Street ','Pittsford','NY',14534,0.56231992
+'Ophelia','Rodgers',NULL,'ophelia.rodgers@gmail.com','133 Joy Ridge Drive ','Hopewell Junction','NY',12533,0.775372825
+'Barrett','Sanders',NULL,'barrett.sanders@aol.com','32 Hawthorne St. ','Longview','TX',75604,0.207257187
+'Bernardina','Cooper',NULL,'bernardina.cooper@msn.com','223 Glen Creek Ave. ','Whitestone','NY',11357,0.350639887
+'Douglas','Richards',NULL,'douglas.richards@hotmail.com','221 Arcadia Lane ','Valley Stream','NY',11580,0.737174499
+'Phillis','Fowler',NULL,'phillis.fowler@aol.com','8976 N. Hall Street ','Clifton Park','NY',12065,0.844648443
+'Reyes','Merritt',NULL,'reyes.merritt@yahoo.com','48 Lexington Rd. ','Staten Island','NY',10301,0.398826339
+'Nathalie','Knowles',NULL,'nathalie.knowles@aol.com','4 Cactus Street ','West Islip','NY',11795,0.36622542
+'Vallie','Dixon',NULL,'vallie.dixon@yahoo.com','85 E. Ann Drive ','Rowlett','TX',75088,0.311095828
+'Elnora','Simpson',NULL,'elnora.simpson@yahoo.com','7157 Shore Ave. ','Bellmore','NY',11710,0.043953301
+'Ivelisse','Nixon','(281) 941-4933','ivelisse.nixon@aol.com','782 Boston Ave. ','Houston','TX',77016,0.982227652
+'Shanti','Johnston',NULL,'shanti.johnston@gmail.com','722 Alderwood Drive ','Staten Island','NY',10301,0.163882313
+'Martha','Burgess',NULL,'martha.burgess@msn.com','9631 St Margarets Lane ','Woodhaven','NY',11421,0.277894645
+'Neville','Mcclain',NULL,'neville.mcclain@yahoo.com','781 Buttonwood Ave. ','West Hempstead','NY',11552,0.145943672
+'Ghislaine','Compton',NULL,'ghislaine.compton@aol.com','8930 Princess St. ','Lindenhurst','NY',11757,0.98695214
+'Leanna','Manning',NULL,'leanna.manning@yahoo.com','39 E. Stillwater Ave. ','Hicksville','NY',11801,0.949582753
+'Marshall','Johnson',NULL,'marshall.johnson@yahoo.com','44 Greenview St. ','Vista','CA',92083,0.134920599
+'Zelda','Pratt','(717) 428-4018','zelda.pratt@gmail.com','74 Trusel Drive ','Lancaster','NY',14086,0.65103576
+'Joel','Wynn','(619) 210-6032','joel.wynn@aol.com','7 North Oak Ave. ','San Diego','CA',92111,0.248299008
+'Yahaira','Robertson',NULL,'yahaira.robertson@yahoo.com','142 Roehampton Dr. ','Endicott','NY',13760,0.889047659
+'Sandy','Mills',NULL,'sandy.mills@gmail.com','333 Olive Ave. ','Schenectady','NY',12302,0.561028599
+'Cassidy','Clark',NULL,'cassidy.clark@hotmail.com','9879 Old Kingston Road ','Astoria','NY',11102,0.918272013
+'Kristy','Watkins',NULL,'kristy.watkins@gmail.com','977 South Brook Ave. ','Howard Beach','NY',11414,0.636618017
+'Tina','Bush',NULL,'tina.bush@aol.com','8038 Bellevue Street ','Maspeth','NY',11378,0.056754953
+'Veronika','Rollins',NULL,'veronika.rollins@yahoo.com','94 Arnold Ave. ','Webster','NY',14580,0.609456988
+'Kristel','Byrd',NULL,'kristel.byrd@hotmail.com','9967 Piper Street ','Hicksville','NY',11801,0.837828898
+'Shay','Stephenson',NULL,'shay.stephenson@aol.com','9569 4th Lane ','Smithtown','NY',11787,0.538429811
+'George','Pickett',NULL,'george.pickett@msn.com','691 Rocky River St. ','Sunnyside','NY',11104,0.65640788
+'Renato','Morton',NULL,'renato.morton@msn.com','8526 Sherwood Street ','Mount Vernon','NY',10550,0.633363097
+'Marcy','Rodriguez',NULL,'marcy.rodriguez@gmail.com','97 Trusel Drive ','Lockport','NY',14094,0.208858984
+'Edmund','Gaines',NULL,'edmund.gaines@gmail.com','8643 Gartner St. ','Copperas Cove','TX',76522,0.896059516
+'Lory','Berg',NULL,'lory.berg@aol.com','64 Vine Drive ','Oswego','NY',13126,0.067266683
+'Pamala','Fowler',NULL,'pamala.fowler@gmail.com','399 Leatherwood St. ','Ballston Spa','NY',12020,0.009417223
+'Leone','Emerson',NULL,'leone.emerson@msn.com','460 Smith Store Ave. ','Whitestone','NY',11357,0.279792769
+'Brain','Skinner',NULL,'brain.skinner@hotmail.com','8676 Ketch Harbour Ave. ','Euless','TX',76039,0.082911748
+'Roseanne','Maynard',NULL,'roseanne.maynard@yahoo.com','219 Old Paris Hill Dr. ','Euless','TX',76039,0.043964488
+'Corinna','Adams',NULL,'corinna.adams@msn.com','38 Trenton Court ','Rosedale','NY',11422,0.091374638
+'Kellye','Campbell',NULL,'kellye.campbell@gmail.com','75 Marsh St. ','Baldwinsville','NY',13027,0.053324069
+'Erna','Sloan',NULL,'erna.sloan@aol.com','9449 Fifth Avenue ','Howard Beach','NY',11414,0.61402131
+'Carolann','Russell',NULL,'carolann.russell@hotmail.com','9308 Selby Ave. ','Glen Cove','NY',11542,0.704421286
+'Gilbert','Calhoun',NULL,'gilbert.calhoun@msn.com','7339 Summer Drive ','East Elmhurst','NY',11369,0.572658723
+'Manie','Maxwell',NULL,'manie.maxwell@gmail.com','85 Brickell Ave. ','Ronkonkoma','NY',11779,0.332332554
+'Giselle','Robles',NULL,'giselle.robles@hotmail.com','9747 N. El Dorado Dr. ','San Angelo','TX',76901,0.115976944
+'Tessie','Farmer',NULL,'tessie.farmer@msn.com','870 Cottage Ave. ','Plattsburgh','NY',12901,0.826314328
+'Felica','Munoz',NULL,'felica.munoz@aol.com','24 West Rockwell Dr. ','South Ozone Park','NY',11420,0.565603466
+'Kathyrn','Bush',NULL,'kathyrn.bush@gmail.com','90 Devon St. ','Bronx','NY',10451,0.421330975
+'Sylvester','Chan',NULL,'sylvester.chan@hotmail.com','659 Arcadia Street ','Rocklin','CA',95677,0.211034168
+'Lizette','Ellison',NULL,'lizette.ellison@hotmail.com','865 Sunbeam Street ','Port Washington','NY',11050,0.408503531
+'Ernestina','Skinner',NULL,'ernestina.skinner@hotmail.com','52 Spring Drive ','Elmhurst','NY',11373,0.052486805
+'Phyllis','Hill',NULL,'phyllis.hill@yahoo.com','576 Devon Ave. ','Syosset','NY',11791,0.957028981
+'Stephanie','Browning',NULL,'stephanie.browning@yahoo.com','9156 Lantern St. ','Rowlett','TX',75088,0.656383674
+'Arlena','Buckner',NULL,'arlena.buckner@hotmail.com','629 Locust Ave. ','New Hyde Park','NY',11040,0.500835205
+'Lezlie','Thompson',NULL,'lezlie.thompson@yahoo.com','73 Vernon St. ','Freeport','NY',11520,0.198928155
+'Brittney','Rojas',NULL,'brittney.rojas@aol.com','2 E. Overlook Ave. ','Kingston','NY',12401,0.33643906
+'Phylis','Adkins','(212) 325-9145','phylis.adkins@msn.com','7781 James Ave. ','New York','NY',10002,0.113700962
+'Lean','Stark',NULL,'lean.stark@msn.com','215 Old Pumpkin Hill St. ','Upland','CA',91784,0.642608052
+'Lara','Guy',NULL,'lara.guy@aol.com','9809 E. Walnut Drive ','Ronkonkoma','NY',11779,0.444284608
+'Inga','Koch',NULL,'inga.koch@msn.com','8445 South New Court ','New Windsor','NY',12553,0.294404022
+'Klara','Kim',NULL,'klara.kim@gmail.com','9660 Sherman Lane ','Rome','NY',13440,0.592221632
+'Julianne','Shannon',NULL,'julianne.shannon@hotmail.com','28 Applegate Street ','Sugar Land','TX',77478,0.536097581
+'Loni','Mullen',NULL,'loni.mullen@msn.com','55 Thompson Avenue ','South Ozone Park','NY',11420,0.536421508
+'Olympia','Figueroa',NULL,'olympia.figueroa@hotmail.com','587 Surrey St. ','Hopewell Junction','NY',12533,0.096329437
+'Mellie','Puckett',NULL,'mellie.puckett@yahoo.com','64 Van Dyke St. ','Fresh Meadows','NY',11365,0.702401866
+'Shonta','Preston',NULL,'shonta.preston@msn.com','74 Division St. ','Utica','NY',13501,0.95049788
+'Lore','Sykes','(716) 382-5169','lore.sykes@aol.com','7050 Beach Drive ','Buffalo','NY',14215,0.447988579
+'Julia','Joyner',NULL,'julia.joyner@msn.com','2 Valley View Dr. ','Astoria','NY',11102,0.438360149
+'Lynwood','Jackson',NULL,'lynwood.jackson@aol.com','9449 Linda Street ','Longview','TX',75604,0.301144742
+'Rosalva','Hamilton',NULL,'rosalva.hamilton@aol.com','9883 Cedar Dr. ','Campbell','CA',95008,0.130574953
+'Domingo','Casey','(408) 761-9212','domingo.casey@msn.com','8665 Cypress Street ','San Jose','CA',95127,0.231342175
+'Rodrigo','Durham',NULL,'rodrigo.durham@aol.com','82 Old Church Road ','Richmond Hill','NY',11418,0.840612074
+'Dwain','Carlson',NULL,'dwain.carlson@gmail.com','951 North Trusel Ave. ','Smithtown','NY',11787,0.26409067
+'Erlinda','Humphrey',NULL,'erlinda.humphrey@hotmail.com','532 South Victoria St. ','New Windsor','NY',12553,0.575957327
+'Silas','Tate','(361) 219-2149','silas.tate@yahoo.com','9754 53rd Court ','Corpus Christi','TX',78418,0.472601071
+'Patience','Clayton',NULL,'patience.clayton@hotmail.com','68 Chestnut Dr. ','Niagara Falls','NY',14304,0.094905518
+'Mila','Good',NULL,'mila.good@yahoo.com','812 East Longbranch Ave. ','Plattsburgh','NY',12901,0.540838448
+'Tanesha','Sawyer',NULL,'tanesha.sawyer@aol.com','9B Kingston Lane ','Rosedale','NY',11422,0.380966894
+'Onita','Macdonald',NULL,'onita.macdonald@yahoo.com','94 Wood St. ','Glen Cove','NY',11542,0.082998061
+'Janine','Manning',NULL,'janine.manning@gmail.com','9118B Campfire St. ','Howard Beach','NY',11414,0.554100948
+'Melodie','Melton',NULL,'melodie.melton@yahoo.com','12 S. 8th Road ','Smithtown','NY',11787,0.202804864
+'Ethelyn','Ray',NULL,'ethelyn.ray@yahoo.com','80 South Sutor Lane ','Garden City','NY',11530,0.622465599
+'Phebe','Turner',NULL,'phebe.turner@aol.com','4 West York Street ','Sunnyside','NY',11104,0.614564356
+'Chloe','Patel',NULL,'chloe.patel@yahoo.com','407 Homewood Street ','Santa Monica','CA',90403,0.603158493
+'Hilda','Harvey',NULL,'hilda.harvey@gmail.com','9808 W. Cleveland Ave. ','Ballston Spa','NY',12020,0.251645119
+'Gilberte','Duke','(915) 903-7860','gilberte.duke@gmail.com','12 Birchwood Dr. ','El Paso','TX',79930,0.889515289
+'Willian','Hardin',NULL,'willian.hardin@msn.com','836 West Street ','Oswego','NY',13126,0.377937984
+'Janna','Hayden',NULL,'janna.hayden@msn.com','32 Hilldale Street ','Longview','TX',75604,0.936762919
+'Letisha','May',NULL,'letisha.may@yahoo.com','9965 Princeton Lane ','North Tonawanda','NY',14120,0.849377179
+'Graig','Cannon',NULL,'graig.cannon@gmail.com','36 Oklahoma Ave. ','Syosset','NY',11791,0.327881546
+'Coleen','Navarro',NULL,'coleen.navarro@aol.com','990 Broad Rd. ','Webster','NY',14580,0.433865647
+'Lucilla','Williams',NULL,'lucilla.williams@hotmail.com','42 Cedar Street ','San Carlos','CA',94070,0.592430711
+'Rosanne','George',NULL,'rosanne.george@yahoo.com','38 Pleasant St. ','Ossining','NY',10562,0.158146442
+'Ashlie','Parrish',NULL,'ashlie.parrish@hotmail.com','48 Mill Drive ','Monsey','NY',10952,0.476384622
+'Alissa','Craft',NULL,'alissa.craft@hotmail.com','249 Maple Street ','Ossining','NY',10562,0.332741512
+'Letty','Cobb',NULL,'letty.cobb@msn.com','8652 Wellington Street ','Depew','NY',14043,0.129904791
+'Nathaniel','Richard',NULL,'nathaniel.richard@gmail.com','3 Nicolls Lane ','New Windsor','NY',12553,0.370210086
+'Elaina','Key',NULL,'elaina.key@msn.com','1 Main St. ','Plainview','NY',11803,0.719253051
+'Stefani','Gamble','(845) 724-2996','stefani.gamble@aol.com','9119 W. Victoria St. ','New City','NY',10956,0.713169655
+'Bettyann','Acosta','(717) 746-6658','bettyann.acosta@gmail.com','7949 Chapel St. ','Lancaster','NY',14086,0.640337868
+'Crysta','Velez','(281) 529-3469','crysta.velez@yahoo.com','64 South Front Street ','Houston','TX',77016,0.232441346
+'Carisa','Carpenter',NULL,'carisa.carpenter@hotmail.com','551 Belmont Lane ','Victoria','TX',77904,0.692705963
+'Jule','Davenport',NULL,'jule.davenport@aol.com','19 River St. ','San Carlos','CA',94070,0.786912847
+'Lonna','Franks',NULL,'lonna.franks@yahoo.com','667 Brickyard Street ','Ontario','CA',91762,0.31470721
+'Elease','Dejesus',NULL,'elease.dejesus@gmail.com','7800 Magnolia Street ','Oswego','NY',13126,0.739384855
+'Maira','Long',NULL,'maira.long@msn.com','7587 Bear Hill Street ','Hicksville','NY',11801,0.594203026
+'Jana','Thomas','(408) 624-8137','jana.thomas@yahoo.com','283 E. Spring Dr. ','San Jose','CA',95127,0.145940552
+'Hae','Ramirez',NULL,'hae.ramirez@hotmail.com','9367 Lake Street ','Baldwinsville','NY',13027,0.681705925
+'Erik','Leblanc',NULL,'erik.leblanc@aol.com','7 East Nut Swamp Street ','Sugar Land','TX',77478,0.062790575
+'Daina','Sampson',NULL,'daina.sampson@msn.com','556 Wellington St. ','Longview','TX',75604,0.409506856
+'Delmar','Wise',NULL,'delmar.wise@yahoo.com','8355 Kingston Avenue ','Lockport','NY',14094,0.932034662
+'Alita','Salinas',NULL,'alita.salinas@hotmail.com','8550 Bear Hill Ave. ','Uniondale','NY',11553,0.828114375
+'Elenore','William',NULL,'elenore.william@msn.com','23 Rockland St. ','Mcallen','TX',78501,0.441301505
+'Nikita','Roy',NULL,'nikita.roy@aol.com','9703 N. Snake Hill St. ','Pittsford','NY',14534,0.771532841
+'Inocencia','Key',NULL,'inocencia.key@hotmail.com','36 Wild Rose Ave. ','Massapequa Park','NY',11762,0.039835901
+'Liliana','Kerr',NULL,'liliana.kerr@yahoo.com','3 Cherry Drive ','Desoto','TX',75115,0.01458554
+'Hortencia','O''neil',NULL,'hortencia.o''neil@hotmail.com','1 Gulf Rd. ','Rockville Centre','NY',11570,0.921666229
+'Beryl','Bennett','(916) 422-6956','beryl.bennett@aol.com','9563 Edgemont St. ','Sacramento','CA',95820,0.451456981
+'Alishia','Elliott',NULL,'alishia.elliott@aol.com','8905 Courtland Ave. ','Mount Vernon','NY',10550,0.883248891
+'Vernia','Madden','(248) 206-3697','vernia.madden@aol.com','5 Iroquois Street ','Troy','NY',12180,0.044051584
+'Kristel','Bullock',NULL,'kristel.bullock@yahoo.com','7292 Armstrong Drive ','Smithtown','NY',11787,0.878839708
+'Ruthanne','Hoover',NULL,'ruthanne.hoover@aol.com','835 Paris Hill Road ','Torrance','CA',90505,0.550831553
+'James','Robles',NULL,'james.robles@aol.com','9 Chapel Lane ','North Tonawanda','NY',14120,0.331101984
+'Evelin','Vargas',NULL,'evelin.vargas@msn.com','7049 Pin Oak Ave. ','Webster','NY',14580,0.16401984
+'Elvia','Cardenas',NULL,'elvia.cardenas@hotmail.com','8 Paris Hill St. ','Massapequa','NY',11758,0.873977461
+'Randee','Pitts',NULL,'randee.pitts@msn.com','7371B Essex Street ','Canyon Country','CA',91387,0.8378081
+'Lea','Irwin',NULL,'lea.irwin@gmail.com','845 Adams Lane ','New Windsor','NY',12553,0.903593934
+'Bryce','Monroe',NULL,'bryce.monroe@aol.com','52 Cooper Lane ','Kingston','NY',12401,0.866230852
+'Katina','Mcintosh','(661) 464-1523','katina.mcintosh@yahoo.com','263 Swanson Dr. ','Bakersfield','CA',93306,0.357021954
+'Guillermo','Hart','(212) 652-7198','guillermo.hart@hotmail.com','81 Indian Summer Drive ','New York','NY',10002,0.448710689
+'Joann','Barber',NULL,'joann.barber@gmail.com','8945 Courtland Street ','Santa Monica','CA',90403,0.69193625
+'Thurman','Ellis',NULL,'thurman.ellis@gmail.com','20 Augusta Road ','Pleasanton','CA',94566,0.045407995
+'Delana','Wagner',NULL,'delana.wagner@aol.com','8499 Mill Pond Road ','Clifton Park','NY',12065,0.939816762
+'Porter','Bass',NULL,'porter.bass@hotmail.com','370 North Alderwood Dr. ','San Angelo','TX',76901,0.630583274
+'Yvonne','Bean',NULL,'yvonne.bean@yahoo.com','20 W. Marsh Ave. ','Wappingers Falls','NY',12590,0.41434377
+'Lurline','Rivers',NULL,'lurline.rivers@msn.com','69 Pine Street ','Howard Beach','NY',11414,0.462655216
+'Ocie','Slater',NULL,'ocie.slater@msn.com','7799 W. Bohemia Dr. ','Hamburg','NY',14075,0.324345176
+'Genevie','Miles',NULL,'genevie.miles@aol.com','45 West Sulphur Springs Ave. ','Monroe','NY',10950,0.726588368
+'Sherilyn','Wilcox',NULL,'sherilyn.wilcox@gmail.com','905 North Buckingham Lane ','Ossining','NY',10562,0.704464256
+'Aida','Koch',NULL,'aida.koch@gmail.com','9778 3rd Drive ','West Hempstead','NY',11552,0.035088262
+'Emory','O''connor','(507) 606-2192','emory.o''connor@gmail.com','34 Foxrun Street ','Rochester','NY',14606,0.604326497
+'Maximina','Hutchinson','(361) 164-3098','maximina.hutchinson@hotmail.com','53 Stillwater Avenue ','Corpus Christi','TX',78418,0.27980788
+'Marina','Hinton',NULL,'marina.hinton@yahoo.com','7440 North Oxford St. ','Encino','CA',91316,0.075382504
+'Danyell','Dickerson',NULL,'danyell.dickerson@msn.com','8306 Fieldstone Dr. ','Central Islip','NY',11722,0.264301607
+'Davis','Long','(717) 653-1755','davis.long@msn.com','929 Elmwood Dr. ','Lancaster','NY',14086,0.655581895
+'Lynn','Mcmahon',NULL,'lynn.mcmahon@msn.com','9 Surrey St. ','Scarsdale','NY',10583,0.7391092
+'Tonja','Henderson',NULL,'tonja.henderson@aol.com','82 Alton St. ','Scarsdale','NY',10583,0.267716474
+'Krissy','Ochoa',NULL,'krissy.ochoa@msn.com','80 Queen Ave. ','Port Washington','NY',11050,0.536646024
+'Angella','Bridges',NULL,'angella.bridges@yahoo.com','8708 Sycamore St. ','Pittsford','NY',14534,0.992157642
+'Angele','Castro',NULL,'angele.castro@yahoo.com','15 Acacia Drive ','Palos Verdes Peninsula','CA',90274,0.770103719
+'Siobhan','Lang',NULL,'siobhan.lang@gmail.com','3 Monroe Lane ','Levittown','NY',11756,0.251771804
+'Venessa','Frost',NULL,'venessa.frost@msn.com','621 West School Rd. ','Scarsdale','NY',10583,0.570666836
+'Verna','Solis','(507) 115-1633','verna.solis@yahoo.com','7 Lincoln Lane ','Rochester','NY',14606,0.866169537
+'Steve','Bender',NULL,'steve.bender@gmail.com','908 N. Pennington Dr. ','Scarsdale','NY',10583,0.08599284
+'Aileen','Marquez',NULL,'aileen.marquez@msn.com','8899 Newbridge Street ','Torrance','CA',90505,0.458741311
+'Kattie','Stevenson',NULL,'kattie.stevenson@aol.com','52 Carson Street ','Helotes','TX',78023,0.077400104
+'Hassan','Nash',NULL,'hassan.nash@yahoo.com','8105 University Lane ','Hicksville','NY',11801,0.708280205
+'Delfina','Gilliam',NULL,'delfina.gilliam@hotmail.com','9463 Bayberry Rd. ','West Babylon','NY',11704,0.163906062
+'Venus','Hewitt',NULL,'venus.hewitt@msn.com','9835 Old Cemetery Lane ','Farmingdale','NY',11735,0.897892322
+'Stephen','Vega','(657) 288-3778','stephen.vega@msn.com','5 Briarwood St. ','Anaheim','CA',92806,0.570587681
+'Ciera','Koch',NULL,'ciera.koch@gmail.com','881 Lawrence Drive ','Euless','TX',76039,0.408392837
+'Christel','Barber','(916) 679-3547','christel.barber@hotmail.com','320 Briarwood Lane ','Sacramento','CA',95820,0.891009647
+'Arline','Lawson','(516) 792-3395','arline.lawson@gmail.com','48 Whitemarsh Lane ','Hempstead','NY',11550,0.082369897
+'Iva','Wilcox',NULL,'iva.wilcox@aol.com','452 South Mayflower Drive ','Kingston','NY',12401,0.61996159
+'Maple','Griffin',NULL,'maple.griffin@gmail.com','20 Glendale Drive ','Copperas Cove','TX',76522,0.944762333
+'Anisha','Lang',NULL,'anisha.lang@aol.com','265 Peachtree St. ','Rome','NY',13440,0.111487268
+'Brent','Calderon','(361) 981-8725','brent.calderon@aol.com','3 Thomas St. ','Corpus Christi','TX',78418,0.121822577
+'Margit','Osborn',NULL,'margit.osborn@yahoo.com','909 Gulf Drive ','Plainview','NY',11803,0.663873428
+'Novella','Patel',NULL,'novella.patel@gmail.com','500 Livingston Street ','Glen Cove','NY',11542,0.952187368
+'Laurette','Hebert',NULL,'laurette.hebert@msn.com','18 South Constitution Court ','Canandaigua','NY',14424,0.525854024
+'Jonna','Brown',NULL,'jonna.brown@aol.com','1 Spring Drive ','Mahopac','NY',10541,0.802072222
+'Jennell','Solis','(507) 421-7354','jennell.solis@hotmail.com','194 2nd Rd. ','Rochester','NY',14606,0.387984485
+'Ruth','Horton',NULL,'ruth.horton@gmail.com','488 Mulberry Ave. ','Hollis','NY',11423,0.27984574
+'Samual','Warner','(631) 151-4988','samual.warner@gmail.com','8735 Thatcher Dr. ','Brentwood','NY',11717,0.657900519
+'Damian','Mills','(562) 924-3079','damian.mills@yahoo.com','7747 Elm Dr. ','Long Beach','NY',11561,0.719976161
+'Margaretta','Clayton',NULL,'margaretta.clayton@yahoo.com','524 San Pablo Ave. ','Ridgecrest','CA',93555,0.232975991
+'Marcell','Barrett',NULL,'marcell.barrett@gmail.com','266 Elm Drive ','Astoria','NY',11102,0.001781551
+'Annis','Sanchez','(424) 352-6275','annis.sanchez@aol.com','4 Edgewater Road ','Los Angeles','CA',90008,0.768988092
+'Ayanna','Cherry',NULL,'ayanna.cherry@yahoo.com','8829 Galvin Rd. ','Smithtown','NY',11787,0.358348789
+'Barton','Cox',NULL,'barton.cox@yahoo.com','8220 Creekside Street ','Amityville','NY',11701,0.137698719
+'Diana','Reyes',NULL,'diana.reyes@msn.com','7415 Annadale St. ','Bronx','NY',10451,0.186660591
+'Ingeborg','Ellison',NULL,'ingeborg.ellison@yahoo.com','360 Trusel St. ','Ithaca','NY',14850,0.338756056
+'Carter','Booth',NULL,'carter.booth@msn.com','82 Beech Drive ','Port Chester','NY',10573,0.002286837
+'Christel','Cardenas','(562) 342-8083','christel.cardenas@aol.com','428 S. Swanson Drive ','Long Beach','NY',11561,0.652445576
+'Orval','Hunter',NULL,'orval.hunter@aol.com','35 Wagon Drive ','San Angelo','TX',76901,0.821536841
+'Marguerite','Berger',NULL,'marguerite.berger@aol.com','875 Arch Lane ','Fullerton','CA',92831,0.095924532
+'Ivette','Warren',NULL,'ivette.warren@gmail.com','8408 Thomas Street ','Franklin Square','NY',11010,0.087672855
+'Milagros','Weber',NULL,'milagros.weber@hotmail.com','7591 Glendale Ave. ','Harlingen','TX',78552,0.59267512
+'Marcel','Lindsay',NULL,'marcel.lindsay@hotmail.com','249 Peninsula St. ','Ossining','NY',10562,0.175467295
+'Louis','Powell',NULL,'louis.powell@aol.com','368 Sugar Rd. ','Staten Island','NY',10301,0.568102314
+'Vanda','Holmes',NULL,'vanda.holmes@aol.com','9835 Wild Rose Drive ','Syosset','NY',11791,0.173599922
+'Loreen','Byers',NULL,'loreen.byers@yahoo.com','83 S. Rockledge Circle ','South Ozone Park','NY',11420,0.393672793
+'Casimira','Chapman',NULL,'casimira.chapman@yahoo.com','67 Snake Hill St. ','Monroe','NY',10950,0.36207221
+'Brigida','Larson',NULL,'brigida.larson@hotmail.com','8789 Sycamore Lane ','Canyon Country','CA',91387,0.938403193
+'Chere','Alston',NULL,'chere.alston@gmail.com','16 Lower River Street ','Patchogue','NY',11772,0.402999969
+'Giovanna','Jefferson',NULL,'giovanna.jefferson@gmail.com','9394 Riverside St. ','Ridgecrest','CA',93555,0.909740183
+'Demarcus','Reese',NULL,'demarcus.reese@gmail.com','8087 Armstrong Dr. ','Yorktown Heights','NY',10598,0.175057389
+'Amina','Salazar',NULL,'amina.salazar@aol.com','944 Wellington Street ','Canandaigua','NY',14424,0.138302371
+'Serafina','Clemons',NULL,'serafina.clemons@gmail.com','851 Brown Ave. ','Shirley','NY',11967,0.448054372
+'Trinidad','Mcclain',NULL,'trinidad.mcclain@msn.com','98 Tunnel Drive ','Baldwin','NY',11510,0.323539947
+'Heather','Chaney',NULL,'heather.chaney@yahoo.com','4 Morris Dr. ','Jamestown','NY',14701,0.580588525
+'Latoya','Johns',NULL,'latoya.johns@hotmail.com','7914 W. Woodsman St. ','Ballston Spa','NY',12020,0.398492898
+'Shiloh','Reeves',NULL,'shiloh.reeves@msn.com','818 Kirkland Lane ','West Babylon','NY',11704,0.114957724
+'Lee','Roman','(631) 913-6967','lee.roman@gmail.com','4 Canal Ave. ','Brentwood','NY',11717,0.977617824
+'Cami','Williamson',NULL,'cami.williamson@hotmail.com','9511A Windsor Drive ','Massapequa','NY',11758,0.540680424
+'Sharell','Ross',NULL,'sharell.ross@msn.com','7830 Devonshire Ave. ','Vista','CA',92083,0.073902082
+'Jerald','Blackwell',NULL,'jerald.blackwell@hotmail.com','8364 South Wakehurst Ave. ','East Elmhurst','NY',11369,0.855194407
+'Ruthanne','Franco',NULL,'ruthanne.franco@yahoo.com','61 Applegate St. ','Astoria','NY',11102,0.324079105
+'Marjory','Leonard',NULL,'marjory.leonard@msn.com','800 Greystone Lane ','Apple Valley','CA',92307,0.201896731
+'Jimmy','Russell',NULL,'jimmy.russell@hotmail.com','33 Iroquois Ave. ','Howard Beach','NY',11414,0.263048789
+'Berneice','Pollard',NULL,'berneice.pollard@hotmail.com','607 Bohemia Street ','Forney','TX',75126,0.170260099
+'Deangelo','Cooley',NULL,'deangelo.cooley@aol.com','3 NE. Edgewood Rd. ','Rosedale','NY',11422,0.867198988
+'Katia','Henry',NULL,'katia.henry@msn.com','69 E. Columbia Ave. ','Bethpage','NY',11714,0.417766981
+'Sebrina','Gross',NULL,'sebrina.gross@yahoo.com','993 Glendale Drive ','Garland','TX',75043,0.174330334
+'Josephine','Dale',NULL,'josephine.dale@aol.com','8214 West Drive ','Baldwinsville','NY',13027,0.133812843
+'Alma','Peck',NULL,'alma.peck@aol.com','298 South Bay Meadows Drive ','Corona','NY',11368,0.444878305
+'Ling','Newman',NULL,'ling.newman@msn.com','832 Spring Road ','South Richmond Hill','NY',11419,0.376464605
+'Nichelle','Rosario',NULL,'nichelle.rosario@hotmail.com','709 Dunbar Ave. ','Garden City','NY',11530,0.280265868
+'Shenna','Benton','(212) 578-2912','shenna.benton@msn.com','57 Shadow Brook Road ','New York','NY',10002,0.465835483
+'Philip','Bryan','(510) 533-4262','philip.bryan@hotmail.com','914 Devonshire Court ','Oakland','CA',94603,0.982032089
+'Carita','Salinas',NULL,'carita.salinas@yahoo.com','90 Griffin Street ','Maspeth','NY',11378,0.527634664
+'Janie','Herrera',NULL,'janie.herrera@gmail.com','652 Westport Street ','Elmhurst','NY',11373,0.952770152
+'Lorraine','Marks',NULL,'lorraine.marks@msn.com','160 North Pearl Street ','San Carlos','CA',94070,0.20407549
+'Nicolas','Carlson',NULL,'nicolas.carlson@yahoo.com','7899 Spruce Street ','Saint Albans','NY',11412,0.925130697
+'Hye','Mercer',NULL,'hye.mercer@gmail.com','9681 Redwood St. ','Mahopac','NY',10541,0.46303073
+'Adena','Blake',NULL,'adena.blake@hotmail.com','684 Westport Drive ','Ballston Spa','NY',12020,0.723716497
+'Coleman','Boyd','(915) 607-6336','coleman.boyd@yahoo.com','9740 Bay Meadows Drive ','El Paso','TX',79930,0.616908763
+'Daphine','Willis',NULL,'daphine.willis@msn.com','152 Shady St. ','Farmingdale','NY',11735,0.326196524
+'Jenine','Dawson',NULL,'jenine.dawson@msn.com','17 Park Street ','Endicott','NY',13760,0.723623263
+'Shanita','Wiley',NULL,'shanita.wiley@yahoo.com','121 Bridge Lane ','Saint Albans','NY',11412,0.075913132
+'Shanna','Bonner',NULL,'shanna.bonner@msn.com','386 Lafayette Road ','Canandaigua','NY',14424,0.918136616
+'Ping','Quinn',NULL,'ping.quinn@gmail.com','9051 Hanover Dr. ','Rowlett','TX',75088,0.447536192
+'Saran','Moses',NULL,'saran.moses@yahoo.com','94 Hall Dr. ','Brooklyn','NY',11201,0.490431026
+'Tonja','Bean',NULL,'tonja.bean@aol.com','9 Middle River St. ','Fairport','NY',14450,0.159861296
+'Vernon','Knowles',NULL,'vernon.knowles@yahoo.com','5 Olive Lane ','Huntington Station','NY',11746,0.180080549
+'Jeannette','Skinner',NULL,'jeannette.skinner@yahoo.com','8886 High Point Drive ','Forest Hills','NY',11375,0.699077354
+'Rico','Salas',NULL,'rico.salas@msn.com','8041 Walt Whitman St. ','Centereach','NY',11720,0.152042379
+'Tangela','Hurley',NULL,'tangela.hurley@msn.com','49 North Cross St. ','Campbell','CA',95008,0.931475112
+'Randee','Lester',NULL,'randee.lester@gmail.com','81 Bear Hill Street ','Centereach','NY',11720,0.332026437
+'Ashanti','Hammond',NULL,'ashanti.hammond@msn.com','9202 W. Lyme Ave. ','Nanuet','NY',10954,0.64036946
+'Garry','Juarez',NULL,'garry.juarez@hotmail.com','670 Nut Swamp Drive ','Forest Hills','NY',11375,0.402692824
+'Bee','Baker',NULL,'bee.baker@aol.com','307 E. Magnolia St. ','Liverpool','NY',13090,0.480590899
+'Shantae','Hammond',NULL,'shantae.hammond@hotmail.com','526 Harvard Drive ','Victoria','TX',77904,0.816351026
+'Bettye','Espinoza',NULL,'bettye.espinoza@yahoo.com','76 Rockwell Street ','Oswego','NY',13126,0.607164446
+'Larissa','Hays',NULL,'larissa.hays@aol.com','66 2nd Drive ','Elmont','NY',11003,0.463300527
+'Diane','Jones',NULL,'diane.jones@gmail.com','859 Prince St. ','Fresh Meadows','NY',11365,0.093624998
+'Zenia','Bruce',NULL,'zenia.bruce@aol.com','349 James Road ','Rosedale','NY',11422,0.121870084
+'Pasquale','Hogan',NULL,'pasquale.hogan@aol.com','403 Bank St. ','Vista','CA',92083,0.869355836
+'Dane','Mcdaniel',NULL,'dane.mcdaniel@hotmail.com','891 Court Ave. ','Canandaigua','NY',14424,0.525993154
+'Jamaal','Baker',NULL,'jamaal.baker@hotmail.com','186 Big Rock Cove Ave. ','Elmhurst','NY',11373,0.058852095
+'Ji','Burt',NULL,'ji.burt@hotmail.com','40 S. Roberts Street ','Apple Valley','CA',92307,0.065788938
+'Marcelino','Mcbride',NULL,'marcelino.mcbride@hotmail.com','29 Oxford Ave. ','Clifton Park','NY',12065,0.360292074
+'Rozella','Fitzgerald',NULL,'rozella.fitzgerald@yahoo.com','7795 Myers Ave. ','Shirley','NY',11967,0.334512637
+'Tonisha','Fowler',NULL,'tonisha.fowler@msn.com','9270 Valley View Lane ','Huntington Station','NY',11746,0.439238475
+'Zora','Ford','(916) 192-3196','zora.ford@gmail.com','7416 La Sierra Dr. ','Sacramento','CA',95820,0.662515183
+'Parthenia','Figueroa',NULL,'parthenia.figueroa@msn.com','550 Theatre Dr. ','Mahopac','NY',10541,0.463983293
+'Arielle','Levine',NULL,'arielle.levine@yahoo.com','7100 High Ridge St. ','Garland','TX',75043,0.218902348
+'Hildegarde','Christensen',NULL,'hildegarde.christensen@hotmail.com','488 East Mill Pond Ave. ','Maspeth','NY',11378,0.024367439
+'Rebbecca','Espinoza',NULL,'rebbecca.espinoza@hotmail.com','8266 Valley Farms Road ','Mount Vernon','NY',10550,0.605405316
+'Conchita','Boone',NULL,'conchita.boone@gmail.com','814 Birchpond Lane ','Mount Vernon','NY',10550,0.764540225
+'Aisha','Woods',NULL,'aisha.woods@gmail.com','9292 Bear Hill Ave. ','Webster','NY',14580,0.840859109
+'Season','Harvey',NULL,'season.harvey@yahoo.com','388 Arnold Court ','East Northport','NY',11731,0.945899951
+'Tommie','Cooley','(717) 634-4113','tommie.cooley@yahoo.com','92 Hickory St. ','Lancaster','NY',14086,0.617055803
+'Alanna','Barry',NULL,'alanna.barry@yahoo.com','33 Laurel Avenue ','Euless','TX',76039,0.755022126
+'Jerri','Guthrie',NULL,'jerri.guthrie@msn.com','95 Sugar Dr. ','Carmel','NY',10512,0.974518371
+'Tammy','Austin',NULL,'tammy.austin@yahoo.com','182 Stillwater Ave. ','Lake Jackson','TX',77566,0.897708802
+'Patsy','Russo',NULL,'patsy.russo@gmail.com','8438 Fairway Avenue ','Rowlett','TX',75088,0.8728589
+'Desiree','Branch',NULL,'desiree.branch@msn.com','67 Bayport Drive ','San Lorenzo','CA',94580,0.533829523
+'Raeann','Duncan','(657) 256-2008','raeann.duncan@aol.com','126 Edgewood St. ','Anaheim','CA',92806,0.86639427
+'Lillia','Gillespie',NULL,'lillia.gillespie@hotmail.com','382 Cardinal Dr. ','Rego Park','NY',11374,0.826912466
+'Doris','Kaufman',NULL,'doris.kaufman@gmail.com','69 Fairground Dr. ','Duarte','CA',91010,0.654640684
+'Rodolfo','Buck',NULL,'rodolfo.buck@gmail.com','8359 Brewery Street ','Shirley','NY',11967,0.302044838
+'Olimpia','Mays',NULL,'olimpia.mays@aol.com','42 Nichols Lane ','Oakland Gardens','NY',11364,0.283448673
+'Shemeka','Lyons',NULL,'shemeka.lyons@msn.com','97 South Jockey Hollow St. ','Pomona','CA',91768,0.92196725
+'Maryalice','Henry',NULL,'maryalice.henry@msn.com','85 Prince Street ','Richardson','TX',75080,0.286462298
+'Leeanne','Cross',NULL,'leeanne.cross@yahoo.com','424 Newcastle Road ','Bayside','NY',11361,0.307878621
+'Lanelle','Guerra',NULL,'lanelle.guerra@yahoo.com','989 Wrangler St. ','Floral Park','NY',11001,0.456484474
+'Dann','Huff',NULL,'dann.huff@gmail.com','475 S. Rockville St. ','Huntington Station','NY',11746,0.405320754
+'Sherise','Mercer',NULL,'sherise.mercer@gmail.com','9401 Catherine Dr. ','Vista','CA',92083,0.750030819
+'Heather','Perry',NULL,'heather.perry@gmail.com','982 Durham Street ','Sunnyside','NY',11104,0.32065983
+'Theresia','Barron',NULL,'theresia.barron@aol.com','951 Wild Rose Street ','Forest Hills','NY',11375,0.256929108
+'Cindi','Ellis',NULL,'cindi.ellis@yahoo.com','6 Cypress Lane ','Floral Park','NY',11001,0.79426474
+'Mirella','Duffy',NULL,'mirella.duffy@yahoo.com','43 University Ave. ','Longview','TX',75604,0.035117084
+'Carson','Macias',NULL,'carson.macias@gmail.com','7 Pennington St. ','New Rochelle','NY',10801,0.760814711
+'Divina','Madden','(562) 264-3998','divina.madden@gmail.com','7314 Armstrong St. ','Long Beach','NY',11561,0.543346869
+'Cher','Alston',NULL,'cher.alston@msn.com','38 Wild Horse Road ','Wantagh','NY',11793,0.829042426
+'Regine','Odom',NULL,'regine.odom@msn.com','684 N. Mayfield Ave. ','Franklin Square','NY',11010,0.71433346
+'Adam','Thornton',NULL,'adam.thornton@hotmail.com','755 East Henry Lane ','Central Islip','NY',11722,0.39819529
+'Cori','Schwartz',NULL,'cori.schwartz@msn.com','43 Lancaster Lane ','Jamaica','NY',11432,0.460203063
+'Willow','Gardner',NULL,'willow.gardner@gmail.com','57 S. Lakewood Dr. ','Pleasanton','CA',94566,0.529463863
+'Jane','Henderson',NULL,'jane.henderson@hotmail.com','46 Carson Drive ','Apple Valley','CA',92307,0.411463557
+'Chere','Mcfadden',NULL,'chere.mcfadden@yahoo.com','695 San Pablo Drive ','Orchard Park','NY',14127,0.047554937
+'Ira','Erickson',NULL,'ira.erickson@aol.com','6 Lake Forest St. ','Port Jefferson Station','NY',11776,0.832042308
+'Risa','Gallagher',NULL,'risa.gallagher@yahoo.com','8281 Edgefield Drive ','Rocklin','CA',95677,0.891298455
+'Lavinia','Cotton',NULL,'lavinia.cotton@yahoo.com','7485 Bridle Street ','East Northport','NY',11731,0.08273586
+'Alejandrina','Hodges',NULL,'alejandrina.hodges@msn.com','7598 Shadow Brook St. ','Deer Park','NY',11729,0.964623745
+'Keitha','Black',NULL,'keitha.black@yahoo.com','7670 Hilldale Ave. ','Lindenhurst','NY',11757,0.739130481
+'Corene','Swanson',NULL,'corene.swanson@aol.com','597 Lakeshore Lane ','Rego Park','NY',11374,0.849152063
+'Tonda','Webb',NULL,'tonda.webb@yahoo.com','53 SW. Edgemont Rd. ','Baldwinsville','NY',13027,0.941201684
+'Collen','Dennis',NULL,'collen.dennis@gmail.com','284 E. Mill Street ','San Pablo','CA',94806,0.544560299
+'Treasa','Dickerson',NULL,'treasa.dickerson@hotmail.com','70 W. Creekside Road ','Rockville Centre','NY',11570,0.766355311
+'Jewell','Reyes',NULL,'jewell.reyes@hotmail.com','8711 Glen Creek Drive ','Jackson Heights','NY',11372,0.462915511
+'Penny','Acevedo',NULL,'penny.acevedo@yahoo.com','318 Mulberry Drive ','Ballston Spa','NY',12020,0.011919422
+'Louise','Flowers',NULL,'louise.flowers@yahoo.com','28 N. Gregory Court ','Depew','NY',14043,0.344468222
+'Henrietta','Wagner','(682) 143-2224','henrietta.wagner@hotmail.com','54 Brickyard St. ','Fort Worth','TX',76110,0.569796484
+'Ardelia','Cooley',NULL,'ardelia.cooley@aol.com','59 Henry Smith St. ','Canyon Country','CA',91387,0.849742546
+'Khalilah','Robertson',NULL,'khalilah.robertson@aol.com','22 Longbranch Rd. ','Spring Valley','NY',10977,0.810428601
+'Armando','Black',NULL,'armando.black@gmail.com','8611 N. Poor House St. ','Richardson','TX',75080,0.372551716
+'Jerri','Henry',NULL,'jerri.henry@msn.com','141 N. Purple Finch Avenue ','Spring Valley','NY',10977,0.845356237
+'Lynda','Newman',NULL,'lynda.newman@msn.com','44 SW. Thomas Ave. ','Saratoga Springs','NY',12866,0.156767322
+'Bao','Wade',NULL,'bao.wade@gmail.com','7587 Church St. ','Desoto','TX',75115,0.32731259
+'Gussie','Harding',NULL,'gussie.harding@gmail.com','41 Edgefield Avenue ','Deer Park','NY',11729,0.73829617
+'Shirely','Cantrell',NULL,'shirely.cantrell@aol.com','6 Kent Street ','West Hempstead','NY',11552,0.915601048
+'Caroline','Jenkins',NULL,'caroline.jenkins@msn.com','86 River Lane ','Richardson','TX',75080,0.734747893
+'Hollis','Rasmussen',NULL,'hollis.rasmussen@yahoo.com','8949 S. Gates Road ','Massapequa','NY',11758,0.320280961
+'Kendra','Harrington',NULL,'kendra.harrington@yahoo.com','768 Cooper Street ','Jamestown','NY',14701,0.239331199
+'Douglass','Blankenship','(229) 891-2087','douglass.blankenship@hotmail.com','409 W. Rock Maple Lane ','Albany','NY',12203,0.392625488
+'Lina','Meadows',NULL,'lina.meadows@aol.com','7020 Ashley Rd. ','Glen Cove','NY',11542,0.638133753
+'Patria','Harper',NULL,'patria.harper@msn.com','90 Arlington St. ','Astoria','NY',11102,0.248020683
+'Jeffrey','Hill',NULL,'jeffrey.hill@gmail.com','2 Shub Farm St. ','Rosedale','NY',11422,0.737104934
+'Ja','Dillard',NULL,'ja.dillard@yahoo.com','25 Orchard St. ','Canyon Country','CA',91387,0.410949109
+'Tora','Dunlap',NULL,'tora.dunlap@hotmail.com','9903 North Halifax Ave. ','Monsey','NY',10952,0.149961665
+'Karole','Alvarez',NULL,'karole.alvarez@gmail.com','69 Woodland St. ','East Northport','NY',11731,0.655749021
+'Shasta','Combs',NULL,'shasta.combs@yahoo.com','726 James Dr. ','Yorktown Heights','NY',10598,0.278764572
+'Cicely','Deleon',NULL,'cicely.deleon@yahoo.com','751 Newbridge Ave. ','Massapequa Park','NY',11762,0.552770096
+'Raphael','O''neil',NULL,'raphael.o''neil@aol.com','762 East Lantern Dr. ','Fairport','NY',14450,0.608163914
+'Hubert','Reilly',NULL,'hubert.reilly@hotmail.com','9004 N. Lake Rd. ','Amityville','NY',11701,0.467802717
+'Caleb','England',NULL,'caleb.england@gmail.com','649 Marvon St. ','Pleasanton','CA',94566,0.833576752
+'Elmira','Levy',NULL,'elmira.levy@gmail.com','6 Columbia Dr. ','Spring Valley','NY',10977,0.996931561
+'Waldo','Hart',NULL,'waldo.hart@yahoo.com','9782 Pineknoll Lane ','Queensbury','NY',12804,0.474172595
+'Bea','Kane',NULL,'bea.kane@aol.com','398 Green Lake Ave. ','Mahopac','NY',10541,0.179798175
+'Gilberto','Sanders',NULL,'gilberto.sanders@hotmail.com','186 Roehampton Ave. ','Woodside','NY',11377,0.776497546
+'Benny','Bender',NULL,'benny.bender@aol.com','520 W. Hamilton St. ','Elmont','NY',11003,0.460830751
+'Desmond','Rose',NULL,'desmond.rose@hotmail.com','9956 Lexington Rd. ','Mount Vernon','NY',10550,0.081527023
+'Parthenia','Holman',NULL,'parthenia.holman@gmail.com','17 Orange Court ','Ithaca','NY',14850,0.554043041
+'Dung','King',NULL,'dung.king@aol.com','523 Prairie St. ','West Islip','NY',11795,0.930785335
+'Sherril','Alvarado',NULL,'sherril.alvarado@hotmail.com','9434 Cypress Court ','Desoto','TX',75115,0.465248949
+'Alisia','Albert',NULL,'alisia.albert@gmail.com','9490 Coffee St. ','Garland','TX',75043,0.194044582
+'Kallie','Best','(507) 997-4112','kallie.best@aol.com','9842 Fairview St. ','Rochester','NY',14606,0.789366136
+'Dottie','Roberts',NULL,'dottie.roberts@aol.com','8252 Theatre St. ','Port Washington','NY',11050,0.681592825
+'Hubert','Stone',NULL,'hubert.stone@hotmail.com','203 Penn St. ','Ridgecrest','CA',93555,0.762169073
+'Gabriella','Jones',NULL,'gabriella.jones@hotmail.com','9100 Gates Ave. ','Mount Vernon','NY',10550,0.664224705
+'Penney','Hall',NULL,'penney.hall@msn.com','8306 Jockey Hollow Street ','Liverpool','NY',13090,0.064672677
+'Mallie','Osborn',NULL,'mallie.osborn@gmail.com','9022 Bridgeton St. ','Newburgh','NY',12550,0.431926387
+'Britteny','Schroeder',NULL,'britteny.schroeder@aol.com','855 Bohemia Dr. ','Pittsford','NY',14534,0.599531997
+'Sommer','Hopkins',NULL,'sommer.hopkins@gmail.com','827 Laurel Ave. ','Tonawanda','NY',14150,0.497334454
+'Jewel','Sparks',NULL,'jewel.sparks@aol.com','12 Vine Road ','Oakland Gardens','NY',11364,0.727091145
+'Deandrea','Vega','(914) 818-7312','deandrea.vega@gmail.com','613 Mill Pond St. ','Yonkers','NY',10701,0.928371315
+'Charlsie','Carson',NULL,'charlsie.carson@hotmail.com','3 South Grant Avenue ','Saint Albans','NY',11412,0.54656126
+'Kandace','Ayers',NULL,'kandace.ayers@gmail.com','9005 Lookout Lane ','Santa Monica','CA',90403,0.427756952
+'Lenore','Valdez',NULL,'lenore.valdez@msn.com','829 Birchpond Street ','Spring Valley','NY',10977,0.243382674
+'Drucilla','Gilliam',NULL,'drucilla.gilliam@hotmail.com','8257 E. Westminster Ave. ','Santa Clara','CA',95050,0.304011185
+'Keturah','Reid','(361) 394-2024','keturah.reid@yahoo.com','747 SE. Beech Ave. ','Corpus Christi','TX',78418,0.805716567
+'Herminia','Reyes',NULL,'herminia.reyes@gmail.com','782 Stonybrook Street ','Centereach','NY',11720,0.406447853
+'Tuyet','Rosa',NULL,'tuyet.rosa@aol.com','9038 Golden Star Street ','South El Monte','CA',91733,0.79514704
+'Ara','Vazquez',NULL,'ara.vazquez@msn.com','343 2nd Court ','San Carlos','CA',94070,0.787812611
+'Barry','Albert',NULL,'barry.albert@gmail.com','13 Grand St. ','Auburn','NY',13021,0.342827406
+'Verdell','Joyner',NULL,'verdell.joyner@aol.com','9191 Sierra St. ','Far Rockaway','NY',11691,0.96848645
+'Han','Wade',NULL,'han.wade@hotmail.com','587 Sulphur Springs St. ','Howard Beach','NY',11414,0.669519863
+'Anton','Barton','(716) 472-3707','anton.barton@msn.com','7284 East Indian Spring Rd. ','Buffalo','NY',14215,0.850365658
+'Vito','Pickett',NULL,'vito.pickett@hotmail.com','93 High Point Street ','Canandaigua','NY',14424,0.167402247
+'Charlene','Norris',NULL,'charlene.norris@msn.com','972 South Sierra Drive ','Syosset','NY',11791,0.638310026
+'Efren','Whitfield',NULL,'efren.whitfield@gmail.com','139 Union Rd. ','Euless','TX',76039,0.342699891
+'Santa','Larson',NULL,'santa.larson@gmail.com','5 Bellevue Dr. ','Valley Stream','NY',11580,0.888620601
+'Carmelina','Sellers',NULL,'carmelina.sellers@hotmail.com','12 Race St. ','Ithaca','NY',14850,0.963678969
+'Carmela','Hays',NULL,'carmela.hays@aol.com','149 Pennington Ave. ','Lawndale','CA',90260,0.684278281
+'Patrina','Tanner',NULL,'patrina.tanner@gmail.com','7136 Selby Road ','Scarsdale','NY',10583,0.830733523
+'Rikki','Morrow','(682) 936-1482','rikki.morrow@hotmail.com','7096 Plumb Branch Road ','Fort Worth','TX',76110,0.153085127
+'Junita','Reese',NULL,'junita.reese@gmail.com','8773 North Walt Whitman Court ','Bay Shore','NY',11706,0.906543283
+'Ryan','Carter',NULL,'ryan.carter@yahoo.com','8684 Studebaker Road ','Nanuet','NY',10954,0.289184398
+'Almeta','Benjamin',NULL,'almeta.benjamin@aol.com','8456 Oakwood St. ','Sunnyside','NY',11104,0.145241471
+'Beatris','Joyner',NULL,'beatris.joyner@gmail.com','7463 Gonzales Rd. ','Spring Valley','NY',10977,0.543674883
+'Mechelle','Chan',NULL,'mechelle.chan@gmail.com','458 Overlook Street ','Richmond Hill','NY',11418,0.15925162
+'Earlean','Pena',NULL,'earlean.pena@yahoo.com','7698 Fulton St. ','Rome','NY',13440,0.735718078
+'Katherin','Clark',NULL,'katherin.clark@yahoo.com','996 Iroquois Street ','Pittsford','NY',14534,0.315969186
+'Chanel','May',NULL,'chanel.may@msn.com','806 Saxton Court ','Garden City','NY',11530,0.037869304
+'Aaron','Knapp','(914) 402-4335','aaron.knapp@yahoo.com','807 Grandrose Ave. ','Yonkers','NY',10701,0.191516292
+'Sindy','Anderson',NULL,'sindy.anderson@gmail.com','543 Halifax Ave. ','Pomona','CA',91768,0.329948593
+'Sheree','Blanchard',NULL,'sheree.blanchard@gmail.com','41 Glenwood Ave. ','Queensbury','NY',12804,0.5720283
+'Charlesetta','Soto',NULL,'charlesetta.soto@yahoo.com','25 South Colonial Drive ','Poughkeepsie','NY',12601,0.327648879
+'Wendie','Nash','(805) 389-2549','wendie.nash@hotmail.com','9 South Road ','Oxnard','CA',93035,0.067424975
+'Vernetta','Banks',NULL,'vernetta.banks@aol.com','7633 Albany St. ','Brooklyn','NY',11201,0.309539875
+'Myrtle','Gardner',NULL,'myrtle.gardner@aol.com','303 Creekside Street ','Farmingdale','NY',11735,0.439724407
+'Agustina','Lawrence',NULL,'agustina.lawrence@yahoo.com','9347 Delaware Ave. ','Brooklyn','NY',11201,0.278070188
+'Trinidad','Chapman',NULL,'trinidad.chapman@aol.com','7371 Glen Eagles Street ','Ronkonkoma','NY',11779,0.359255424
+'Kim','Clark',NULL,'kim.clark@msn.com','19 Liberty St. ','Merrick','NY',11566,0.304037891
+'Annabelle','Hebert',NULL,'annabelle.hebert@aol.com','9745 Nicolls Lane ','Spring Valley','NY',10977,0.783665528
+'Corine','Stuart',NULL,'corine.stuart@msn.com','5 Penn Street ','Clifton Park','NY',12065,0.456130654
+'Kiesha','Bond',NULL,'kiesha.bond@aol.com','29 Marvon St. ','San Carlos','CA',94070,0.205341214
+'Kenyetta','Mason',NULL,'kenyetta.mason@msn.com','98 Poplar Ave. ','Flushing','NY',11354,0.591431975
+'Marcene','Curtis','(914) 361-6045','marcene.curtis@msn.com','7699 Illinois Lane ','Yonkers','NY',10701,0.539829485
+'Sheila','Goodman',NULL,'sheila.goodman@msn.com','9586 Chestnut St. ','Uniondale','NY',11553,0.839197237
+'Romeo','Steele',NULL,'romeo.steele@msn.com','162 Crescent Lane ','Port Jefferson Station','NY',11776,0.973756737
+'Tam','Fisher','(507) 351-9375','tam.fisher@aol.com','8000 Woodsman Lane ','Rochester','NY',14606,0.513207501
+'Gena','Owens',NULL,'gena.owens@gmail.com','43 Buckingham St. ','Desoto','TX',75115,0.19278313
+'Phebe','Soto',NULL,'phebe.soto@hotmail.com','9239 Leatherwood Rd. ','South Ozone Park','NY',11420,0.502985993
+'Leticia','Snyder',NULL,'leticia.snyder@yahoo.com','173 Lyme Dr. ','Pittsford','NY',14534,0.499585028
+'Chantell','Bridges','(716) 941-6072','chantell.bridges@yahoo.com','8478 N. Wrangler Dr. ','Buffalo','NY',14215,0.298062953
+'Ileana','Holt',NULL,'ileana.holt@msn.com','817 Adams St. ','Patchogue','NY',11772,0.64432592
+'Nakisha','Clay',NULL,'nakisha.clay@gmail.com','8996 Beechwood Ave. ','Port Washington','NY',11050,0.410181304
+'Cheryll','Snyder',NULL,'cheryll.snyder@yahoo.com','77 E. Liberty St. ','Brooklyn','NY',11201,0.57000784
+'Consuela','Collier',NULL,'consuela.collier@msn.com','338 S. Holly Avenue ','North Tonawanda','NY',14120,0.39131257
+'Aubrey','Durham',NULL,'aubrey.durham@aol.com','14 Foster Ave. ','Port Washington','NY',11050,0.345278829
+'Nita','Guy',NULL,'nita.guy@hotmail.com','75 Academy Street ','Port Chester','NY',10573,0.74566687
+'Carmina','Emerson',NULL,'carmina.emerson@hotmail.com','7137 Monroe Road ','Banning','CA',92220,0.97828788
+'Georgeann','Rojas',NULL,'georgeann.rojas@msn.com','691 Devon Ave. ','Desoto','TX',75115,0.323873107
+'Leslie','Higgins',NULL,'leslie.higgins@hotmail.com','805 Logan Ave. ','Saratoga Springs','NY',12866,0.560684149
+'Emmaline','Huber',NULL,'emmaline.huber@gmail.com','7975 Harrison Rd. ','Mount Vernon','NY',10550,0.769456398
+'Mercy','Brown',NULL,'mercy.brown@msn.com','8207 Central Street ','Hollis','NY',11423,0.603643964
+'Jenell','Crosby','(631) 544-4772','jenell.crosby@hotmail.com','507 Fulton Street ','Brentwood','NY',11717,0.817051848
+'Leila','Barr',NULL,'leila.barr@yahoo.com','120 Fremont Rd. ','Carmel','NY',10512,0.085593892
+'Deandrea','Cox',NULL,'deandrea.cox@msn.com','617 Sycamore Street ','Huntington','NY',11743,0.346620366
+'Shawnna','Frank',NULL,'shawnna.frank@hotmail.com','17 NW. Cottage Lane ','Woodside','NY',11377,0.06455472
+'Brenton','Whitaker',NULL,'brenton.whitaker@gmail.com','25 Elmwood Rd. ','Niagara Falls','NY',14304,0.161656454
+'Jaqueline','Cummings',NULL,'jaqueline.cummings@hotmail.com','478 Wrangler St. ','Huntington Station','NY',11746,0.427467805
+'Yang','Giles',NULL,'yang.giles@gmail.com','25 Bridle Lane ','San Angelo','TX',76901,0.338704068
+'Brigid','Sharp',NULL,'brigid.sharp@hotmail.com','495 Sleepy Hollow Court ','Santa Clara','CA',95050,0.466972945
+'Karl','Stephens',NULL,'karl.stephens@gmail.com','208 Thatcher Rd. ','Rockville Centre','NY',11570,0.736058789
+'Elvina','Gates',NULL,'elvina.gates@hotmail.com','112 Smith St. ','Pleasanton','CA',94566,0.366400818
+'Carlie','Terrell','(914) 517-8036','carlie.terrell@yahoo.com','7437 Snake Hill Road ','Yonkers','NY',10701,0.494323383
+'Donovan','Cantrell','(510) 624-3824','donovan.cantrell@msn.com','601 Winchester Dr. ','Oakland','CA',94603,0.087838882
+'Alden','Atkinson',NULL,'alden.atkinson@gmail.com','46 Valley St. ','Shirley','NY',11967,0.593168999
+'Carissa','Cross',NULL,'carissa.cross@yahoo.com','9335 West Main Dr. ','Huntington Station','NY',11746,0.322692428
+'Joy','Underwood',NULL,'joy.underwood@gmail.com','7297 Armstrong Dr. ','Apple Valley','CA',92307,0.129674606
+'Geraldine','O''donnell',NULL,'geraldine.o''donnell@hotmail.com','8241 Lookout Rd. ','Flushing','NY',11354,0.866112393
+'Bronwyn','Vargas',NULL,'bronwyn.vargas@msn.com','35 James Street ','New Windsor','NY',12553,0.960609909
+'Abram','Copeland',NULL,'abram.copeland@gmail.com','9782 Indian Spring Lane ','Harlingen','TX',78552,0.729310591
+'Mellisa','Griffin',NULL,'mellisa.griffin@msn.com','49 Alton Circle ','Los Banos','CA',93635,0.064920508
+'Qiana','Jackson',NULL,'qiana.jackson@gmail.com','56 Galvin Street ','East Northport','NY',11731,0.444250694
+'Magali','Dixon','(248) 279-5331','magali.dixon@msn.com','815 Del Monte Court ','Troy','NY',12180,0.677816025
+'Zulema','Clemons','(510) 565-8496','zulema.clemons@aol.com','75 W. Howard St. ','Oakland','CA',94603,0.989920632
+'Carina','Lynch',NULL,'carina.lynch@gmail.com','64 Jennings Road ','Wappingers Falls','NY',12590,0.031900878
+'Jesus','Burch',NULL,'jesus.burch@hotmail.com','7024 Squaw Creek Street ','Desoto','TX',75115,0.668616263
+'Selene','Vega',NULL,'selene.vega@gmail.com','11 Sierra St. ','Campbell','CA',95008,0.615348238
+'Jong','Guthrie',NULL,'jong.guthrie@hotmail.com','889 Leatherwood Drive ','Bethpage','NY',11714,0.444041418
+'Lise','Hebert',NULL,'lise.hebert@gmail.com','140 East Broad Lane ','Vista','CA',92083,0.866995974
+'Joshua','Berg',NULL,'joshua.berg@hotmail.com','16 East St. ','Ossining','NY',10562,0.451368921
+'Georgina','Gonzales',NULL,'georgina.gonzales@yahoo.com','307 Chapel St. ','Endicott','NY',13760,0.016008962
+'Rudolph','Velez',NULL,'rudolph.velez@yahoo.com','9397 Pleasant Drive ','Mount Vernon','NY',10550,0.779616043
+'Luke','Kramer',NULL,'luke.kramer@hotmail.com','7955 Delaware Drive ','Bethpage','NY',11714,0.361710361
+'Edgar','Quinn',NULL,'edgar.quinn@aol.com','556 Dogwood Ave. ','Harlingen','TX',78552,0.939605166
+'Tara','Maynard',NULL,'tara.maynard@hotmail.com','9375 Fordham Street ','Lindenhurst','NY',11757,0.292919264
+'Bella','Perez',NULL,'bella.perez@msn.com','43 Green Lake Street ','Duarte','CA',91010,0.794247453
+'Nathaniel','Davidson',NULL,'nathaniel.davidson@hotmail.com','7476 Henry Smith Street ','Rome','NY',13440,0.002460912
+'Chauncey','Donaldson',NULL,'chauncey.donaldson@aol.com','7412 Golf Ave. ','Franklin Square','NY',11010,0.246989601
+'Heide','Reed',NULL,'heide.reed@yahoo.com','9174 Coffee Drive ','Floral Park','NY',11001,0.237848854
+'Trang','Hardin',NULL,'trang.hardin@yahoo.com','9255 Myers Drive ','Depew','NY',14043,0.185926595
+'Gabriela','Warren','(562) 986-2247','gabriela.warren@aol.com','9947 Brewery Ave. ','Long Beach','NY',11561,0.220691567
+'Dale','Rasmussen',NULL,'dale.rasmussen@aol.com','8590 Adams Street ','Kingston','NY',12401,0.241575108
+'Tammie','Cherry',NULL,'tammie.cherry@hotmail.com','791 Wakehurst Dr. ','Massapequa','NY',11758,0.870623036
+'Bethany','Herring',NULL,'bethany.herring@yahoo.com','7563 High Point Street ','Port Jefferson Station','NY',11776,0.314326382
+'Barbra','Dickerson',NULL,'barbra.dickerson@gmail.com','8424 E. Rockcrest Dr. ','Ridgecrest','CA',93555,0.46937851
+'Neoma','Daugherty',NULL,'neoma.daugherty@gmail.com','80 Spring Street ','Mount Vernon','NY',10550,0.444589684
+'Nanette','Roman',NULL,'nanette.roman@yahoo.com','8254 North Riverview Street ','Glendora','CA',91740,0.934136925
+'Adriene','Rollins',NULL,'adriene.rollins@msn.com','55 Cambridge Street ','Plainview','NY',11803,0.237131083
+'Susannah','Fields',NULL,'susannah.fields@hotmail.com','17 Railroad Street ','Far Rockaway','NY',11691,0.756328281
+'Dung','Reid',NULL,'dung.reid@msn.com','468 West Washington Ave. ','Canyon Country','CA',91387,0.688558223
+'Ben','Stone',NULL,'ben.stone@gmail.com','8855 University St. ','Ithaca','NY',14850,0.891473245
+'Nubia','Anderson',NULL,'nubia.anderson@aol.com','584 NW. Hilldale Drive ','Ronkonkoma','NY',11779,0.964619404
+'Rosamaria','Meyer',NULL,'rosamaria.meyer@yahoo.com','446 Elizabeth St. ','Webster','NY',14580,0.44742481
+'Todd','Waters',NULL,'todd.waters@yahoo.com','92 Cedar Swamp Street ','Bay Shore','NY',11706,0.837282989
+'Kimbery','Nieves',NULL,'kimbery.nieves@msn.com','768 Roehampton St. ','San Carlos','CA',94070,0.936494737
+'Phuong','Wolf',NULL,'phuong.wolf@yahoo.com','7765 N. Annadale Dr. ','Schenectady','NY',12302,0.710937263
+'Adelaida','Hancock',NULL,'adelaida.hancock@aol.com','669 S. Gartner Street ','San Pablo','CA',94806,0.520335578
+'Brianne','Hays',NULL,'brianne.hays@gmail.com','88 Tailwater Ave. ','San Pablo','CA',94806,0.163596807
+'Rufina','Chandler',NULL,'rufina.chandler@aol.com','7985 Alderwood Street ','New Hyde Park','NY',11040,0.72737981
+'Devin','Velazquez','(631) 254-8497','devin.velazquez@aol.com','61 Redwood St. ','Brentwood','NY',11717,0.754094529
+'Bonita','Marshall',NULL,'bonita.marshall@msn.com','48 Bald Hill Drive ','Endicott','NY',13760,0.875215076
+'Myrl','Gay',NULL,'myrl.gay@hotmail.com','8708 Taylor Lane ','Garland','TX',75043,0.307172214
+'Earline','Gordon',NULL,'earline.gordon@gmail.com','81 Railroad Drive ','Ronkonkoma','NY',11779,0.624487267
+'Sung','Chambers',NULL,'sung.chambers@gmail.com','369 N. Virginia Street ','Kingston','NY',12401,0.675577206
+'Gustavo','Gamble',NULL,'gustavo.gamble@msn.com','8054 W. Meadowbrook Street ','Port Washington','NY',11050,0.214197653
+'Ciera','Webb',NULL,'ciera.webb@yahoo.com','958 Anderson Ave. ','Orchard Park','NY',14127,0.957777324
+'Roy','Chan',NULL,'roy.chan@hotmail.com','7578 Middle River St. ','Pomona','CA',91768,0.04212707
+'Houston','Vasquez',NULL,'houston.vasquez@msn.com','845 Aspen Street ','Fullerton','CA',92831,0.956733347
+'Cheree','Hale',NULL,'cheree.hale@yahoo.com','95 Lyme Avenue ','Oswego','NY',13126,0.439106663
+'Odette','Moses',NULL,'odette.moses@gmail.com','899 Overlook Lane ','Newburgh','NY',12550,0.218948099
+'Lenita','Bonner',NULL,'lenita.bonner@aol.com','7286 Swanson Drive ','Los Banos','CA',93635,0.874242178
+'Shona','Mcmillan',NULL,'shona.mcmillan@msn.com','57 West Maple Dr. ','Apple Valley','CA',92307,0.545449008
+'Piedad','Irwin',NULL,'piedad.irwin@hotmail.com','581 Garden St. ','Coram','NY',11727,0.778211362
+'Loan','Graham',NULL,'loan.graham@yahoo.com','57 Glen Eagles St. ','Jackson Heights','NY',11372,0.551179083
+'Stan','Saunders',NULL,'stan.saunders@yahoo.com','407 Essex Dr. ','Canandaigua','NY',14424,0.710487364
+'Jackeline','Colon',NULL,'jackeline.colon@msn.com','9916 Cedarwood Drive ','Wappingers Falls','NY',12590,0.349881043
+'Marlen','Dawson',NULL,'marlen.dawson@msn.com','67 Oak Valley Street ','Woodside','NY',11377,0.466887092
+'Alexis','Mack','(845) 707-6088','alexis.mack@aol.com','7767 Sutor Ave. ','New City','NY',10956,0.448689916
+'Mica','Barry',NULL,'mica.barry@yahoo.com','3 SE. Sugar St. ','Hopewell Junction','NY',12533,0.765742201
+'Shanice','Spears',NULL,'shanice.spears@msn.com','5 Piper Ave. ','Brooklyn','NY',11201,0.644283739
+'Garth','Huff',NULL,'garth.huff@yahoo.com','794 East University St. ','Glendora','CA',91740,0.414337023
+'Dione','Pratt',NULL,'dione.pratt@msn.com','864 Winding Way St. ','Pleasanton','CA',94566,0.627725467
+'Victor','Pittman',NULL,'victor.pittman@aol.com','9294 Devon Dr. ','Astoria','NY',11102,0.845113788
+'Allie','Conley',NULL,'allie.conley@msn.com','96 High Point Road ','Lawndale','CA',90260,0.096856564
+'Shanelle','Anderson',NULL,'shanelle.anderson@yahoo.com','646 Surrey Street ','Bethpage','NY',11714,0.58320892
+'Minnie','Compton',NULL,'minnie.compton@gmail.com','185 Hudson Street ','South Richmond Hill','NY',11419,0.69101815
+'Shiloh','Bates',NULL,'shiloh.bates@msn.com','15 Wellington Dr. ','Monsey','NY',10952,0.182801999
+'Lakenya','Oliver',NULL,'lakenya.oliver@yahoo.com','82 Bayport Court ','San Lorenzo','CA',94580,0.899093974
+'Sally','Kinney',NULL,'sally.kinney@msn.com','7565 High Dr. ','Floral Park','NY',11001,0.612293365
+'Edith','Davenport',NULL,'edith.davenport@gmail.com','685 Alton Road ','Ontario','CA',91762,0.651208555
+'Alline','Beasley',NULL,'alline.beasley@yahoo.com','8704 NE. Olive Ave. ','North Tonawanda','NY',14120,0.501275979
+'Travis','Whitley',NULL,'travis.whitley@aol.com','60 Euclid Ave. ','Saint Albans','NY',11412,0.508587091
+'Vanessa','West',NULL,'vanessa.west@gmail.com','34 Prairie Lane ','New Rochelle','NY',10801,0.187383337
+'Trudy','Riddle',NULL,'trudy.riddle@aol.com','8943 Johnson Street ','Schenectady','NY',12302,0.63019122
+'Shauna','Edwards',NULL,'shauna.edwards@msn.com','8 Dogwood Ave. ','Yorktown Heights','NY',10598,0.967119756
+'Clorinda','Donovan',NULL,'clorinda.donovan@msn.com','9690 E. Morris Ave. ','Jamestown','NY',14701,0.92676459
+'Raven','Curtis',NULL,'raven.curtis@aol.com','18 Summit Lane ','Lawndale','CA',90260,0.361323501
+'Verda','Gilbert',NULL,'verda.gilbert@gmail.com','54 Hillcrest Drive ','East Northport','NY',11731,0.887424945
+'Renay','Atkins',NULL,'renay.atkins@aol.com','7146 Leeton Ridge Ave. ','Woodside','NY',11377,0.287637837
+'Tama','Berg',NULL,'tama.berg@hotmail.com','3 Cardinal Avenue ','Hollis','NY',11423,0.193714169
+'Dalia','Carson','(507) 186-2004','dalia.carson@aol.com','7175 Galvin St. ','Rochester','NY',14606,0.680070116
+'America','Swanson',NULL,'america.swanson@msn.com','83 South Arlington Lane ','Webster','NY',14580,0.017998747
+'Cinda','Rocha',NULL,'cinda.rocha@hotmail.com','926 North Oklahoma Dr. ','Los Banos','CA',93635,0.199254067
+'Shea','Howell',NULL,'shea.howell@msn.com','67 Arch Rd. ','South El Monte','CA',91733,0.544860936
+'Kimberli','Cline',NULL,'kimberli.cline@yahoo.com','7115 Stonybrook Court ','Centereach','NY',11720,0.086920336
+'Emanuel','Mckee',NULL,'emanuel.mckee@yahoo.com','9411 Lake Dr. ','Schenectady','NY',12302,0.991072854
+'Whitley','Cannon',NULL,'whitley.cannon@msn.com','614 High Point Lane ','Coram','NY',11727,0.241059061
+'Tereasa','Bird',NULL,'tereasa.bird@aol.com','7526 Vine Drive ','Ronkonkoma','NY',11779,0.332185364
+'Dante','Grimes',NULL,'dante.grimes@yahoo.com','23 Shore St. ','Duarte','CA',91010,0.958731999
+'Joeann','Garrison',NULL,'joeann.garrison@yahoo.com','1 Harrison St. ','Ontario','CA',91762,0.682109219
+'Omega','Johnston',NULL,'omega.johnston@gmail.com','9935 Tarkiln Hill St. ','Canyon Country','CA',91387,0.745383999
+'Conrad','Mueller',NULL,'conrad.mueller@yahoo.com','3 Myrtle St. ','Massapequa','NY',11758,0.061913179
+'Glady','Wells',NULL,'glady.wells@gmail.com','627 Ramblewood Ave. ','Syosset','NY',11791,0.059820221
+'Tisha','Petty','(210) 851-3122','tisha.petty@msn.com','9083 Lake View Ave. ','San Antonio','TX',78213,0.645410493
+'Claris','Santiago',NULL,'claris.santiago@msn.com','763 Mountainview Dr. ','Newburgh','NY',12550,0.009429825
+'Obdulia','Barber',NULL,'obdulia.barber@gmail.com','878 Lexington Rd. ','Newburgh','NY',12550,0.224413537
+'Shantel','Gregory',NULL,'shantel.gregory@yahoo.com','7722 Second Lane ','West Islip','NY',11795,0.579146153
+'Ai','Forbes',NULL,'ai.forbes@yahoo.com','254 Central St. ','Franklin Square','NY',11010,0.488610229
+'Ebony','Cotton',NULL,'ebony.cotton@yahoo.com','8979 Miller St. ','West Babylon','NY',11704,0.248550732
+'Arla','Ellis',NULL,'arla.ellis@yahoo.com','127 Crescent Ave. ','Utica','NY',13501,0.393666656
+'Magdalena','Sherman',NULL,'magdalena.sherman@gmail.com','176 Sunbeam St. ','Oswego','NY',13126,0.13302382
+'Tarra','Guerrero',NULL,'tarra.guerrero@aol.com','10 Baker St. ','Auburn','NY',13021,0.818401495
+'Consuela','Romero',NULL,'consuela.romero@hotmail.com','54 Elm Court ','Monroe','NY',10950,0.990932612
+'Cindie','Franklin',NULL,'cindie.franklin@yahoo.com','7249 Franklin St. ','Lawndale','CA',90260,0.270220746
+'Sharyn','Brewer',NULL,'sharyn.brewer@aol.com','70 Columbia Ave. ','Hollis','NY',11423,0.62506162
+'Karren','Stevenson',NULL,'karren.stevenson@aol.com','155 Old York St. ','San Carlos','CA',94070,0.172049421
+'Divina','Reeves',NULL,'divina.reeves@hotmail.com','767 Bradford Dr. ','Newburgh','NY',12550,0.160740447
+'Novella','Ross',NULL,'novella.ross@gmail.com','9418 Acacia Drive ','Glendora','CA',91740,0.789288835
+'Omega','Huff',NULL,'omega.huff@aol.com','63 Devon St. ','Santa Monica','CA',90403,0.380330632
+'Ashleigh','Finch',NULL,'ashleigh.finch@yahoo.com','82 Hudson Court ','Newburgh','NY',12550,0.046095803
+'Corina','Lynch',NULL,'corina.lynch@msn.com','44 Sunbeam Dr. ','Rosedale','NY',11422,0.026431931
+'Joe','Melton',NULL,'joe.melton@gmail.com','8998 Hartford Street ','New Windsor','NY',12553,0.451574433
+'Bernetta','Summers',NULL,'bernetta.summers@aol.com','1 Young Ave. ','Longview','TX',75604,0.396242099
+'Inez','Snider',NULL,'inez.snider@gmail.com','837 Catherine Lane ','Ronkonkoma','NY',11779,0.720819489
+'Neida','King','(442) 778-1121','neida.king@aol.com','137 Bohemia St. ','Oceanside','NY',11572,0.954184602
+'Tona','Velasquez',NULL,'tona.velasquez@msn.com','9166 Trout St. ','Whitestone','NY',11357,0.342285487
+'Rozanne','Reyes',NULL,'rozanne.reyes@aol.com','11 W. Surrey Drive ','Garden City','NY',11530,0.912183493
+'Lekisha','Pope',NULL,'lekisha.pope@msn.com','390 Livingston Avenue ','Freeport','NY',11520,0.783206267
+'Jama','Rodriquez',NULL,'jama.rodriquez@msn.com','681 Smith Dr. ','Upland','CA',91784,0.983546416
+'Eloisa','Tucker',NULL,'eloisa.tucker@hotmail.com','7268 Leatherwood Ave. ','Howard Beach','NY',11414,0.212329248
+'Arie','Hunter',NULL,'arie.hunter@msn.com','66 Old State Rd. ','Flushing','NY',11354,0.597009442
+'Sanora','Webster','(424) 464-7290','sanora.webster@msn.com','74 Beach St. ','Los Angeles','CA',90008,0.839718476
+'Kate','Barber',NULL,'kate.barber@hotmail.com','46 W. Oak Valley Ave. ','Saratoga Springs','NY',12866,0.901066037
+'Yvone','Guerrero',NULL,'yvone.guerrero@aol.com','8548 Jackson Ave. ','Merrick','NY',11566,0.88947133
+'Kami','Rios',NULL,'kami.rios@yahoo.com','8400 8th Dr. ','Encino','CA',91316,0.57640984
+'Annett','Rush',NULL,'annett.rush@hotmail.com','758 Fordham Lane ','Rosedale','NY',11422,0.51811483
+'Carman','Hardy',NULL,'carman.hardy@yahoo.com','800 Whitemarsh St. ','Jamestown','NY',14701,0.297041471
+'Dorothea','Miranda',NULL,'dorothea.miranda@aol.com','7882 Parker St. ','Upland','CA',91784,0.423922194
+'Agatha','Daniels',NULL,'agatha.daniels@yahoo.com','125 Canal St. ','South El Monte','CA',91733,0.206691343
+'Alexandria','Zamora',NULL,'alexandria.zamora@yahoo.com','95 Cherry Circle ','Schenectady','NY',12302,0.17965876
+'Thad','Gilliam',NULL,'thad.gilliam@hotmail.com','8844 Gonzales Court ','Levittown','NY',11756,0.846076256
+'Inger','Jennings',NULL,'inger.jennings@yahoo.com','38 NW. Shore Lane ','Patchogue','NY',11772,0.626100044
+'Karren','Lamb','(559) 628-2239','karren.lamb@aol.com','35 N. Chapel St. ','Fresno','CA',93706,0.013248472
+'Noble','Glover',NULL,'noble.glover@gmail.com','728 W. Rocky River Street ','Orchard Park','NY',14127,0.615327151
+'Octavia','Donaldson',NULL,'octavia.donaldson@hotmail.com','8095 Wayne Ave. ','Levittown','NY',11756,0.469706003
+'Latashia','Travis',NULL,'latashia.travis@yahoo.com','7877 King Rd. ','Upland','CA',91784,0.500667784
+'Destiny','Goodman',NULL,'destiny.goodman@msn.com','29 Smoky Hollow St. ','Westbury','NY',11590,0.603951962
+'Christiana','Gross',NULL,'christiana.gross@yahoo.com','645 North Richardson Road ','Orchard Park','NY',14127,0.025936413
+'Nestor','Haynes','(281) 969-4579','nestor.haynes@msn.com','27 Nut Swamp Street ','Houston','TX',77016,0.583865306
+'Grisel','Maynard',NULL,'grisel.maynard@msn.com','353 North Arch St. ','Ballston Spa','NY',12020,0.701353533
+'Shenna','Espinoza',NULL,'shenna.espinoza@gmail.com','202 North George Street ','Queensbury','NY',12804,0.889203192
+'Trena','Rogers',NULL,'trena.rogers@aol.com','502 Sherwood St. ','Campbell','CA',95008,0.347885316
+'Lucile','Manning',NULL,'lucile.manning@yahoo.com','511 Livingston Lane ','Campbell','CA',95008,0.794040395
+'Veronique','Fulton',NULL,'veronique.fulton@yahoo.com','81 Hilldale Ave. ','Ballston Spa','NY',12020,0.053808861
+'Starr','Schneider',NULL,'starr.schneider@aol.com','77 Mulberry Street ','Shirley','NY',11967,0.072915382
+'Rona','Rojas','(408) 611-3553','rona.rojas@gmail.com','815 Riverview St. ','San Jose','CA',95127,0.590696517
+'Pandora','Estes',NULL,'pandora.estes@aol.com','228 Shadow Brook Drive ','New Hyde Park','NY',11040,0.562846736
+'Renna','Williams',NULL,'renna.williams@hotmail.com','7398 SW. Glen Ridge Road ','South Ozone Park','NY',11420,0.091696902
+'Lanora','Robbins',NULL,'lanora.robbins@hotmail.com','31 W. Maiden Lane ','West Babylon','NY',11704,0.341783866
+'Juliane','Dillard',NULL,'juliane.dillard@aol.com','63 Birchwood Court ','Glendora','CA',91740,0.740008419
+'Carlena','Salinas',NULL,'carlena.salinas@gmail.com','1 Wagon Street ','Jamaica','NY',11432,0.651179777
+'Kimberley','Reynolds',NULL,'kimberley.reynolds@aol.com','8475 Homewood Street ','Port Washington','NY',11050,0.454234137
+'Johana','Jacobson','(507) 407-9384','johana.jacobson@gmail.com','29 San Juan St. ','Rochester','NY',14606,0.955130316
+'Enoch','Rosario','(559) 329-7615','enoch.rosario@hotmail.com','186 Arlington St. ','Fresno','CA',93706,0.082837558
+'Dorine','Thornton',NULL,'dorine.thornton@gmail.com','8730 N. Atlantic Street ','Sunnyside','NY',11104,0.26306136
+'Eliz','Lynch',NULL,'eliz.lynch@hotmail.com','717 West Deerfield Ave. ','Uniondale','NY',11553,0.271630004
+'Mercedez','Brooks',NULL,'mercedez.brooks@hotmail.com','7483 Ann St. ','Duarte','CA',91010,0.921337174
+'Wynona','Douglas',NULL,'wynona.douglas@msn.com','6 Country Ave. ','Harlingen','TX',78552,0.689532073
+'Desire','Mcgowan','(661) 800-8091','desire.mcgowan@msn.com','942 North Ohio Road ','Bakersfield','CA',93306,0.805452902
+'Elmo','Sweeney',NULL,'elmo.sweeney@yahoo.com','43 Arch Ave. ','San Carlos','CA',94070,0.333728548
+'Kenton','Hughes',NULL,'kenton.hughes@gmail.com','632 Sleepy Hollow Drive ','Canandaigua','NY',14424,0.617566551
+'Cesar','Wilkins','(619) 685-5786','cesar.wilkins@hotmail.com','7 Inverness St. ','San Diego','CA',92111,0.982230358
+'Phylicia','Stout',NULL,'phylicia.stout@aol.com','8842 Littleton Lane ','Canandaigua','NY',14424,0.208075509
+'Nanette','Harris',NULL,'nanette.harris@hotmail.com','26 Pin Oak Lane ','East Meadow','NY',11554,0.049799258
+'Ulrike','Chan',NULL,'ulrike.chan@aol.com','7949 Lancaster St. ','Port Chester','NY',10573,0.596184833
+'Genoveva','Lloyd',NULL,'genoveva.lloyd@aol.com','706 Devonshire St. ','Bayside','NY',11361,0.768880768
+'Sheryl','Chase',NULL,'sheryl.chase@gmail.com','388 Cedar Avenue ','Floral Park','NY',11001,0.332387461
+'Trista','Lambert',NULL,'trista.lambert@gmail.com','79 River Street ','Fairport','NY',14450,0.959700494
+'Vivian','Deleon',NULL,'vivian.deleon@msn.com','9925 Hamilton Street ','Jamaica','NY',11432,0.760680076
+'Genny','Fields',NULL,'genny.fields@msn.com','9145 San Juan Dr. ','Amityville','NY',11701,0.069293576
+'Eliseo','Knight',NULL,'eliseo.knight@msn.com','693 Holly Street ','Woodhaven','NY',11421,0.253439835
+'Delma','Bailey','(657) 454-8493','delma.bailey@gmail.com','9883 West King Lane ','Anaheim','CA',92806,0.59709661
+'Dewayne','Herring',NULL,'dewayne.herring@aol.com','9015 Willow Lane ','Webster','NY',14580,0.421541759
+'Nevada','Hood',NULL,'nevada.hood@aol.com','515 Bank Rd. ','Hopewell Junction','NY',12533,0.986408553
+'Angelika','Perry',NULL,'angelika.perry@msn.com','7684 South Branch Drive ','Canandaigua','NY',14424,0.990178618
+'Shayla','Hart',NULL,'shayla.hart@msn.com','9092 Aspen St. ','Woodhaven','NY',11421,0.161974494
+'Willetta','Murphy',NULL,'willetta.murphy@msn.com','436 Devonshire Street ','East Elmhurst','NY',11369,0.880927885
+'Sandee','Alvarado',NULL,'sandee.alvarado@aol.com','69 Bowman Street ','Depew','NY',14043,0.190496133
+'Mila','Moody','(248) 234-5902','mila.moody@gmail.com','675 Williams St. ','Troy','NY',12180,0.570691452
+'Loyce','Conway',NULL,'loyce.conway@aol.com','729 State Lane ','Central Islip','NY',11722,0.573182738
+'Thanh','Figueroa',NULL,'thanh.figueroa@yahoo.com','6 Roberts Drive ','Mount Vernon','NY',10550,0.509884167
+'Farrah','Orr',NULL,'farrah.orr@msn.com','8711 W. Ashley St. ','New Hyde Park','NY',11040,0.67093887
+'Hugh','Craft',NULL,'hugh.craft@msn.com','8716 Homewood Court ','Centereach','NY',11720,0.94803171
+'Eleanor','Mendez',NULL,'eleanor.mendez@yahoo.com','4 West St. ','Port Chester','NY',10573,0.404903061
+'Lamar','Bush','(716) 294-7174','lamar.bush@msn.com','76 Lilac Drive ','Buffalo','NY',14215,0.890258839
+'Lurlene','Finch','(914) 367-7691','lurlene.finch@msn.com','849 Magnolia St. ','Yonkers','NY',10701,0.138427461
+'Shanda','Stevenson',NULL,'shanda.stevenson@yahoo.com','9547 N. Courtland St. ','Freeport','NY',11520,0.461853521
+'Adrien','Hunter',NULL,'adrien.hunter@yahoo.com','720 Thompson Lane ','Rego Park','NY',11374,0.973311892
+'Ophelia','Decker',NULL,'ophelia.decker@yahoo.com','69 Rockwell Court ','New Windsor','NY',12553,0.419469292
+'Sonja','Walls',NULL,'sonja.walls@aol.com','30 Marshall Dr. ','Queensbury','NY',12804,0.963291306
+'Harold','O''connor',NULL,'harold.o''connor@gmail.com','9530 Summerhouse Street ','Santa Cruz','CA',95060,0.096142606
+'Miranda','Kennedy',NULL,'miranda.kennedy@gmail.com','726 East High St. ','Astoria','NY',11102,0.928417647
+'Jasper','Castro',NULL,'jasper.castro@aol.com','977 SE. Railroad Road ','Forney','TX',75126,0.473113209
+'Penni','Best','(657) 611-2991','penni.best@msn.com','875 Second Drive ','Anaheim','CA',92806,0.0337814
+'Lurlene','Cotton',NULL,'lurlene.cotton@yahoo.com','8218 George St. ','Pleasanton','CA',94566,0.385160467
+'Kelsey','Noble',NULL,'kelsey.noble@hotmail.com','36 Pearl Court ','Mount Vernon','NY',10550,0.31380114
+'Edris','Barrett',NULL,'edris.barrett@hotmail.com','36 Pulaski Drive ','Plattsburgh','NY',12901,0.588011041
+'Tempie','Jacobson',NULL,'tempie.jacobson@hotmail.com','136 Old Fairview St. ','Smithtown','NY',11787,0.040747891
+'Dollie','Cervantes','(682) 362-7457','dollie.cervantes@aol.com','8828 Applegate Drive ','Fort Worth','TX',76110,0.447243063
+'Lashunda','Cole',NULL,'lashunda.cole@hotmail.com','783 Baker St. ','Monsey','NY',10952,0.740854904
+'Justina','Jenkins',NULL,'justina.jenkins@msn.com','345 SE. Green Lane ','Shirley','NY',11967,0.671343735
+'Londa','Gould','(361) 206-5550','londa.gould@aol.com','9169 Beech Lane ','Corpus Christi','TX',78418,0.178330667
+'Mikel','Wilkerson',NULL,'mikel.wilkerson@msn.com','9233 Clinton St. ','Atwater','CA',95301,0.213614969
+'Carola','Johns',NULL,'carola.johns@msn.com','7077 Fordham Rd. ','Santa Cruz','CA',95060,0.011696086
+'Lorrie','Justice',NULL,'lorrie.justice@gmail.com','8396 Brook Drive ','Pomona','CA',91768,0.307255402
+'Tayna','Wade','(661) 858-1224','tayna.wade@hotmail.com','65 Smith Store Dr. ','Bakersfield','CA',93306,0.863835286
+'Mark','Benton',NULL,'mark.benton@aol.com','83 Eagle St. ','East Elmhurst','NY',11369,0.3019511
+'Zona','Cameron',NULL,'zona.cameron@aol.com','42 Bridle Court ','East Northport','NY',11731,0.615507255
+'Nicola','Knight',NULL,'nicola.knight@aol.com','25 SE. Miles Lane ','Scarsdale','NY',10583,0.292502337
+'Elana','Miles',NULL,'elana.miles@yahoo.com','7077 Euclid Ave. ','Liverpool','NY',13090,0.850103497
+'Merrie','Fowler',NULL,'merrie.fowler@aol.com','532 Leatherwood Ave. ','Scarsdale','NY',10583,0.088458855
+'Macie','Ayers',NULL,'macie.ayers@msn.com','8730 Longfellow St. ','Bellmore','NY',11710,0.292241721
+'Son','Warner',NULL,'son.warner@hotmail.com','20 W. Rosewood Ave. ','Rockville Centre','NY',11570,0.046639423
+'Lee','Dunn','(408) 807-6157','lee.dunn@aol.com','8626 Grand Ave. ','San Jose','CA',95127,0.349151599
+'Florrie','Little',NULL,'florrie.little@yahoo.com','8330 Marsh St. ','New Rochelle','NY',10801,0.595414803
+'Ernest','Rollins',NULL,'ernest.rollins@yahoo.com','4 West Ridge Dr. ','Oakland Gardens','NY',11364,0.670830296
+'Jamaal','Morrison',NULL,'jamaal.morrison@msn.com','796 SE. Nut Swamp St. ','Staten Island','NY',10301,0.172799274
+'Cassie','Cline',NULL,'cassie.cline@gmail.com','947 Lafayette Drive ','Brooklyn','NY',11201,0.306823769
+'Lezlie','Lamb',NULL,'lezlie.lamb@gmail.com','401 Brandywine Street ','Central Islip','NY',11722,0.755066893
+'Ivette','Estes',NULL,'ivette.estes@gmail.com','88 N. Canterbury Ave. ','Canandaigua','NY',14424,0.499237118
+'Ester','Acevedo',NULL,'ester.acevedo@gmail.com','671 Miles Court ','San Lorenzo','CA',94580,0.904753274
