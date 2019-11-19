@@ -160,20 +160,21 @@ def print_results(cur, operation=None):
         print
 
 
-def create_temp_result_table(cur, results, result_table_name, projections):
+def create_temp_result_table(cur, results, result_table_name, projections, table_name=None):
     if projections != '*':
         # join provenance values before inserting them in temp result table
         results = add_provenance_values(results)
         column_names = [col.strip() for col in projections.split(',')]
     else:
-        if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
+        if table_name and is_temp_table_empty(TEMP_TABLE_NAME_1, cur) and is_temp_table_empty(TEMP_TABLE_NAME_2, cur):
+            cur.execute("PRAGMA table_info({})".format(table_name))
+        elif is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
             cur.execute("PRAGMA table_info({})".format(TEMP_TABLE_NAME_2))
-            column_names = [col[1] for col in cur.fetchall()]
         else:
             cur.execute("PRAGMA table_info({})".format(TEMP_TABLE_NAME_1))
-            column_names = [col[1] for col in cur.fetchall()]
+        column_names = [col[1] for col in cur.fetchall()]
     
-    cur.execute ("CREATE TABLE {} ({})".format(result_table_name, " text, ".join(column_names) + ' text'))
+    cur.execute("CREATE TABLE {} ({})".format(result_table_name, " text, ".join(column_names) + ' text'))
     for result in results:
         print(result)
         cur.execute("INSERT INTO {} values {}".format(result_table_name, result))
@@ -316,7 +317,7 @@ def process_probability_query(inputline, cur):
         else:
             result_table_name = TEMP_RESULT_TABLE_NAME_2
 
-        create_temp_result_table(cur, results, result_table_name, projections)
+        create_temp_result_table(cur, results, result_table_name, projections, temp_table_name)
         
         if index != 0:
             print("nested query")
