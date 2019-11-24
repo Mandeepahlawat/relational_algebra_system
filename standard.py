@@ -61,7 +61,7 @@ def process_join (cur, relation):
         execute_query(cur, 'ALTER TABLE {} RENAME COLUMN standard TO standard2'.format(next))
         execute_query(cur, 'CREATE TABLE {} AS SELECT * FROM {} NATURAL JOIN {}'.format(temp_table, current, next))
         execute_query(cur, 'ALTER TABLE {} RENAME COLUMN standard2 TO standard'.format(next))
-        execute_query(cur, 'UPDATE {} SET standard2=standard*standard2'.format(temp_table))
+        execute_query(cur, 'UPDATE {} SET standard2=CASE WHEN standard>standard2 THEN '.format(temp_table))
         columns=",".join(get_columns(cur, temp_table))
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(result_table))
         execute_query(cur, 'CREATE TABLE {} AS SELECT {} FROM {}'.format(result_table, columns, temp_table))
@@ -94,6 +94,6 @@ def process_query_standard(inputline, cur):
     columns=",".join(get_columns(cur, temp_name))
 
     execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(new_name))
-    execute_query(cur, 'CREATE TABLE {} AS SELECT {},MAX(standard) FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
+    execute_query(cur, 'CREATE TABLE {} AS SELECT {},MAX(standard) AS standard FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
     execute_query(cur, 'SELECT * FROM {}'.format(new_name))
     print_results(cur)

@@ -96,6 +96,6 @@ def process_query_provenance(inputline, cur):
     columns=",".join(get_columns(cur, temp_name))
 
     execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(new_name))
-    execute_query(cur, 'CREATE TABLE {} AS SELECT {},GROUP_CONCAT(provenance, "+") FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
+    execute_query(cur, 'CREATE TABLE {} AS SELECT {},GROUP_CONCAT(provenance, "+") as provenance FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
     execute_query(cur, 'SELECT * FROM {}'.format(new_name))
     print_results(cur)
