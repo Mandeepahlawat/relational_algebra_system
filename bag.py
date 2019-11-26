@@ -51,13 +51,14 @@ def get_columns(cur, table):
             columns.append(result[1])
     return columns
 
+
 def get_columns_omitbags(cur, table):
     query = 'PRAGMA table_info({})'.format(table)
     cur.execute(query)
     results = cur.fetchall()
     columns = []
     for result in results:
-        if (result[1] != "bag" and result[1] != "bag2"):
+        if result[1] != "bag" and result[1] != "bag2":
             columns.append(result[1])
     return columns
 
@@ -79,17 +80,12 @@ def process_join(cur, relation):
     columnsOrig = ",".join(origColumn) + ",bag"
 
     columnsAndInfoBag2 = " TEXT,".join(origColumn) + " TEXT, bag2 TEXT"
-    columnsAndInfoBag = " TEXT,".join(origColumn) + " TEXT, bag TEXT"
-
-
-
 
     while (relations):
         next = relations.pop()
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(copy_table))
         execute_query(cur, 'CREATE TABLE {} ({})'.format(copy_table, columnsAndInfoBag2))
         execute_query(cur, 'INSERT INTO {} SELECT {} FROM {}'.format(copy_table, columnsOrig, current))
-
 
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(temp_table))
         execute_query(cur, 'CREATE TABLE {} AS SELECT * FROM {} NATURAL JOIN {}'.format(temp_table, copy_table, next))
@@ -105,19 +101,6 @@ def process_join(cur, relation):
         execute_query(cur, 'CREATE TABLE {} ({})'.format(result_table, temp_columns_type))
         execute_query(cur, 'INSERT INTO {} SELECT {} FROM {}'.format(result_table, columnsOrigMCopy, temp_table))
 
-
-        # execute_query(cur, 'SELECT * FROM {}'.format(result_table))
-        # print_results(cur)
-        # execute_query(cur, 'ALTER TABLE {} RENAME COLUMN bag2 TO bag'.format(next))
-        # execute_query(cur,
-        #               'UPDATE {} SET bag="("||bag||")" WHERE bag LIKE "%+%"'.format(temp_table))
-        # execute_query(cur,
-        #               'UPDATE {} SET bag2="("||bag2||")" WHERE bag2 LIKE "%+%"'.format(temp_table))
-        # execute_query(cur, 'UPDATE {} SET bag2=bag||"*"||bag2'.format(temp_table))
-        # columns = ",".join(get_columns(cur, temp_table))
-        # execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(result_table))
-        # execute_query(cur, 'CREATE TABLE {} AS SELECT {} FROM {}'.format(result_table, columns, temp_table))
-        # execute_query(cur, 'ALTER TABLE {} RENAME COLUMN bag2 TO bag'.format(result_table))
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(temp_table))
         execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(copy_table))
         current = result_table
@@ -144,8 +127,7 @@ def process_query_bag(inputline, cur):
         if union:
             query += " UNION ALL "
 
-
-        if (re.search(" join ", relation, re.IGNORECASE)):
+        if re.search(" join ", relation, re.IGNORECASE):
             relation = process_join(cur, relation)
 
         query += 'Select {} from {}'.format(projections, relation)
@@ -164,6 +146,7 @@ def process_query_bag(inputline, cur):
 
     execute_query(cur, 'DROP TABLE IF EXISTS {}'.format(new_name))
     # execute_query(cur, 'CREATE TABLE {} AS SELECT * FROM {} '.format(new_name, temp_name))
-    execute_query(cur, 'CREATE TABLE {} AS SELECT {},sum(bag) as bag FROM {} GROUP BY {}'.format(new_name, columns, temp_name, columns))
+    execute_query(cur, 'CREATE TABLE {} AS SELECT {},sum(bag) as bag FROM {} GROUP BY {}'.format(new_name, columns,
+                                                                                                 temp_name, columns))
     execute_query(cur, 'SELECT * FROM {}'.format(new_name))
     print_results(cur)

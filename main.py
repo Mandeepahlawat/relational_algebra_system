@@ -152,7 +152,17 @@ def main():
         while int(annotation) > 5:
             annotation = input("Enter annotation number from 1 to 5\n")
 
-        if (union_or_natjoin_present(inputline)):
+
+
+
+        if (union_or_natjoin_present(inputline) and annotation != 2):
+
+            new_name = get_new(inputline)
+
+            if new_name != '':
+                inputline = re.split(':', inputline)[1]
+                new_name = new_name + ': '
+
             sub_query = re.split('natjoin|union', inputline)
             processed_sub_query = []
             for sub in sub_query:
@@ -172,7 +182,7 @@ def main():
 
             for op in conv:
                 query += op + processed_sub_query.pop(0)
-            inputline = "(" + query + ")"
+            inputline = new_name + "(" + query + ")"
         process_query_combined(inputline, cur, annotation)
 
 
