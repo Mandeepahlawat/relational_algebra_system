@@ -2,7 +2,7 @@ import re
 import sqlite3
 from functools import reduce
 
-ANNOTATED_COLUMN_NAME = 'probability'
+ANNOTATED_COLUMN_NAME = 'provenance'
 TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'
@@ -77,8 +77,18 @@ def get_join_and_columns_from_relation_dict(relation_dict):
                     join_columns.append(val)
     return (common_columns, join_columns)
 
-def create_temp_join_table(cur, inputline, relation_dict):
-    cur.execute("select * from {}".format(get_relations(inputline)))
+def create_temp_join_table(cur, inputline, relation_dict, is_normal_join=False):
+    is_self_join = None
+    relations = get_relations(inputline)
+    relation_list = [relation.strip() for relation in relations.split('join')]
+
+    if is_normal_join:
+        # if joining with same relation then need to rename one of the relations
+        if relation_list[0] == relation_list[1]:
+            is_self_join = True
+            relations = " join ".join([relation_list[0], "{} as _{}".format(relation_list[1], relation_list[1])])
+
+    cur.execute("select * from {}".format(relations))
 
     join_results = cur.fetchall()
     join_columns = [col[0] for col in cur.description]
@@ -91,6 +101,8 @@ def create_temp_join_table(cur, inputline, relation_dict):
 
     #update join_columns to append table_name in front of columns
     common_columns, join_columns = get_join_and_columns_from_relation_dict(relation_dict)
+    if is_self_join:
+        join_columns = join_columns + [ "'{}.{}'".format(relation_list[0], col) for col in join_columns]
 
     join_columns.append(ANNOTATED_COLUMN_NAME)
 
@@ -261,8 +273,8 @@ def process_probability_query(inputline, cur):
     # inputline = "project <code1> (a) union project <code1> (b) union project <code1> (c)"
     # inputline = "project <code1> (a) union project <code1> (b) union project <code1> (c) union project <code3> (b)"
     # inputline = "project <code1> (a) nestedjoin project <code1> (b)"
-    # inputline = "project <city> select[position='Analyst'](r) nestedjoin project <city> select[position='Field agent' or position='Double agent'](r)"
-    # inputline = "project <city> select[position='Analyst'](r) union project <city> select[position='Field agent' or position='Double agent'](r)"
+    # inputline = "project <city> select[position='"Analyst"'](r) nestedjoin project <city> select[position='"Field agent"' or position='"Double agent"'](r)"
+    # inputline = "project <city> select[position='"Analyst"'](r) union project <city> select[position='"Field agent"' or position='"Double agent"'](r)"
 
     # drop both temp result tables
     drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_1, cur)
@@ -289,9 +301,12 @@ def process_probability_query(inputline, cur):
         results = []
         if is_join_present(query):
             relation_dict = get_all_table_columns(query, cur)
-            create_temp_join_table(cur, query, relation_dict)
+            create_temp_join_table(cur, query, relation_dict, is_normal_join=True)
             select_conditions = get_select_conditions(query)
             projections = get_projections(query)
+            # remove duplicate columns
+            if projections == '*':
+                projections = get_projections_for_nested_join(query, cur)
 
             temp_table_name = None
             if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):

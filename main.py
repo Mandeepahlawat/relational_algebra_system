@@ -153,9 +153,7 @@ def main():
             annotation = input("Enter annotation number from 1 to 5\n")
 
 
-
-
-        if (union_or_natjoin_present(inputline) and annotation != 2):
+        if (union_or_natjoin_present(inputline) and annotation != "2"):
 
             new_name = get_new(inputline)
 
