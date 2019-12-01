@@ -2,7 +2,7 @@ import re
 import sqlite3
 from functools import reduce
 
-ANNOTATED_COLUMN_NAME = 'provenance'
+ANNOTATED_COLUMN_NAME = 'probability'
 TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'
@@ -206,7 +206,7 @@ def is_union_query(inputline):
         return True   
 
 def is_nested_join_query(inputline):
-    nested_join = re.search("nestedjoin", inputline, re.IGNORECASE)
+    nested_join = re.search("natjoin", inputline, re.IGNORECASE)
     if nested_join:
         return True
 
@@ -263,7 +263,7 @@ def get_projections_for_nested_join(query, cur):
 
 
 def process_probability_query(inputline, cur):
-    # inputline = "project <code1> (a) nestedjoin project<code3> (b)"
+    # inputline = "project <code1> (a) natjoin project<code3> (b)"
     # inputline = "project <code1, code2> select[code1='YUL'] (a)"
     # inputline = "project <code1, code2> select[code1='YUL'] (a join b)"
     # inputline = "project <code1, code2> (a join b)"
@@ -272,8 +272,8 @@ def process_probability_query(inputline, cur):
     # inputline = "project <code2> (a) union project <code3> (b)"
     # inputline = "project <code1> (a) union project <code1> (b) union project <code1> (c)"
     # inputline = "project <code1> (a) union project <code1> (b) union project <code1> (c) union project <code3> (b)"
-    # inputline = "project <code1> (a) nestedjoin project <code1> (b)"
-    # inputline = "project <city> select[position='"Analyst"'](r) nestedjoin project <city> select[position='"Field agent"' or position='"Double agent"'](r)"
+    # inputline = "project <code1> (a) natjoin project <code1> (b)"
+    # inputline = "project <city> select[position='"Analyst"'](r) natjoin project <city> select[position='"Field agent"' or position='"Double agent"'](r)"
     # inputline = "project <city> select[position='"Analyst"'](r) union project <city> select[position='"Field agent"' or position='"Double agent"'](r)"
 
     # drop both temp result tables
@@ -288,7 +288,7 @@ def process_probability_query(inputline, cur):
         query_list = re.split("union", inputline, flags=re.IGNORECASE)
         is_union = True
     elif is_nested_join_query(inputline):
-        query_list = re.split("nestedjoin", inputline, flags=re.IGNORECASE)
+        query_list = re.split("natjoin", inputline, flags=re.IGNORECASE)
         is_nested_join = True
     else:
         query_list.append(inputline)
