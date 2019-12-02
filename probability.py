@@ -7,6 +7,7 @@ TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'
 TEMP_RESULT_TABLE_NAME_2 = 'temp_prob_result_table_2'
+DEBUG_MODE = True
 
 def get_select_conditions(inputline):
     if re.search("select", inputline, re.IGNORECASE):
@@ -118,7 +119,8 @@ def create_temp_join_table(cur, inputline, relation_dict, is_normal_join=False):
     cur.execute("CREATE TABLE {} ({})".format(temp_table_name, " text, ".join(join_columns) + ' text'))
 
     for result in new_join_results:
-        print(result)
+        if DEBUG_MODE:
+            print(result)
         cur.execute("INSERT INTO {} values {}".format(temp_table_name, result))
 
     #perform natural join
@@ -188,7 +190,8 @@ def create_temp_result_table(cur, results, result_table_name, projections, table
     
     cur.execute("CREATE TABLE {} ({})".format(result_table_name, " text, ".join(column_names) + ' text'))
     for result in results:
-        print(result)
+        if DEBUG_MODE:
+            print(result)
         cur.execute("INSERT INTO {} values {}".format(result_table_name, result))
 
 def is_temp_table_empty(table_name, cur):
@@ -238,7 +241,8 @@ def nested_join_queries(cur):
 
     query = 'Select {} from {}'.format(projection_list, temp_table_name)
 
-    print("nestedjoin", query)
+    if DEBUG_MODE:
+        print("nestedjoin", query)
     cur.execute(query)
     return cur.fetchall()
 
@@ -322,8 +326,9 @@ def process_probability_query(inputline, cur):
             query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
         else:
             query = 'Select {} from {}'.format(projections, temp_table_name)
-            
-        print(query)
+        
+        if DEBUG_MODE:   
+            print(query)
         cur.execute(query)
         results = cur.fetchall()
 
@@ -335,7 +340,8 @@ def process_probability_query(inputline, cur):
         create_temp_result_table(cur, results, result_table_name, projections, temp_table_name)
         
         if index != 0:
-            print("nested query")
+            if DEBUG_MODE:
+                print("nested query")
             combined_results = []
             if is_union:
                 combined_results = union_queries(cur)
