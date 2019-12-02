@@ -7,7 +7,7 @@ TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'
 TEMP_RESULT_TABLE_NAME_2 = 'temp_prob_result_table_2'
-DEBUG_MODE = True
+DEBUG_MODE = False
 
 def get_select_conditions(inputline):
     if re.search("select", inputline, re.IGNORECASE):
