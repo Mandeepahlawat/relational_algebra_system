@@ -47,7 +47,7 @@ def get_columns(cur, table):
     return columns
 
 def execute_query(cur, query):
-    print (query)
+#    print (query)
     cur.execute(query)
 
 def process_join (cur, relation):

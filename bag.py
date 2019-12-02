@@ -64,7 +64,7 @@ def get_columns_omitbags(cur, table):
 
 
 def execute_query(cur, query):
-    print(query)
+#    print(query)
     cur.execute(query)
 
 
