@@ -122,11 +122,8 @@ def create_temp_join_table(cur, inputline, relation_dict, is_normal_join=False):
            
     cur.execute("CREATE TABLE {} ({})".format(temp_table_name, " text, ".join(join_columns) + ' text'))
 
-    for result in new_join_results:
-        if DEBUG_MODE:
-            print(result)
-        cur.execute("INSERT INTO {} values {}".format(temp_table_name, result))
-
+    question_string = ("?," * len(join_columns))[:-1]
+    cur.executemany("INSERT INTO {}".format(temp_table_name) + " values(" + question_string + ")", new_join_results)
     #perform natural join
     cur.execute("PRAGMA table_info({})".format(temp_table_name))
     temp_col_list = [col[1] for col in cur.fetchall()]
@@ -193,10 +190,14 @@ def create_temp_result_table(cur, results, result_table_name, projections, table
         column_names = [col[1] for col in cur.fetchall()]
     
     cur.execute("CREATE TABLE {} ({})".format(result_table_name, " text, ".join(column_names) + ' text'))
-    for result in results:
-        if DEBUG_MODE:
-            print(result)
-        cur.execute("INSERT INTO {} values {}".format(result_table_name, result))
+
+    question_string = ("?," * len(column_names))[:-1]
+    cur.executemany("INSERT INTO {}".format(result_table_name) + " values(" + question_string + ")", results)
+
+    # for result in results:
+    #     if DEBUG_MODE:
+    #         print(result)
+    #     cur.execute("INSERT INTO {} values {}".format(result_table_name, result))
 
 def is_temp_table_empty(table_name, cur):
     cur.execute ("SELECT COUNT(name) FROM sqlite_master WHERE type='table' AND name='{}'".format(table_name))
