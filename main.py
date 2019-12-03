@@ -1,6 +1,7 @@
 import glob
 import re
 import sqlite3
+import time
 from provenance import process_query_provenance
 from bag import process_query_bag
 from probability import process_probability_query
@@ -135,6 +136,7 @@ def main():
 
     annotation = 0
     temp = 0
+    time_so_far = 0
 
     # format of input line "project <projection_column1, projection_column2> select[condition1, condition2] (table_name1 join table_name2)"
     inputline = input(
@@ -152,6 +154,7 @@ def main():
         while int(annotation) > 5:
             annotation = input("Enter annotation number from 1 to 5\n")
 
+        start_time = time.time()
 
         if (union_or_natjoin_present(inputline) and annotation != "2"):
 
@@ -169,19 +172,51 @@ def main():
                 processed_sub_query.append('_main_temp_{}'.format(temp))
                 process_query_combined(query, cur, annotation)
             operations = re.findall('union|natjoin', inputline, re.IGNORECASE)
-            conv = []
+
+            joined = []
+            i = 0
             for op in operations:
-                if op == "union":
-                    conv.append(" , ")
                 if op == "natjoin":
-                    conv.append(" join ")
+                    temp += 1
+                    sub = "(" + processed_sub_query[i] + " join " + processed_sub_query[i+1] + ")"
+                    joined.append(processed_sub_query[i])
+                    joined.append(processed_sub_query[i+1])
+                    query = '_main_temp_{}: {}'.format(temp, sub)
 
-            query = processed_sub_query.pop(0)
+                    processed_sub_query.append('_main_temp_{}'.format(temp))
+                    process_query_combined(query, cur, annotation)
 
-            for op in conv:
-                query += op + processed_sub_query.pop(0)
+                i += 1
+
+            filter = []
+
+            for sub in processed_sub_query:
+                if sub not in joined:
+                    filter.append(sub)
+
+            # conv = []
+            # for op in operations:
+            #     if op == "union":
+            #         conv.append(" , ")
+            #     if op == "natjoin":
+            #         conv.append(" join ")
+            #
+            # query = processed_sub_query.pop(0)
+            #
+            # for op in conv:
+            #     query += op + processed_sub_query.pop(0)
+
+            query = ', '.join(filter)
+
+
             inputline = new_name + "(" + query + ")"
         process_query_combined(inputline, cur, annotation)
+
+        elapsedtime = (time.time() - start_time)
+        time_so_far += elapsedtime
+
+
+        print('Exection time {} ---- total time {}\n'.format(elapsedtime, time_so_far))
 
 
         inputline = input(
