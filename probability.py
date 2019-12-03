@@ -7,6 +7,10 @@ TEMP_TABLE_NAME_1 = 'temp_prob_table_1'
 TEMP_TABLE_NAME_2 = 'temp_prob_table_2'
 TEMP_RESULT_TABLE_NAME_1 = 'temp_prob_result_table_1'
 TEMP_RESULT_TABLE_NAME_2 = 'temp_prob_result_table_2'
+TEMP_UNION_RESULT_TABLE_NAME_1 = 'temp_prob_union_result_table_1'
+TEMP_UNION_RESULT_TABLE_NAME_2 = 'temp_prob_union_result_table_2'
+
+
 DEBUG_MODE = False
 
 def get_select_conditions(inputline):
@@ -214,7 +218,7 @@ def is_nested_join_query(inputline):
         return True
 
 def union_queries(cur):
-    cur.execute("select * from {} union all select * from {}".format(TEMP_RESULT_TABLE_NAME_1, TEMP_RESULT_TABLE_NAME_2))
+    cur.execute("select * from {} union all select * from {}".format(TEMP_UNION_RESULT_TABLE_NAME_1, TEMP_UNION_RESULT_TABLE_NAME_2))
     return cur.fetchall()
 
 def get_nested_join_table_names(cur):
@@ -285,68 +289,149 @@ def process_probability_query(inputline, cur):
     drop_temp_table_by_name(TEMP_RESULT_TABLE_NAME_2, cur)
     
     query_list = []
-    is_union = False
     is_nested_join = False
 
-    if is_union_query(inputline):
-        query_list = re.split("union", inputline, flags=re.IGNORECASE)
-        is_union = True
-    elif is_nested_join_query(inputline):
+    if is_nested_join_query(inputline):
         query_list = re.split("natjoin", inputline, flags=re.IGNORECASE)
         is_nested_join = True
     else:
         query_list.append(inputline)
 
     for index, query in enumerate(query_list):
-        # drop both temp join tables everytime we process a query
-        drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
-        drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
+        union_query_list = []
         
-        results = []
-        if is_join_present(query):
-            relation_dict = get_all_table_columns(query, cur)
-            create_temp_join_table(cur, query, relation_dict, is_normal_join=True)
-            select_conditions = get_select_conditions(query)
-            projections = get_projections(query)
-            # remove duplicate columns
-            if projections == '*':
-                projections = get_projections_for_nested_join(query, cur)
+        if is_union_query(query):
+            union_query_list = re.split("union", query, flags=re.IGNORECASE)
+            is_union = True
 
-            temp_table_name = None
-            if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
-                temp_table_name = TEMP_TABLE_NAME_2
+            drop_temp_table_by_name(TEMP_UNION_RESULT_TABLE_NAME_1, cur)
+            drop_temp_table_by_name(TEMP_UNION_RESULT_TABLE_NAME_2, cur)
+
+            for idx, u_query in enumerate(union_query_list):
+
+                # drop both temp join tables everytime we process a query
+                drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
+                drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
+                
+                results = []
+
+                if is_join_present(u_query):
+                    relation_dict = get_all_table_columns(u_query, cur)
+                    create_temp_join_table(cur, u_query, relation_dict, is_normal_join=True)
+                    select_conditions = get_select_conditions(u_query)
+                    projections = get_projections(u_query)
+                    # remove duplicate columns
+                    if projections == '*':
+                        projections = get_projections_for_nested_join(u_query, cur)
+
+                    temp_table_name = None
+                    if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
+                        temp_table_name = TEMP_TABLE_NAME_2
+                    else:
+                        temp_table_name = TEMP_TABLE_NAME_1
+                else:
+                    select_conditions = get_select_conditions(u_query)
+                    projections = get_projections(u_query)
+                    temp_table_name = get_relations(u_query)
+
+                if select_conditions:
+                    u_query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
+                else:
+                    u_query = 'Select {} from {}'.format(projections, temp_table_name)
+            
+                if DEBUG_MODE:   
+                    print(u_query)
+                cur.execute(u_query)
+                results = cur.fetchall()
+
+                if is_temp_table_empty(TEMP_UNION_RESULT_TABLE_NAME_1, cur):
+                    result_table_name = TEMP_UNION_RESULT_TABLE_NAME_1
+                else:
+                    result_table_name = TEMP_UNION_RESULT_TABLE_NAME_2
+
+                create_temp_result_table(cur, results, result_table_name, projections, temp_table_name)
+
+
+                if idx != 0:
+                    if DEBUG_MODE:
+                        print("nested union query")
+                    combined_results = []
+                    if is_union:
+                        combined_results = union_queries(cur)
+                        cur.execute("PRAGMA table_info({})".format(TEMP_UNION_RESULT_TABLE_NAME_2))
+                        result_table_projections = ",".join([col[1] for col in cur.fetchall()])
+
+                    # delete one of the temp results table and create a new one consisting union results
+                    result_table_name = TEMP_UNION_RESULT_TABLE_NAME_1
+                    drop_temp_table_by_name(result_table_name, cur)
+                    
+                    create_temp_result_table(cur, combined_results, result_table_name, result_table_projections)
+                    drop_temp_table_by_name(TEMP_UNION_RESULT_TABLE_NAME_2, cur)
+
+                if idx+1 == len(union_query_list):
+                    # # last query, hence show results
+                    # cur.execute('select * from {}'.format(result_table_name))
+                    # print_results(cur)
+                    if is_temp_table_empty(TEMP_RESULT_TABLE_NAME_1, cur):
+                        result_table_name = TEMP_RESULT_TABLE_NAME_1
+                    else:
+                        result_table_name = TEMP_RESULT_TABLE_NAME_2
+
+                    if is_temp_table_empty(TEMP_UNION_RESULT_TABLE_NAME_2, cur):
+                        union_result_table = TEMP_UNION_RESULT_TABLE_NAME_1
+                    else:
+                        union_result_table = TEMP_UNION_RESULT_TABLE_NAME_2
+
+                    query = 'CREATE TABLE {} AS select * from {}'.format(result_table_name, union_result_table)
+                    cur.execute(query)
+        else:
+            # drop both temp join tables everytime we process a query
+            drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
+            drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
+            
+            results = []
+
+            if is_join_present(query):
+                relation_dict = get_all_table_columns(query, cur)
+                create_temp_join_table(cur, query, relation_dict, is_normal_join=True)
+                select_conditions = get_select_conditions(query)
+                projections = get_projections(query)
+                # remove duplicate columns
+                if projections == '*':
+                    projections = get_projections_for_nested_join(query, cur)
+
+                temp_table_name = None
+                if is_temp_table_empty(TEMP_TABLE_NAME_1, cur):
+                    temp_table_name = TEMP_TABLE_NAME_2
+                else:
+                    temp_table_name = TEMP_TABLE_NAME_1
             else:
-                temp_table_name = TEMP_TABLE_NAME_1
-        else:
-            select_conditions = get_select_conditions(query)
-            projections = get_projections(query)
-            temp_table_name = get_relations(query)
+                select_conditions = get_select_conditions(query)
+                projections = get_projections(query)
+                temp_table_name = get_relations(query)
 
-        if select_conditions:
-            query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
-        else:
-            query = 'Select {} from {}'.format(projections, temp_table_name)
-        
-        if DEBUG_MODE:   
-            print(query)
-        cur.execute(query)
-        results = cur.fetchall()
+            if select_conditions:
+                query = 'Select {} from {} where {}'.format(projections, temp_table_name, select_conditions)
+            else:
+                query = 'Select {} from {}'.format(projections, temp_table_name)
 
-        if is_temp_table_empty(TEMP_RESULT_TABLE_NAME_1, cur):
-            result_table_name = TEMP_RESULT_TABLE_NAME_1
-        else:
-            result_table_name = TEMP_RESULT_TABLE_NAME_2
+            if DEBUG_MODE:   
+                print(query)
+            cur.execute(query)
+            results = cur.fetchall()
 
-        create_temp_result_table(cur, results, result_table_name, projections, temp_table_name)
-        
+            if is_temp_table_empty(TEMP_RESULT_TABLE_NAME_1, cur):
+                result_table_name = TEMP_RESULT_TABLE_NAME_1
+            else:
+                result_table_name = TEMP_RESULT_TABLE_NAME_2
+
+            create_temp_result_table(cur, results, result_table_name, projections, temp_table_name)
+
+
         if index != 0:
             if DEBUG_MODE:
                 print("nested query")
             combined_results = []
-            if is_union:
-                combined_results = union_queries(cur)
-                cur.execute("PRAGMA table_info({})".format(TEMP_RESULT_TABLE_NAME_2))
-                result_table_projections = ",".join([col[1] for col in cur.fetchall()])
             if is_nested_join:
                 drop_temp_table_by_name(TEMP_TABLE_NAME_1, cur)
                 drop_temp_table_by_name(TEMP_TABLE_NAME_2, cur)
