@@ -114,7 +114,7 @@ def process_query_combined(inputline, cur, annotation):
     if (annotation == "4"):
         process_query_provenance(inputline, cur)
     elif annotation == "2":
-        process_probability_query(inputline, cur)
+        return process_probability_query(inputline, cur)
     elif (annotation == "1"):
         process_query_bag(inputline, cur)
     elif (annotation == "5"):
@@ -210,7 +210,23 @@ def main():
 
 
             inputline = new_name + "(" + query + ")"
-        process_query_combined(inputline, cur, annotation)
+            process_query_combined(inputline, cur, annotation)
+        elif annotation == "2":
+            new_name = get_new(inputline)
+
+            if new_name != '':
+                inputline = re.split(':', inputline)[1]
+            result_table_name = process_query_combined(inputline, cur, annotation)
+
+            if new_name != '':
+                cur.execute('DROP TABLE IF EXISTS {}'.format(new_name))
+                cur.execute('create table {} as select * from {}'.format(new_name, result_table_name))
+                cur.execute('select * from {}'.format(new_name))
+                print_results(cur)
+            else:
+                cur.execute('select * from {}'.format(result_table_name))
+                print_results(cur)
+
 
         elapsedtime = (time.time() - start_time)
         time_so_far += elapsedtime

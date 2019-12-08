@@ -449,5 +449,7 @@ def process_probability_query(inputline, cur):
         
         if index+1 == len(query_list):
             # last query, hence show results
-            cur.execute('select * from {}'.format(result_table_name))
-            print_results(cur)
+            # cur.execute('select * from {}'.format(result_table_name))
+            # print_results(cur)
+            return result_table_name
+
